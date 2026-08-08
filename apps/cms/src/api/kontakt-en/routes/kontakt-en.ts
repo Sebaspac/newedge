@@ -1,0 +1,6 @@
+/**
+ * kontakt-en router
+ */
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreRouter('api::kontakt-en.kontakt-en');

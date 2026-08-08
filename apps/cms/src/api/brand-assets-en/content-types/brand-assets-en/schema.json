@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "brand_assets_en_entries",
+  "info": {
+    "singularName": "brand-assets-en",
+    "pluralName": "brand-assets-en-entries",
+    "displayName": "Brand Assets En",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "loadingLogo": {
+      "type": "json"
+    },
+    "consultAvatar": {
+      "type": "json"
+    }
+  }
+}

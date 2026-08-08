@@ -1,0 +1,19 @@
+# ⚠️  NUR FÜR STANDALONE-BETRIEB auf einer eigenen Subdomain.
+#
+# Im NEWEDGE-Produktionsbetrieb wird diese Datei NICHT verwendet: Dort läuft der
+# Lead-Service Same-Origin unter der Hauptdomain hinter nginx —
+# apps/cms/deploy/nginx.conf routet /contact, /roi-report, /abmelden/<token>
+# und /health an 127.0.0.1:8090. TLS macht certbot für die Hauptdomain.
+#
+# Diese Vorlage bleibt nur für den Fall, dass der Service allein auf einem
+# eigenen Host läuft (siehe docker-compose.standalone.yml).
+#
+# Caddy als Reverse-Proxy mit automatischem HTTPS (Let's Encrypt).
+# Voraussetzung: DNS-A-Record der Subdomain zeigt auf den VPS.
+#
+# Install (Ubuntu/Debian): https://caddyserver.com/docs/install
+# Diese Datei nach /etc/caddy/Caddyfile mergen, dann: systemctl reload caddy
+
+roi-api.newedgebrand.com {
+	reverse_proxy 127.0.0.1:8090
+}

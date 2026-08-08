@@ -1,0 +1,41 @@
+# New Edge Brand
+
+> KI-Agentur aus München – Marke, Digital & KI aus einer Hand.
+
+New Edge Brand ist eine spezialisierte KI-Agentur mit Sitz in München. Wir arbeiten an der Schnittstelle von Markenstrategie, Digitalentwicklung und künstlicher Intelligenz. Unsere Kunden sind mittelständische Unternehmen (KMU) und Konzerne, die KI nicht als Buzzword, sondern als operative Infrastruktur einsetzen wollen.
+
+## Leistungsbereiche
+
+### Studio – Brand & Digital
+- Brand Identity & Markenentwicklung
+- Webdesign & Webentwicklung
+- Content-Strategie & Produktion
+- Social Media Management
+
+### Lab – Website, Automation & Ownership
+- Website-Entwicklung (ab €2.240)
+- KI-Automatisierung & Prozessoptimierung
+- LLM-Deployment & Custom AI Agents
+- RAG-Systeme & Wissensmanagement
+- BAFA-förderfähige KI-Beratung
+
+### KI-Audit
+- Kostenlose KI-Potenzialanalyse für Unternehmen
+- Identifikation von Automatisierungs-Potenzialen
+- Strategische KI-Roadmap
+
+## Kontakt
+
+- Website: https://newedgebrand.com
+- E-Mail: info@newedgebrand.com
+- Standort: München, Deutschland
+- LinkedIn: https://www.linkedin.com/company/new-edge-brand/
+
+## Weiterführende Informationen
+
+- Über uns: https://newedgebrand.com/about
+- Methodik: https://newedgebrand.com/methodik
+- KI-Audit: https://newedgebrand.com/ki-audit
+- KI-Glossar: https://newedgebrand.com/ki-glossar
+- Kontakt: https://newedgebrand.com/kontakt
+- Detaillierte Informationen: https://newedgebrand.com/llms-full.txt

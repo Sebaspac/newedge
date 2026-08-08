@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Consent Mode v2 — Default VOR Cookiebot (offizielle Reihenfolge):
+         Standard ist Ablehnung, gilt auch für alles, was später über den
+         GTM-Container nachgeladen wird. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted'
+      });
+    </script>
+
+    <!-- Cookiebot — Banner + Consent-Verwaltung -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="196aa51d-737c-49f4-abdb-fee88db82562" data-blockingmode="auto" type="text/javascript"></script>
+
+    <!-- Google Tag Manager & GA4 — Consent-Gate (DSGVO/TTDSG)
+         Consent kommt von Cookiebot. Vor der Einwilligung geht KEINE Anfrage
+         an Google. Rückkehrer mit gespeicherter Einwilligung werden direkt
+         beim ersten apply() bedient (uc.js lädt synchron davor), Neubesucher
+         über die Cookiebot-Events nach dem Banner-Klick.
+         Zuordnung: Cookiebot "statistics" → analytics_storage,
+         Cookiebot "marketing" → ad_storage/ad_user_data/ad_personalization. -->
+    <script>
+      (function () {
+        var GTM_ID = 'GTM-5LPQ2DT7';
+        var GA_ID = 'G-9JCE208Q8L';
+        var injected = false;
+
+        function injectGoogle() {
+          if (injected) return;
+          injected = true;
+          window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var gtm = document.createElement('script');
+          gtm.async = true;
+          gtm.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
+          document.head.appendChild(gtm);
+
+          var ga = document.createElement('script');
+          ga.async = true;
+          ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+          document.head.appendChild(ga);
+          gtag('js', new Date());
+          gtag('config', GA_ID);
+        }
+
+        function apply() {
+          var c = window.Cookiebot && window.Cookiebot.consent;
+          if (!c) return;
+          gtag('consent', 'update', {
+            ad_storage: c.marketing ? 'granted' : 'denied',
+            ad_user_data: c.marketing ? 'granted' : 'denied',
+            ad_personalization: c.marketing ? 'granted' : 'denied',
+            analytics_storage: c.statistics ? 'granted' : 'denied'
+          });
+          if (c.statistics || c.marketing) injectGoogle();
+        }
+
+        apply();
+        window.addEventListener('CookiebotOnConsentReady', apply);
+        window.addEventListener('CookiebotOnAccept', apply);
+      })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="XtuEeSbCDu8Kudt1pr8BEw0Lixm1iuaGkC-hcpwlSiA" />
+
+    <!-- SEO Meta-Tags -->
+    <!-- description & canonical werden PRO SEITE von SEOHead (react-helmet) gesetzt.
+         Hier bewusst KEINE statische canonical/description (die statische canonical="/"
+         wäre auf allen Unterseiten falsch und doppelte sich mit Helmet). -->
+    <title>Die KI-Abteilung für den Mittelstand | NEWEDGE München</title>
+    <meta name="keywords" content="KI-Abteilung, KI für den Mittelstand, KI-Analyse, Prozessautomatisierung, Cortex, Datenhoheit, DSGVO-konforme KI, München, NEWEDGE">
+    <meta name="author" content="NEWEDGE — die KI-Abteilung für den Mittelstand" />
+      
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://newedgebrand.com/" />
+    <meta property="og:site_name" content="newedgebrand" />
+    <meta property="og:image" content="https://newedgebrand.com/og-default.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    
+    <meta name="twitter:image" content="https://newedgebrand.com/og-default.jpg" />
+
+    <!-- Favicon & App-Icons — erzeugt aus der Wortmarke:
+         python3 scripts/gen-brand-icons.py -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icons/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    
+    <!-- Apple/Safari specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload Critical Fonts for faster FCP -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/epilogue/v17/O4ZMFGj5hxF0EhjimngomvnCCtqb30OXMDLiDJXVigHPVA.woff2" as="font" type="font/woff2" crossorigin />
+    
+    <!-- Preload Hero Images for LCP optimization -->
+    <link rel="preload" as="image" href="/assets/93b90410-bdbd-4098-938c-5ff9f158253c.png" type="image/png" />
+    <link rel="preload" as="image" href="/assets/c19dc1d8-e93c-4d25-a965-34dbef5d9fe1.png" type="image/png" />
+    
+    <!-- Load Fonts - preloaded above, now apply with swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+  
+  
+  
+  <meta property="og:title" content="Die KI-Abteilung für den Mittelstand | NEWEDGE München">
+  <meta name="twitter:title" content="Die KI-Abteilung für den Mittelstand | NEWEDGE München">
+  <meta property="og:description" content="NEWEDGE baut Ihre eigene KI-Abteilung auf: von der kostenlosen Analyse über Cortex bis zu laufenden Automatisierungen. DSGVO-konform, oft förderfähig.">
+  <meta name="twitter:description" content="NEWEDGE baut Ihre eigene KI-Abteilung auf: von der kostenlosen Analyse über Cortex bis zu laufenden Automatisierungen. DSGVO-konform, oft förderfähig.">
+</head>
+
+  <body>
+    <!-- Kein GTM-noscript-iframe: der würde ohne Einwilligung laden und lässt
+         sich nicht per Consent Mode steuern. -->
+
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Visueller Editor nur lokal — im Live-Build würde dieser Aufruf auf dem
+         localhost des BESUCHERS landen (fehlschlagender Request, unter HTTPS
+         zusätzlich eine Mixed-Content-Warnung). -->
+    <script>
+      if (['localhost', '127.0.0.1'].indexOf(location.hostname) !== -1) {
+        var neEditor = document.createElement('script');
+        neEditor.src = 'http://localhost:3000/editor.js';
+        neEditor.defer = true;
+        document.body.appendChild(neEditor);
+      }
+    </script>
+  </body>
+</html>

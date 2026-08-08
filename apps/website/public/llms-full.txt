@@ -1,0 +1,113 @@
+# New Edge Brand – Vollständige Unternehmensübersicht
+
+> KI-Agentur aus München – Marke, Digital & KI aus einer Hand.
+
+## Über New Edge Brand
+
+New Edge Brand ist eine spezialisierte KI-Agentur mit Sitz in München, Deutschland. Gegründet an der Schnittstelle von Markenstrategie, Digitalentwicklung und künstlicher Intelligenz, unterstützen wir Unternehmen dabei, KI operativ einzusetzen – nicht als Experiment, sondern als produktive Infrastruktur.
+
+Unsere Zielgruppe sind mittelständische Unternehmen (KMU) und Konzerne im deutschsprachigen Raum, die nachhaltig von KI profitieren wollen.
+
+## Kernkompetenzen
+
+### 1. Studio – Brand & Digital
+
+Das Studio entwickelt Markenidentitäten und digitale Auftritte, die strategisch fundiert und visuell überzeugend sind.
+
+**Leistungen:**
+- Brand Identity: Logoentwicklung, Visual Identity, Brand Guidelines
+- Webdesign & Webentwicklung: Responsive Websites, Landing Pages, Web-Apps
+- Content-Strategie: Redaktionsplanung, Storytelling, Content-Produktion
+- Social Media: Kanalstrategie, Content-Erstellung, Community Management
+- Marketing-Automation: E-Mail-Marketing, Lead-Nurturing, CRM-Integration
+
+### 2. Lab – Website, Automation & Ownership
+
+Das Lab entwickelt technische KI-Lösungen und Webinfrastruktur mit vollem Eigentum für den Kunden.
+
+**Leistungen:**
+- Website-Entwicklung: Professionelle Unternehmenswebsites (ab €2.240)
+- KI-Automatisierung: Prozessoptimierung durch intelligente Workflows
+- LLM-Deployment: Eigene Sprachmodelle für Unternehmen
+- RAG-Systeme: Retrieval Augmented Generation für Wissensdatenbanken
+- Custom AI Agents: Maßgeschneiderte KI-Agenten für Sales, Marketing, Support
+- API-Integrationen: Anbindung an bestehende Unternehmenssysteme
+
+**Preismodelle:**
+- Starter Website: ab €2.240
+- KI-Systeme: individuelle Projektpreise
+- Enterprise: maßgeschneiderte Lösungen
+- BAFA-Förderung: Beratungsleistungen sind über das BAFA-Programm förderfähig
+
+### 3. KI-Audit
+
+Ein kostenloser Einstiegspunkt für Unternehmen, die KI-Potenziale identifizieren möchten.
+
+**Ablauf:**
+1. Analyse bestehender Geschäftsprozesse
+2. Identifikation von Automatisierungs-Potenzialen
+3. Bewertung der KI-Readiness
+4. Strategische KI-Roadmap mit priorisierten Maßnahmen
+
+## Referenzprojekte (Cases)
+
+### AlbaNova Consulting
+- Branche: Consulting
+- Umfang: Komplette Marken- und Digitalstrategie
+- Ergebnis: Zweisprachige Marke von Konzept bis Launch
+
+### RAG-Wissensagent (Maschinenbau)
+- Branche: Industrie / Maschinenbau
+- Umfang: Unternehmensweiter RAG-Wissensagent
+- Ergebnis: Produktions- und Engineering-Know-how in Echtzeit abrufbar
+
+### Marketing-Automatisierung (Retail)
+- Branche: Einzelhandel
+- Umfang: KI-gestützte Marketingautomatisierung
+- Ergebnis: Automatisierte Content-Erstellung und Performance-Optimierung
+
+### Sales-Agent (B2B)
+- Branche: B2B
+- Umfang: Automatisierte Lead-Qualifizierung
+- Ergebnis: Effizienterer Vertriebsprozess durch KI-gestützte Vorqualifizierung
+
+## Häufig gestellte Fragen (FAQ)
+
+**Was ist New Edge Brand?**
+New Edge Brand ist eine KI-Agentur aus München, die Unternehmen bei Markenstrategie, Digitalentwicklung und KI-Implementierung unterstützt.
+
+**Für wen ist New Edge Brand geeignet?**
+Für mittelständische Unternehmen und Konzerne im DACH-Raum, die KI operativ einsetzen und ihre Marke digital stärken möchten.
+
+**Was kostet eine Website bei New Edge Brand?**
+Website-Projekte starten ab €2.240. Umfang und Preis werden individuell auf die Anforderungen zugeschnitten.
+
+**Ist die KI-Beratung förderfähig?**
+Ja, unsere Beratungsleistungen sind über das BAFA-Förderprogramm förderfähig.
+
+**Was ist ein KI-Audit?**
+Ein kostenloser Analyse-Prozess, bei dem wir KI-Potenziale in Ihrem Unternehmen identifizieren und eine priorisierte Roadmap erstellen.
+
+**Wo sitzt New Edge Brand?**
+In München, Deutschland. Wir arbeiten mit Kunden in ganz Deutschland und dem DACH-Raum.
+
+**Welche KI-Technologien setzt New Edge Brand ein?**
+Wir arbeiten mit LLMs (Large Language Models), RAG-Systemen, Custom AI Agents, Automatisierungs-Frameworks und modernen Web-Technologien.
+
+## Kontaktinformationen
+
+- Website: https://newedgebrand.com
+- E-Mail: info@newedgebrand.com
+- Standort: München, Deutschland
+- LinkedIn: https://www.linkedin.com/company/new-edge-brand/
+- KI-Audit anfragen: https://newedgebrand.com/ki-audit
+- Kontaktformular: https://newedgebrand.com/kontakt
+
+## Seitenübersicht
+
+- Startseite: https://newedgebrand.com
+- Über uns: https://newedgebrand.com/about
+- Methodik: https://newedgebrand.com/methodik
+- KI-Audit: https://newedgebrand.com/ki-audit
+- KI-Glossar: https://newedgebrand.com/ki-glossar
+- Kontakt: https://newedgebrand.com/kontakt

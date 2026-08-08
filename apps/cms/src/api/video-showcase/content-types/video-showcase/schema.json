@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "video_showcase_entries",
+  "info": {
+    "singularName": "video-showcase",
+    "pluralName": "video-showcase-entries",
+    "displayName": "Video Showcase",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub": {
+      "type": "string"
+    },
+    "ctaPrimary": {
+      "type": "json"
+    },
+    "ctaSecondary": {
+      "type": "json"
+    }
+  }
+}

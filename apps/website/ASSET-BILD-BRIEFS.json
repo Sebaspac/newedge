@@ -1,0 +1,1975 @@
+{
+  "assets": [
+    {
+      "id": "auswahlverfahren-phase-1",
+      "type": "feature",
+      "slug": "auswahlverfahren",
+      "phase": 1,
+      "status": "approved_generated",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Nie wieder PDF-Stapel sortieren.",
+        "visual_metaphor": "Verstreute Dokument-Icons (PDF, Word, Mail) links, rechts derselbe Stapel sauber geordnet mit einem Lime-Häkchen-Badge.",
+        "left_problem": "Chaotic scattered cluster of ~8 abstract document-icon shapes (rounded rectangles, folded top-right corner) at random rotated angles, ink line-work on paper background.",
+        "right_solution": "Same 8 document icons perfectly reorganized into one neat aligned vertical stack; topmost icon carries one solid lime checkmark badge — the only color accent."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat, bold editorial infographic illustration in a premium modern SaaS one-pager style (like a Stripe or Linear concept graphic) — NOT a photograph, NOT a 3D render, NOT a screenshot. On the left side: a chaotic scattered cluster of about eight small abstract document-icon shapes (simple rounded rectangles with a folded top-right corner, representing a PDF, a Word file, and an email attachment) at random rotated angles, outlined in dark ink (#171717) line-work on an off-white paper background (#F2F2F2), conveying visual disorder and mess. On the right side: the exact same eight document-icon shapes now perfectly reorganized into one neat, aligned vertical stack, all edges lined up, conveying order. A single, subtle curved lime-green (#CCFF00) arrow flows from the chaotic cluster on the left toward the neat stack on the right, and the topmost document icon in the neat stack carries one small solid lime-green checkmark badge — the ONLY color accent in the entire image, everything else stays ink-gray line art on paper-white. No readable words, no paragraphs, no fake text anywhere — the document icons are purely abstract shapes with a folded-corner detail, never rendered as legible text blocks. Flat vector-style illustration with soft minimal drop shadow for gentle depth, clean geometric shapes, generous white space, no gradients, no glow, no glossy chrome, no 3D bevels, no photographic elements, no human figures, no torn paper or rip effects, no violet, purple, magenta, or teal anywhere. 16:9 landscape composition."
+      }
+    },
+    {
+      "id": "auswahlverfahren-phase-2",
+      "type": "feature",
+      "slug": "auswahlverfahren",
+      "phase": 2,
+      "status": "approved_generated",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Schluss mit dem Juroren-Hinterhertelefonieren.",
+        "visual_metaphor": "Verstreute Personen-Icons mit Anruf-/Chat-Symbolen links, rechts dieselben Personen in geordneter Reihe, verbunden zu einem zentralen Lime-Häkchen-Badge.",
+        "left_problem": "~6 abstract person head-and-shoulders icons at random angles, each paired with a speech-bubble or phone-handset icon, ink line-work on paper.",
+        "right_solution": "Same 6 person icons realigned into one neat horizontal row, each connected by a thin ink line to one central badge filled solid lime with a checkmark — the only color accent."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat, bold editorial infographic illustration in a premium modern SaaS one-pager style (like a Stripe or Linear concept graphic) — NOT a photograph, NOT a 3D render, NOT a screenshot. On the left side: a scattered cluster of about six simple abstract person-head-and-shoulders icons (plain rounded silhouettes, no facial features), each one paired with a small speech-bubble or phone-handset icon floating next to it, all at slightly different rotated angles and uneven spacing, outlined in dark ink (#171717) line-work on an off-white paper background (#F2F2F2) — conveying scattered, disconnected phone-chasing and follow-up chaos. On the right side: the exact same six person icons now realigned into one neat, evenly-spaced horizontal row, each connected by a single thin ink line to one central rounded badge shape; that central badge is filled solid lime-green (#CCFF00) with a small checkmark inside — the ONLY color accent in the entire image, everything else stays ink-gray line art on paper-white. A single subtle curved lime-green arrow flows from the scattered cluster on the left toward the aligned row on the right. No readable words, no paragraphs, no fake text, no faces, no photographic elements, no human likeness beyond simple abstract silhouette icons. Flat vector-style illustration with soft minimal drop shadow for gentle depth, clean geometric shapes, generous white space, no gradients, no glow, no glossy chrome, no 3D bevels, no torn paper or rip effects, no violet, purple, magenta, or teal anywhere. 16:9 landscape composition."
+      }
+    },
+    {
+      "id": "auswahlverfahren-phase-3",
+      "type": "feature",
+      "slug": "auswahlverfahren",
+      "phase": 3,
+      "status": "approved_generated",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Jede Entscheidung ist begründet — automatisch.",
+        "visual_metaphor": "Ein großes Fragezeichen-Icon links, rechts eine verkettete Timeline aus Schritt-Icons, endend in einem Lime-Schild-mit-Häkchen-Icon.",
+        "left_problem": "One large ink-outlined question-mark shape inside a rounded square, standing alone.",
+        "right_solution": "Vertical chain of 5 step icons connected by a solid ink line; bottommost step filled solid lime with a shield-checkmark icon — the only color accent."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat, bold editorial infographic illustration in a premium modern SaaS one-pager style (like a Stripe or Linear concept graphic) — NOT a photograph, NOT a 3D render, NOT a screenshot. On the left side: one large abstract ink-outlined question-mark shape inside a simple rounded square, standing alone, conveying an undocumented, unclear decision. On the right side: a vertical chain of five small rounded-square step icons connected top to bottom by a single solid ink line, like a locked timeline — each step icon is a plain outlined square (no readable text inside, just a tiny dot or short tick mark as a generic placeholder), stacked neatly one below the other; the final, bottommost step icon in the chain is filled solid lime-green (#CCFF00) and contains a small shield-with-checkmark icon — the ONLY color accent in the entire image, everything else stays ink-gray (#171717) line art on off-white paper background (#F2F2F2). A single subtle curved lime-green arrow flows from the question-mark shape on the left toward the top of the timeline chain on the right. No readable words, no paragraphs, no fake text, no photographic elements, no human figures. Flat vector-style illustration with soft minimal drop shadow for gentle depth, clean geometric shapes, generous white space, no gradients, no glow, no glossy chrome, no 3D bevels, no torn paper or rip effects, no violet, purple, magenta, or teal anywhere. 16:9 landscape composition."
+      }
+    },
+    {
+      "id": "compliance-phase-1",
+      "type": "feature",
+      "slug": "compliance",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Compliance-Seite, Feature 1: \"Kein Dokument geht mehr unter — egal in welcher Sprache.\"",
+        "visual_metaphor": "Mehrsprachige Handelsdokumente (Rechnung, Packliste, Zollanmeldung in verschiedenen Sprachen) liegen links verstreut und ungeordnet durcheinander; rechts sind dieselben Dokumente sauber aufgereiht und alle zu einer Sendung/einem Paket-Icon verknüpft, mit einem Lime-Häkchen-Badge als Beleg für die geprüfte, vollständige Zuordnung.",
+        "left_problem": "Ein loser, leicht verdrehter Haufen aus 5-6 einfachen Dokument-Icons (Rechteck mit abgerundeter Ecke wie ein Blatt Papier), unordentlich überlappend und in verschiedene Richtungen gekippt. Jedes Dokument trägt ein anderes abstraktes Linienmuster als Platzhalter für eine andere Sprache/Schrift (z.B. eines mit horizontalen Strichzeilen, eines mit einem Raster aus kleinen Quadraten/Punkten, eines mit geschwungenen Linien, eines mit vertikalen Strichen) — bewusst keine echten Buchstaben, nur Textur. Ein bis zwei Dokumente haben zusätzlich ein kleines Warn-Zickzack oder ein schiefes Eckchen, das auf Lücken/Widersprüche hindeutet.",
+        "right_solution": "Dieselben 5-6 Dokument-Icons mit denselben abstrakten Sprachmustern, jetzt aber ordentlich in einer geraden, leicht gefächerten Reihe ausgerichtet. Von jedem Dokument führt eine dünne Ink-Linie zu einem zentralen Sendungs-/Paket-Icon (einfache Box- oder Container-Silhouette) rechts außen, in das alle Linien zusammenlaufen. Genau ein Element ist in Lime gefüllt: ein Häkchen-Badge direkt auf oder neben dem Paket-Icon, das die geprüfte, vollständige Zuordnung markiert — alles andere bleibt reine Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), strict two-part before/after composition on a paper background (#F2F2F2), 16:9 format, ink-only line art (#171717, no fill) except for exactly one lime accent (#CCFF00): on the LEFT, a loose, slightly tilted, overlapping pile of five to six simple document icons (rounded-corner rectangles like sheets of paper), each carrying a different abstract line texture standing in for a different language or script — one with horizontal dash rows, one with a small grid of dots/squares, one with flowing curved strokes, one with vertical tick marks — purely abstract placeholder patterns, absolutely no real letters or readable text, with one or two documents showing a small jagged warning notch or crooked corner to suggest gaps or contradictions; a thin curved lime arrow (#CCFF00) sweeps from the left side to the right side of the image; on the RIGHT, the same five to six document icons with their same abstract language-pattern textures, now neatly aligned in a tidy fanned row, each connected by a thin ink line converging into a single shipment/package icon (a simple box or container silhouette) on the far right, with exactly one lime-filled element — a checkmark badge on or beside the package icon — marking the verified, complete match, while every other shape stays pure ink line art; flat vector artwork only, subtle soft drop shadow for depth, no gradients, no glow, no glossy 3D or chrome, no device or browser frame, no paper-tear effects, no photography, no 3D render, no fake software dashboard or UI chrome, strictly no violet/purple/magenta/teal anywhere in the image."
+      }
+    },
+    {
+      "id": "compliance-phase-2",
+      "type": "feature",
+      "slug": "compliance",
+      "phase": 2,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"compliance\" (Außenhandel & Compliance) — Feature 2: \"Ein Dashboard statt zehn Excel-Tabellen\"",
+        "visual_metaphor": "Statt vier isolierter Akteure (Spediteur, Zoll, Lager, Lieferant), die per Anruf/Mail/Excel getrennt voneinander auf den Sendungsstatus schauen, werden dieselben vier Rollen-Icons rechts zu einem Kreis geordnet und über dünne Linien mit EINEM zentralen Live-Hub verbunden — der einzige Lime-Akzent ist der pulsierende Sync-Punkt in der Mitte, der den einen gemeinsamen Echtzeit-Status symbolisiert (bewusst kein Dashboard-Screenshot, sondern ein Icon-Sinnbild für \"alle auf demselben Stand\").",
+        "left_problem": "Vier ungeordnete, schräg verstreute Rollen-Icons (LKW für Spediteur, Stempel/Amtsgebäude für Zollagent, Lagerregal/Box für Lager, Fabrik-Icon für Lieferant), jedes isoliert ohne Verbindungslinien; dazwischen verstreut kleine Telefonhörer-, Brief-/Mail- und Tabellen-Raster-Icons als Symbol für Anruf, Mail und einzelne Excel-Listen — alles reine Ink-Linienzeichnung, keine Füllung, unordentlich verdreht.",
+        "right_solution": "Dieselben vier Rollen-Icons (LKW, Stempel/Amtsgebäude, Lagerregal, Fabrik), jetzt sauber im Kreis/Reihe angeordnet, jedes über eine dünne Ink-Linie mit einem zentralen Knoten verbunden. Genau ein Lime-Akzent: der zentrale Hub-Punkt, gefüllt in Lime (#CCFF00), von dem aus dünne konzentrische Signal-/Pulsringe ausgehen — Sinnbild für den einen gemeinsamen Echtzeit-Status, den alle Beteiligten sehen."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), 16:9 format, split into a clear before/after composition: on the left, four simple outline icons representing different logistics roles — a delivery truck, a customs stamp/official building, a warehouse shelf with a box, and a small factory building — are scattered at messy, tilted angles with no connecting lines between them, interspersed with small scattered icons of a telephone handset, an envelope, and a spreadsheet grid, all rendered purely as thin ink line drawings (#171717) with no fill on a flat paper background (#F2F2F2), evoking disconnected phone calls, emails, and separate spreadsheets; a single thin curved lime arrow (#CCFF00) sweeps from the left side to the right side of the composition; on the right, the same four role icons (truck, customs stamp/building, warehouse shelf, factory) are neatly arranged in an orderly circle, each connected by a thin ink line to one central hub node, and this central hub is the single lime-filled (#CCFF00) accent in the entire image — a small filled circle with thin concentric signal/pulse rings radiating outward, symbolizing one shared real-time status that every party now sees — while all four role icons themselves remain plain ink line drawings with no additional color. No readable text, no letters or word fragments anywhere in the image, only abstract icon shapes. No photography, no 3D render, no glossy chrome, no gradients or glow, no device or browser frame, no fake software dashboard or screen mockup, no paper-tear effect — flat vector icon artwork only, with a subtle soft drop shadow for depth. Strictly no purple, violet, magenta, or teal anywhere in the image."
+      }
+    },
+    {
+      "id": "compliance-phase-3",
+      "type": "feature",
+      "slug": "compliance",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite „Außenhandel & Compliance\" (Slug: compliance) — Feature 3: „Compliance gesichert. Zollkosten gesenkt.\"",
+        "visual_metaphor": "Der Inhalt dreht sich um zwei verknüpfte Dinge: eine Sendung wird automatisch gegen mehrere Sanktions-/Kontrolllisten geprüft (EU, UN, OFAC, Dual-Use) UND gleichzeitig auf die günstigste legale Zolltarifierung optimiert. Die Metapher ist daher ein Warensendungs-Icon, das links an chaotisch verstreuten, unklaren Kontroll-Listen und einem übersehenen Kosten-Symbol vorbeiläuft, und rechts sauber durch eine ausgerichtete Reihe geprüfter Listen-Icons hindurchgeschleust wird — mündend in einem einzigen Lime-Schild-mit-Häkchen, der beide Ergebnisse (rechtlich abgesichert + Kosten gesenkt) in einem Symbol bündelt. Bewusst NICHT die generische Frage-zeichen→Timeline-Metapher aus Referenz 3 wiederholt, sondern konkret auf Listen-Abgleich + Warensendung zugeschnitten.",
+        "left_problem": "Ein Container-/Paket-Icon (Warensendung) in der Mitte, umgeben von drei bis vier verstreuten, schräg verdrehten Listen-/Dokument-Icons (Platzhalter für die verschiedenen Sanktionslisten), von denen keines mit dem Paket verbunden ist. Dazwischen lose schwebende Warndreieck-/Ausrufezeichen-Icons und ein durchgestrichenes Münz-/Prozent-Icon (Symbol für übersehene Zollkostenersparnis). Eine Lupe liegt isoliert und unausgerichtet daneben, als würde niemand gezielt prüfen. Alles unordentlich, überlappend, ohne erkennbare Verbindungslinien — reine Ink-Linienzeichnung auf Paper-Hintergrund.",
+        "right_solution": "Dasselbe Container-/Paket-Icon, jetzt zentriert und ruhig, verbunden über dünne Ink-Linien mit drei sauber in einer horizontalen Reihe ausgerichteten Listen-Icons (dieselben Listen wie links, jetzt geordnet, jede mit einem kleinen Ink-Häkchen daneben) sowie einem sauber angeschlossenen Münz-/Prozent-Icon (jetzt mit einem kleinen Ink-Pfeil nach unten für die optimierte Tarifierung). Die Reihe mündet rechts in GENAU EINEM gefüllten Lime-Schild-Icon mit Häkchen darin — der einzige Lime-Akzent im Bild, als klarer Abschluss-/Freigabe-Punkt."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in premium SaaS one-pager style (Stripe/Linear aesthetic), strictly ink-line artwork (#171717) on a flat paper background (#F2F2F2), 16:9 format, split into a clear before/after composition connected by one thin curved lime arrow (#CCFF00) flowing from left to right: on the LEFT, a shipping-container icon sits surrounded by three to four scattered, slightly tilted checklist/document icons representing disconnected sanctions and control lists, loose warning-triangle and exclamation-mark icons floating unattached nearby, a crossed-out coin/percentage icon representing missed customs savings, and an isolated magnifying-glass icon pointing at nothing in particular — all drawn as thin ink-line outlines only, messily arranged with no connecting lines, no fill color, no text, no words; on the RIGHT, the same shipping-container icon sits centered and calm, connected by thin ink lines to three neatly aligned checklist icons in a horizontal row, each now paired with a small ink checkmark, plus one cleanly connected coin/percentage icon with a small downward ink arrow indicating optimized tariff cost, the whole sequence culminating in exactly one filled lime-green (#CCFF00) shield icon containing a checkmark as the single color accent in the entire image, everything else remaining pure ink-line linework; flat vector icon artwork only, subtle soft drop shadow for minimal depth, no gradients, no glow, no glossy 3D or chrome effects, no device or browser frame, no paper-tear effects, no photography, no 3D render, no fake software dashboard or UI mockup, no readable text or word fragments anywhere, strictly no purple, violet, magenta, or teal."
+      }
+    },
+    {
+      "id": "kpi-dashboard-phase-1",
+      "type": "feature",
+      "slug": "kpi-dashboard",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite /loesungen/kpi-dashboard, feature1 (\"Wer hat Ihnen gesagt, dass diese KPIs wichtig sind?\" / \"Angepasste KPIs statt generischer Templates\")",
+        "visual_metaphor": "Der Slot handelt davon, dass generische Templates allen Rollen dasselbe aufzwingen, während NEWEDGE jeder Rolle (GF, Teamleitung, Controlling) ihre eigenen, passgenau definierten KPIs gibt. Metapher: links ein Einheits-Template-Stempel, der schief und unpassend auf drei gleiche Personen-Silhouetten gepresst wird; rechts dieselben Rollen, jetzt jede mit ihrem eigenen, exakt zugeschnittenen Chart-Icon.",
+        "left_problem": "Drei identische, generische Dashboard-Template-Icons (rechteckige Kacheln mit demselben zufälligen Balkenmuster, wie ein Stempel dupliziert) werden schief, ungleich groß und unpassend auf drei gleiche, einfache Personen-Silhouetten gepresst — verstreut, überlappend, leicht verdreht angeordnet. Alles reine Ink-Linienzeichnung (#171717) auf Paper-Hintergrund (#F2F2F2), keine Füllfarbe.",
+        "right_solution": "Dieselben drei Personen-Silhouetten stehen jetzt aufrecht in einer sauberen, gleichmäßigen horizontalen Reihe (stellvertretend für GF, Teamleitung, Controlling). Jede ist über dünne Ink-Linien mit einem eigenen, individuell zugeschnittenen kleinen Chart-Icon verbunden (Liniendiagramm, Balkendiagramm, Tacho/Gauge) — sauber im Raster ausgerichtet. Der einzige Lime-Akzent (#CCFF00): ein gefülltes Häkchen-Badge zentral über der Reihe, das das korrekt konfigurierte Ergebnis markiert; sonst bleibt alles Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a two-part before/after composition on a #F2F2F2 paper background, in the premium SaaS one-pager style of Stripe or Linear, illustrating custom role-specific KPIs replacing a generic one-size-fits-all template. On the left, three identical generic dashboard-template icons — each a rectangular tile containing the exact same random bar-chart pattern, like a rubber stamp duplicated — are pressed crookedly and unevenly onto three simple identical person-silhouette icons, tilted, overlapping, and scattered messily, all rendered as thin ink line art (#171717) with no fill color, conveying a one-size-fits-all template forced onto every role regardless of fit. A single thin curved lime arrow (#CCFF00) sweeps from the left side of the composition to the right. On the right, the same three person-silhouette icons now stand upright in a neat, evenly spaced horizontal row, each connected by a thin ink line to its own distinct small chart icon precisely fitted to it — one a line-chart icon, one a bar-chart icon, one a gauge-dial icon — all aligned in a clean grid, still rendered as ink line art with no fill, except for one single filled lime (#CCFF00) checkmark badge centered above the row marking the correctly tailored result. The illustration is flat vector artwork with only a subtle drop shadow for depth — absolutely no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, no readable text or letters or words of any kind, no photography, no 3D rendering, and no fake software dashboard mockup — strictly no purple, violet, magenta, or teal — composed in 16:9 format."
+      }
+    },
+    {
+      "id": "kpi-dashboard-phase-2",
+      "type": "feature",
+      "slug": "kpi-dashboard",
+      "phase": 2,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung kpi-dashboard, feature2 (Phase 2) — \"Sie erfahren es immer eine Woche zu spät\" / Echtzeit-Alerts bei KPI-Abweichungen",
+        "visual_metaphor": "Kernmetapher ist die Zeitspanne zwischen Abweichung und Entdeckung: Links vergehen Tage (verstreute Kalenderblätter), bis eine stumme Glocke erst ganz am Ende reagiert — die Verzögerung selbst wird sichtbar. Rechts schrumpft dieselbe Zeitspanne auf eine einzige Uhr, die Trendlinie ist direkt mit einer läutenden Glocke verbunden, die sofort Alarm schlägt und an die Meldekanäle weitergibt. Passt exakt zu den Bullets \"automatische Aktualisierung\", \"Schwellenwert-Alerts per Mail/Slack/Teams\" und \"eine Datenbasis für alle\".",
+        "left_problem": "Verstreute, leicht schräg liegende Kalenderblatt-Icons (Tage vergehen ungenutzt), daneben eine flache/verrutschte Trendlinie-Ikone, die erst ganz am Ende ein Warndreieck zeigt, und eine durchgestrichene, stumme Glocken-Ikone ohne Schallwellen — alles reine Ink-Linienzeichnung auf Paper-Hintergrund, ungeordnet verteilt.",
+        "right_solution": "Eine einzelne Uhr-Ikone mit minimal verstrichener Zeit, per klarer Linie direkt verbunden mit einer sauber ansteigenden Trendlinie-Ikone, die zu einer läutenden Glocke mit Schallwellen führt — diese Glocke ist der EINE gefüllte Lime-Akzent im Bild. Darunter drei kleine, ordentlich aufgereihte Kanal-Icons (Umschlag, Chat-Blase, App-Quadrat als abstrakte Platzhalter ohne Schrift), sauber verbunden — zeigt sofortige Meldung statt Wochenverzug."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into a clear before/after composition on a paper background (#F2F2F2) with ink-colored line art (#171717), absolutely no readable text, no photography, no 3D render, and no fake software dashboard screenshot. On the left: a messy, slightly tilted cluster of torn calendar-page icons scattered about representing days passing unnoticed, next to a flat, drifting trend-line icon that only reveals a small warning-triangle icon at its very end, plus a crossed-out, silent bell icon with no sound waves — all rendered as thin ink line drawings with no fill, conveying a slow, delayed discovery. A single thin, curved lime arrow (#CCFF00) sweeps from the left side to the right. On the right: a single clock icon showing almost no elapsed time, connected by a clean straight ink line to the same trend-line icon now rising smoothly, which leads directly into a ringing bell icon with small radiating sound-wave lines — this bell is the one filled lime (#CCFF00) accent element in the entire image, marking the instant alert. Below it, three small notification-channel icons (an envelope, a chat bubble, and a simple app-square icon — abstract placeholder symbols only, no letters or words) are neatly aligned in a tidy row, connected by clean ink lines, showing the deviation caught and reported immediately instead of a week late. Flat vector icon artwork only, subtle drop shadow for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, strictly no purple/violet/magenta/teal, 16:9 format."
+      }
+    },
+    {
+      "id": "kpi-dashboard-phase-3",
+      "type": "feature",
+      "slug": "kpi-dashboard",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Loesung \"kpi-dashboard\" — Feature 3: KI-gestützte KPI-Analyse (\"Messen reicht nicht. Was jetzt?\")",
+        "visual_metaphor": "Die Phase sagt: Messen allein ändert nichts — aus der reinen Kennzahl muss eine priorisierte Maßnahme werden, deren Wirkung das System anschließend automatisch misst. Die Metapher übersetzt das in eine Kette aus drei Icon-Stationen (Messwert → priorisierte KI-Empfehlung → Maßnahme → gemessener Effekt): links liegen dieselben Mess-Icons isoliert und ohne Konsequenz herum, rechts bilden sie eine geschlossene, nachvollziehbare Wirkungskette, die mit einem bestätigten Ergebnis endet.",
+        "left_problem": "Drei lose, unverbundene Mess-Icons — Balkendiagramm, Liniendiagramm, Tacho/Gauge — als reine Ink-Linienzeichnung, schräg verdreht und ohne jede Verbindung zueinander im Raum verstreut: Kennzahlen, die zwar gemessen werden, aber zu nichts führen.",
+        "right_solution": "Dieselben drei Icon-Formen jetzt als saubere, verbundene Kette von links nach rechts: Balkendiagramm → Glühbirne mit Stern und kleiner Prioritäts-Flagge (KI-Empfehlung) → Checklisten-Icon mit drei Haken (Maßnahme) → aufsteigendes Trend-Chart-Icon als Abschluss. Der EINE Lime-Akzent sitzt exakt auf diesem letzten Icon: ein gefülltes Lime-Häkchen-Badge auf der Aufwärtstrendlinie, das den gemessenen, bestätigten Effekt markiert — alles andere bleibt reine Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in premium SaaS one-pager style (Stripe/Linear aesthetic), 16:9 format, divided into two clear halves connected by a single thin curved lime arrow (#CCFF00) flowing left to right: on the LEFT, three disconnected measurement icons — a bar-chart icon, a line-graph icon, and a speedometer/gauge icon — drawn as loose ink line art (#171717) on a paper background (#F2F2F2), no fill color, each tilted at a slightly different angle and floating apart from one another with no connecting lines between them, conveying raw metrics that get measured but lead to no action; on the RIGHT, the same three icon shapes reappear, now aligned in a clean, evenly spaced horizontal chain and linked by thin ink connector lines: the bar-chart icon connects to a lightbulb-with-star icon carrying a small priority-flag mark (representing a prioritized AI recommendation), which connects to a checklist icon with three task marks (representing an action step), which connects to a final upward-trend chart icon — this last icon alone carries the single lime-filled (#CCFF00) element in the entire composition, a small checkmark badge on the upward trend line marking the confirmed, measured effect, while every other shape on both sides stays pure ink line art with no fill; absolutely no readable text, no words, no letters, no fake dashboard screenshot, no photography, no 3D render, no gradients, no glow, no glossy chrome, no device or browser frame, no paper-tear effect, and strictly no purple/violet/magenta/teal — only flat ink-black line art on an off-white paper background with the single lime accent, subtle flat drop shadow only, no other ornamentation."
+      }
+    },
+    {
+      "id": "ki-kundensupport-phase-1",
+      "type": "feature",
+      "slug": "ki-kundensupport",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite „ki-kundensupport\" — Feature 1 („80% gelöst. Sofort. Ohne menschliche Intervention.\")",
+        "visual_metaphor": "Die vier häufigsten Anfrage-Typen aus dem Slot-Text (Bestellstatus, Rücksendung, FAQ, Standard-Reklamation) liegen links verstreut und unbearbeitet herum, mit kleinen Sanduhr-Icons als Wartezeit-Signal. Rechts sind dieselben vier Anfrage-Icons zu einer geordneten Reihe ausgerichtet und laufen in einem einzigen Blitz-Häkchen-Icon zusammen — das steht für „automatisch in unter 30 Sekunden gelöst, rund um die Uhr\".",
+        "left_problem": "Vier verstreute, leicht schräg angeordnete Ink-Linienzeichnungen (kein Fill) auf Paper-Hintergrund: Chat-Blase mit Fragezeichen (FAQ), Box mit Rückgabe-Pfeil (Rücksendung), Beleg/Dokument-Icon (Bestellstatus), Chat-Blase mit Ausrufezeichen (Reklamation) — unordentlich verteilt, teils überlappend, dazu zwei kleine Sanduhr-Icons als Warte-Signal.",
+        "right_solution": "Dieselben vier Icons jetzt sauber in einer horizontalen Reihe ausgerichtet, verbunden durch dünne Linien, die in EINEM lime-gefüllten Icon zusammenlaufen: ein Blitz-Symbol in einem Kreis mit kleinem Häkchen — der einzige farbige Akzent im Bild, symbolisiert sofortige automatische Lösung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in the style of a premium SaaS one-pager (Stripe/Linear aesthetic), a before/after split composition illustrating \"80% of support requests solved instantly by AI, without human intervention.\" On the left: four scattered, slightly tilted icons drawn purely as ink-black (#171717) linework on a paper background (#F2F2F2), no fill color — a speech bubble with a question mark (FAQ), a small box with a return arrow (returns), a receipt/document icon (order status), and a speech bubble with an exclamation mark (complaint) — arranged irregularly and overlapping, with two small hourglass icons placed nearby to suggest requests sitting unanswered. A thin, curved lime arrow (#CCFF00) flows smoothly from the left side to the right. On the right: the same four request icon types are now realigned into one neat horizontal row, still drawn as clean ink linework, connected by thin ink lines that converge into a single lime-filled (#CCFF00) icon — a lightning bolt inside a circle with a small checkmark — the only filled, colored element in the entire image, marking instant automatic resolution. Absolutely no readable text, no letters, no words anywhere in the image — only abstract icon shapes. Flat vector icon artwork with only a subtle drop shadow for depth: no gradients, no glow, no glossy 3D chrome, no device or browser frame, no torn-paper effect, strictly no purple/violet/magenta/teal. 16:9 format."
+      }
+    },
+    {
+      "id": "ki-kundensupport-phase-2",
+      "type": "feature",
+      "slug": "ki-kundensupport",
+      "phase": 2,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"ki-kundensupport\", Feature 2 — \"Komplexe Fälle — mit vollem Kontext weitergeleitet.\"",
+        "visual_metaphor": "Eine Sprechblase mit Fragezeichen (der komplexe Fall) wird von der KI an einen Menschen übergeben. Links reißt bei der Übergabe alles auseinander — Kundenhistorie, Dringlichkeits-Hinweis und Kunde selbst treiben lose und unverbunden herum, der Fall landet bei einem x-beliebigen, gesichtslosen Agenten. Rechts bleibt die Sprechblase dieselbe (der Fall ist weiterhin komplex — das ist ok), aber Historie und Dringlichkeits-Flag sind fest an sie angeclipt und wandern gebündelt zu genau einem passenden Agenten aus einer geordneten Reihe, markiert mit dem einen Lime-Akzent.",
+        "left_problem": "Eine leicht schräge Sprechblase mit Fragezeichen (komplexer Fall) in der Mitte; drumherum lose, unverbunden verstreut: ein Kunden-Icon, ein abgerissenes Dokument-/Verlaufs-Fragment und ein Ausrufezeichen-Dringlichkeits-Icon, jeweils in anderem Winkel; eine gestrichelte, abbrechende Verbindungslinie führt zu einem gesichtslosen, generischen Agenten-Icon am Rand — reine Ink-Linienzeichnung, kein Lime.",
+        "right_solution": "Dieselbe Sprechblase mit Fragezeichen, jetzt über eine durchgezogene Linie fest mit einem gebündelten Kontext-Paket verbunden (Verlaufs-Icon + Dringlichkeits-Flag als ein zusammengeclipptes Element); das Paket fließt weiter zu genau einem ausgewählten Agenten-Icon (Person mit Headset) aus einer geordneten Zweier-Reihe identischer Agenten-Silhouetten — nur dieser eine ausgewählte Agent trägt den einzigen Lime-Akzent als kleines gefülltes Badge, alles Übrige bleibt Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), 16:9 format, split into two clear halves, ink linework #171717 on a flat paper background #F2F2F2, no fill color anywhere except one single lime accent, absolutely no readable text or word fragments, no photography, no 3D render, no fake software dashboard or screen mockup, no device or browser frame, no gradients, no glow, no glossy chrome, strictly no violet/purple/magenta/teal, only a subtle flat drop shadow for depth. LEFT side: a slightly tilted speech-bubble icon containing a small question mark (the complex case) sits at the center of the composition, surrounded by loose, disconnected fragments scattered at different angles — a small customer/person outline, a torn fragment of a document/history icon, and a small exclamation-mark urgency icon — with a dotted connector line that trails off and breaks before reaching a plain, faceless generic agent-person icon standing off to the side, conveying that context and urgency get lost during handover. A single thin curved lime arrow (#CCFF00) sweeps from the left half to the right half of the image. RIGHT side: the identical speech-bubble-with-question-mark icon, now cleanly attached via a solid ink line to a neatly bundled context packet made of the same history icon and urgency-flag icon clipped together as one consolidated unit, which flows along a connecting line to a single correctly matched agent icon (a person wearing a headset) chosen out of an orderly row of two identical agent silhouettes; exactly one lime-filled accent — a small badge on the chosen headset-agent icon — marks it as the right, prioritized match, while every other element in the scene remains pure ink linework with no additional color."
+      }
+    },
+    {
+      "id": "ki-kundensupport-phase-3",
+      "type": "feature",
+      "slug": "ki-kundensupport",
+      "phase": 3,
+      "status": "replaces_legacy_purple_asset",
+      "replaces_legacy_asset": true,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"ki-kundensupport\" → Feature 3 (\"Support als Produktintelligenz\")",
+        "visual_metaphor": "Support-Anfragen sind einzelne, unzusammenhängende Signale (Sprechblasen-Icons) — die KI ordnet sie zu einem sichtbaren Muster (Balkendiagramm aus denselben Sprechblasen), das den einen wiederkehrenden Problem-Trend als Erkenntnis sichtbar macht. Passt exakt zu \"Jede Anfrage ist ein Signal\" / Trend-Analyse / Produkt-Insights, ohne generische Personen oder Fake-Dashboards zu zeigen.",
+        "left_problem": "Verstreute, lose über die Fläche verteilte Sprechblasen-Icons (Support-Anfragen) in Ink-Linienzeichnung, unterschiedlich groß, leicht schräg/unordentlich angeordnet, ohne erkennbares Muster — jede für sich, keine Verbindung untereinander.",
+        "right_solution": "Dieselben Sprechblasen-Icons jetzt zu sauberen, unterschiedlich hohen Säulen gestapelt (bilden ein einfaches Balkendiagramm), verbunden durch eine dünne aufsteigende Trendlinie über den Säulenspitzen — alles weiterhin Ink-Linienzeichnung, außer der einen höchsten Säule (das wiederkehrende Problem/die zentrale Erkenntnis), die vollflächig in Lime gefüllt ist als einziger Akzent."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), strictly split into a before/after composition on a Paper background (#F2F2F2), 16:9 format, absolutely no readable text, no letters, no words anywhere in the image, no photography, no 3D render, no gradients, no glow, no glossy chrome, no device or browser frame, no fake software dashboard mockup — only abstract ink-line icon shapes throughout. LEFT side: a loose, disordered scatter of simple speech-bubble icons of varying sizes (representing individual, disconnected customer support requests), each drawn only as thin ink line art (#171717) with no fill, tilted at random slightly messy angles, floating with no visible relationship to one another, conveying scattered unconnected signals. A single thin, gently curved lime arrow (#CCFF00) sweeps from the left side to the right side of the composition, connecting the two halves. RIGHT side: the exact same speech-bubble icons now reassembled into a tidy simple bar-chart made of stacked speech bubbles of increasing height forming clean vertical columns, topped by one thin ascending trend line linking the top of each column, everything still rendered as pure ink line art on the paper background except the single tallest column, which is the one filled solid lime green (#CCFF00) as the sole color accent in the entire image, marking the one clear recurring pattern now revealed as an actionable insight. Only a subtle soft drop shadow beneath each icon for depth, no other shading. Strictly no purple, no violet, no magenta, no teal anywhere in the image."
+      }
+    },
+    {
+      "id": "entscheidungsinstanzen-phase-1",
+      "type": "feature",
+      "slug": "entscheidungsinstanzen",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Loesung \"entscheidungsinstanzen\" — Feature 1: \"Gleiche Maßstäbe für jede Einreichung.\" / \"Schluss mit „das sieht jeder Juror anders\"\"",
+        "visual_metaphor": "Der Slot handelt davon, dass jeder Juror aktuell mit einem anderen, willkürlichen Maßstab bewertet (streng/großzügig/Bauchgefühl) und NEWEDGE alle auf dieselbe Kriterien-Matrix und Skala festlegt. Statt generischer Personen-Icons passt hier eine Bewertungs-/Skala-Metapher direkt zum Text (Kriterien, Gewichtung, Skala, Abweichungen sichtbar): links mehrere uneinheitliche Skalen-Icons (Sterne, Slider, Gauge, Checkliste jeweils unterschiedlich ausgefüllt), rechts dieselben Skalen-Typen exakt gleich und in einem sauberen Raster ausgerichtet.",
+        "left_problem": "Fünf verschiedene, ungleich befüllte Bewertungs-Skalen-Icons (Sterne-Icon mit nur 2 von 5 gefüllt, ein anderes mit 5 von 5; ein Slider-Icon nahe am unteren Anschlag; ein Gauge/Zeiger-Icon nahe am oberen Anschlag; ein Checklisten-Icon mit ungleichmäßiger Zickzack-Linie) — leicht verdreht, unterschiedlich groß, verstreut angeordnet, reine Ink-Linienzeichnung ohne Füllung, um zu zeigen: jeder misst mit einem anderen Maßstab.",
+        "right_solution": "Dieselben fünf Skalen-Icon-Typen, jetzt identisch neu gezeichnet: gleiche Skalenlänge, gleicher Füllstand, in einem sauberen, gleichmäßigen Raster aus Reihen ausgerichtet (die \"einheitliche Kriterien-Matrix\"). Alles bleibt Ink-Linienzeichnung — außer EINEM kleinen, gefüllten Lime-Häkchen-Badge an der Ecke des Rasters, das das einheitliche, vergleichbare Ergebnis markiert."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), 16:9 format, thin ink-line artwork in #171717 on a flat paper background #F2F2F2, no fill color anywhere except one lime accent, absolutely no readable text, letters, or words in the image, no photography, no 3D render, no fake software dashboard or screenshot mockup. Split composition, left to right: on the LEFT, a cluttered, slightly tilted scene of five different inconsistent rating-scale icons — a star-rating icon with only two of five stars filled, another star-rating icon with all five filled, a horizontal slider icon set near its low end, a round gauge-dial icon with its needle pointing near the high end, and a simple checklist icon with an uneven zigzag scale line — each drawn at a different size and angle, scattered and disordered, all rendered as thin ink outlines with no fill, suggesting that every juror judges by a different, arbitrary yardstick; a single thin, gently curving lime arrow (#CCFF00) flows from this left scene toward the right scene; on the RIGHT, the same five rating-scale icon types redrawn identically — matching scale length, matching fill level, matching proportions — and aligned in a neat, evenly spaced grid of rows representing one unified criteria matrix, still pure ink-line outlines except for one small filled lime checkmark badge placed at the corner of the grid marking the single, standardized, comparable result. Only a subtle drop shadow for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, and strictly no purple, violet, magenta, or teal anywhere in the image."
+      }
+    },
+    {
+      "id": "entscheidungsinstanzen-phase-2",
+      "type": "feature",
+      "slug": "entscheidungsinstanzen",
+      "phase": 2,
+      "status": "replaces_legacy_purple_asset",
+      "replaces_legacy_asset": true,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite \"entscheidungsinstanzen\" — Feature 2 Vorher/Nachher-Bild (image key: pain-point-entscheidungsinstanzen-feature2)",
+        "visual_metaphor": "Die Kernaussage von Feature 2 ist: Gremiumsmitglieder sind Fachleute, verlieren ihre Zeit aber an Admin-Kram (Fristen nachhalten, Unterlagen suchen, Bewertungen manuell in Excel zusammenführen) statt zu urteilen. Die Metapher zeigt links jede Person umzingelt von genau dieser Verwaltungslast, rechts dieselben Personen befreit davon — ihre einzelnen Bewertungen laufen automatisch zu einem zentralen, zusammengeführten Ergebnis zusammen.",
+        "left_problem": "Mehrere Personen-Icons (Gremiumsmitglieder), jede umringt von verstreuten, leicht verdrehten Alltagslast-Icons: Kalender/Uhr für Fristen, Lupe-über-Dokument fürs Suchen von Unterlagen, lose verstreute Tabellen-/Raster-Icons für die manuelle Excel-Zusammenführung. Reine Ink-Linienzeichnung (#171717) auf Paper-Hintergrund (#F2F2F2), keine Füllfarbe, unordentlich angeordnet.",
+        "right_solution": "Dieselben Personen-Icons jetzt in einer sauberen, geordneten Reihe, jede mit einem einfachen Häkchen-Icon (= abgegebene Bewertung). Von jeder Person läuft eine dünne Linie zu einem zentralen zusammengeführten Ergebnis-Icon in der Mitte rechts — das ist der EINE Lime-Akzent (#CCFF00, gefüllt) im gesamten Bild; alles andere bleibt Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into two halves on a paper background (#F2F2F2), ink line art only (#171717), no fill color except where noted, no readable text or words, no photography, no 3D render, no fake software dashboard screenshot, no gradients, no glow, no glossy chrome, no device or browser frames, strictly no purple, magenta, or teal, 16:9 format, subtle drop shadow only for depth. On the LEFT: four scattered ink-line person icons representing panel/jury members, each surrounded by tangled, slightly tilted clutter icons — a clock and calendar icon for looming deadlines, a magnifying glass over a document icon for searching paperwork, and loose scattered spreadsheet-grid icons for manually merging scores — everything crooked and disorganized to convey administrative overload burying the experts. A single thin curved lime arrow (#CCFF00) sweeps from the left side to the right side of the composition. On the RIGHT: the same four person icons now standing in a neat, evenly spaced row, each simply marked with a small ink checkmark icon showing their evaluation is complete, with a thin ink line connecting each person to one central merged-results icon — a single filled dashboard/aggregation symbol in lime (#CCFF00), the only lime-filled element in the entire image; everything else remains pure ink line drawing on the paper background, flat vector icon artwork throughout."
+      }
+    },
+    {
+      "id": "entscheidungsinstanzen-phase-3",
+      "type": "feature",
+      "slug": "entscheidungsinstanzen",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Loesung \"entscheidungsinstanzen\" — Phase 3 (feature3): \"Jede Entscheidung hält jeder Prüfung stand.\"",
+        "visual_metaphor": "Kernmetapher ist die externe Prüfung selbst: links eine lückenhafte, brüchige Kette aus einzelnen Notiz-Icons mit einer Lupe, die genau die Lücke zwischen zwei Icons anvisiert (steht für Widerspruch, Aufsichtsbehörde oder Rechnungshof, die nach Belegen suchen) — rechts dieselbe Kette, jetzt lückenlos verbunden zu einer durchgehenden Schritt-für-Schritt-Timeline, die in einem Lime-Prüfsiegel/Stempel-Icon endet und die bestandene, lückenlose Prüfung markiert.",
+        "left_problem": "Verstreute, unverbundene Notiz-/Karteikarten-Icons (Platzhalter für einzelne Bewertungsschritte/Entscheidungsschritte) liegen locker und leicht schief verteilt, mit sichtbaren Lücken dazwischen; eine Lupe schwebt über einer dieser Lücken, als würde sie nach fehlenden Belegen suchen. Reine Ink-Linienzeichnung (#171717) auf Paper-Hintergrund (#F2F2F2), keine Füllung — symbolisiert die lückenhafte, schwer rekonstruierbare Nachvollziehbarkeit, wenn jemand von außen nachfragt.",
+        "right_solution": "Dieselben Karteikarten-Icons, jetzt in einer geraden Kette/Timeline lückenlos aneinandergereiht und durch dünne Ink-Verbindungslinien wie Kettenglieder verbunden — jedes Icon weiterhin reine Linienzeichnung. Der einzige Lime-Akzent (#CCFF00) sitzt ganz am Ende der Kette: ein gefülltes, rundes Stempel-/Prüfsiegel-Icon mit Häkchen darin, das die Entscheidung als vollständig geprüft und bestanden markiert."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in the style of a premium SaaS one-pager (Stripe/Linear aesthetic), split into a clear before/after composition on a paper background (#F2F2F2), illustrating an audit-proof decision record standing up to external scrutiny. On the left, a loose, disconnected row of small note-card icons drawn only as ink line art (#171717, no fill), scattered and slightly tilted at uneven angles with visible gaps between them, and a magnifying glass icon hovering directly over one of the gaps as if probing for missing proof — conveying an incomplete, hard-to-reconstruct record under outside inspection. A single thin, curved lime arrow (#CCFF00) flows from the left scene to the right scene. On the right, the same note-card icons reappear, now aligned edge-to-edge in one unbroken horizontal chain, connected by thin ink line segments like chain links, each icon still rendered in plain ink line art — except for one filled lime (#CCFF00) accent element at the very end of the chain: a round official stamp/seal icon with a checkmark inside, marking the record as fully documented and audit-proof. No readable text, no words, no letterforms anywhere — only abstract icon shapes, dots and lines as placeholders. Strictly flat vector icon artwork with only a subtle soft drop shadow for depth; no gradients, no glow, no glossy 3D chrome, no device or browser frame, no torn-paper effect, no photography, no 3D render, no fake software dashboard mockup. Strictly no purple, violet, magenta, or teal. 16:9 format."
+      }
+    },
+    {
+      "id": "health-care-phase-1",
+      "type": "feature",
+      "slug": "health-care",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"health-care\" (Praxismanagement/Arztpraxen), Phase 1 — Terminplanung/No-Show-Reduktion",
+        "visual_metaphor": "Der h2 \"Leere Stühle kosten Geld. Jeden Tag.\" liefert die Metapher direkt: leere/verstreute Stuhl-Icons als Sinnbild für No-Shows und verpasste Termine. Links sind die Stühle chaotisch, leer, umgekippt — dazwischen unverbundene Erinnerungs-Symbole (Glocke, Sprechblase), die zeigen, dass Erinnerungen nicht koordiniert ankommen. Rechts sitzen dieselben Stühle in einer sauberen Kalenderreihe, jeder mit einer automatischen Erinnerung verbunden — ein Lime-Häkchen-Badge markiert die volle, gesicherte Auslastung.",
+        "left_problem": "Verstreute, unordentlich angeordnete Stuhl-Icons (Termin-Slots) — einige umgekippt, einige durchgestrichen, alle leicht verdreht — reine Ink-Linienzeichnung ohne Füllung. Dazwischen schweben lose, unverbundene Glocke- und Sprechblasen-Symbole, die unkoordinierte/verpasste Erinnerungen symbolisieren.",
+        "right_solution": "Dieselben Stuhl-Icons jetzt in einer geordneten, gleichmäßigen Reihe wie ein Kalenderraster, jeder Stuhl per dünner Linie mit einem kleinen Glocke-Icon darüber verbunden (automatische Erinnerung) — weiterhin reine Ink-Linienzeichnung. Der einzige Farbakzent: EIN gefülltes Lime-Häkchen-Badge, das über der Reihe schwebt und die volle, bestätigte Auslastung markiert."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into a clear before/after composition on a 16:9 canvas: on the left, a scattered, disorderly group of empty chair icons — some tipped over, some crossed out — representing missed appointment slots, rendered as thin ink line drawings (#171717) on a flat paper-colored background (#F2F2F2), with loose, unconnected bell and speech-bubble icons floating around them representing uncoordinated, missed reminders, everything slightly rotated and unaligned, no fill color anywhere; a single thin curved lime arrow (#CCFF00) sweeps from the left side to the right; on the right, the same chair icons are now arranged in a neat, evenly spaced row like a calendar grid, each chair connected by a thin line to a small bell icon above it, still rendered purely as ink line drawings, except for one filled lime (#CCFF00) checkmark badge floating above the row marking full, confirmed occupancy — the only accent color in the entire image. Absolutely no readable text, no letters, no words, no paragraphs of copy — only abstract icon shapes. No photography, no 3D rendering, no glossy chrome, no gradients, no glow, no device or browser frame, no fake software dashboard or screenshot mockup. Strictly no purple, violet, magenta, or teal. Clean flat vector icon artwork with only a subtle drop shadow for depth."
+      }
+    },
+    {
+      "id": "health-care-phase-2",
+      "type": "feature",
+      "slug": "health-care",
+      "phase": 2,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite health-care, feature2 (\"Abrechnungsfehler merkt man meistens erst am Jahresende\" — Abrechnung automatisieren, GKV/PKV-konform)",
+        "visual_metaphor": "Abrechnungsfehler = verstreute, schief liegende Rechnungs-/Abrechnungsbeleg-Icons mit fehlerhaft markierten Code-Tags, die erst spät auffallen (Kernaussage: \"merkt man erst am Jahresende\"). Die automatisierte Lösung = dieselben Belege korrekt codiert, zu einer geordneten Kette verbunden und lückenlos bis zur Zahlung nachverfolgt — endend in einem einzigen Lime-Münz-Häkchen-Stempel als Symbol für korrekte, vollständige Erstattung.",
+        "left_problem": "Verstreute, unordentlich schief liegende Rechnungs-/Abrechnungsbeleg-Icons (5-6 Stück), jedes mit einem kleinen Code-Tag-Symbol versehen, das von einem Fragezeichen oder Kreuz markiert ist — reine Ink-Linienzeichnung #171717 ohne Füllung, chaotisch verteilt auf Paper-Hintergrund #F2F2F2.",
+        "right_solution": "Dieselben Beleg-Icons, jetzt sauber in einer vertikalen Kette/Reihe geordnet, jeder korrekt mit seinem Code-Tag versehen (weiterhin Ink-Linienzeichnung). Die Kette mündet im letzten Beleg in GENAU EINEM lime-gefüllten Münz-mit-Häkchen-Stempel-Badge (#CCFF00) — der einzige Farbakzent im ganzen Bild, markiert korrekte, vollständige Erstattung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into two halves on a paper background (#F2F2F2): on the left, a cluttered, slightly tilted scattered group of five or six invoice/receipt icons, each bearing a small code-tag symbol marked with a crossed-out or question-mark glyph, rendered purely as ink line drawings (#171717) with no fill, conveying chaotic, error-prone manual medical billing where mistakes are only discovered too late; a single thin, curved lime arrow (#CCFF00) sweeps from the left side to the right; on the right, the same invoice/receipt icons reappear, now neatly restacked into an orderly vertical chain, each correctly bearing its code-tag symbol in matching ink line art, the chain flowing into one final receipt topped by a single filled lime (#CCFF00) coin-and-checkmark stamp badge — the only lime accent in the entire image — signifying accurate, fully reconciled and paid reimbursement; flat vector icon artwork throughout, subtle drop shadow only for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, strictly no purple, violet, magenta or teal, absolutely no readable text or letterforms anywhere in the image, only abstract icon shapes, 16:9 format."
+      }
+    },
+    {
+      "id": "health-care-phase-3",
+      "type": "feature",
+      "slug": "health-care",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"health-care\" (Praxismanagement), Feature 3 — \"Keine Praxis ist wie die andere\"",
+        "visual_metaphor": "Ein starres Einheits-Modul, das gewaltsam auf drei unterschiedlich geformte Praxis-Icons gepresst wird (Standardsystem passt nirgends), versus dieselben drei Icons, diesmal jeweils mit einem exakt passgenau zugeschnittenen Baustein verbunden zu einem zentralen, erweiterbaren Hub (individuelle Konfiguration, die mit der Praxis skaliert). Passt zu \"ein Standardsystem deckt das nie ab\" / \"konfigurierbar\" / \"skalierbar\".",
+        "left_problem": "Ein einziges, immer identisches quadratisches Zahnrad-Modul wird ungeschickt auf drei verschieden geformte Praxis-Symbole gepresst — Stethoskop-Kontur, Zahn-Kontur, Kalender/Herzschlag-Kontur. Die Kanten passen nicht zusammen, das Modul sitzt schief, ragt über die Konturen hinaus, alles leicht verdreht und chaotisch verstreut. Reine Ink-Linienzeichnung auf Paper-Hintergrund, keine Füllfarbe.",
+        "right_solution": "Dieselben drei Praxis-Symbole (Stethoskop, Zahn, Kalender/Herzschlag), jetzt jeweils mit einem eigens zugeschnittenen, passgenauen Baustein kombiniert — sauber in einer Reihe ausgerichtet, durch dünne Linien mit einem zentralen Hub-Icon verbunden. Der zentrale Hub trägt als einziges gefülltes Element im Bild einen Lime-Akzent (kleines Zahnrad- oder Plus-Badge), der die passgenaue, skalierbare Konfiguration markiert — alles andere bleibt Ink-Linienzeichnung ohne Füllung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), strict before/after split composition, ink line art in #171717 on a flat paper background #F2F2F2, no fill color anywhere except one lime accent, no gradients, no glow, no glossy 3D, no device or browser frame, no dashboard mockup, no photography, no readable text or letters anywhere, only abstract icon shapes, 16:9 format, subtle flat drop shadow only. LEFT side: a single identical rigid square gear-shaped module icon is forced clumsily onto three distinctly different outlined practice icons — a stethoscope outline, a tooth outline, and a calendar/heartbeat-pulse outline — each connection crooked and overlapping awkwardly, edges misaligned and jutting out at odd angles, the three icon groups scattered messily and slightly tilted across the space, conveying a one-size-fits-all template that fits none of them, pure ink line art, no fill. A single thin curved lime arrow (#CCFF00) flows from the left side to the right side. RIGHT side: the same three practice icon outlines (stethoscope, tooth, calendar/heartbeat), now each paired with its own uniquely shaped, precisely custom-cut module piece that matches its contour exactly, arranged neatly in an aligned horizontal row, each connected by a thin straight line to one central hub icon in the middle; the central hub is the single filled lime element in the entire image (a small gear or plus-shaped badge), marking the perfectly configured, scalable connection point, while every other shape in the composition remains pure ink line art with no fill."
+      }
+    },
+    {
+      "id": "handel-supply-chain-phase-1",
+      "type": "feature",
+      "slug": "handel-supply-chain",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "handel-supply-chain — feature1 (\"Bestellungen verarbeitet, bevor jemand die Mail öffnet.\")",
+        "visual_metaphor": "Bestellungen treffen über vier unterschiedliche Kanäle ein (Mail, Portal, EDI, PDF) — das ist das Chaos links. Rechts werden genau dieselben vier Format-Icons zu einer sauberen Reihe geordnet, die in ein zentrales ERP/Datenbank-Icon mündet — der eine Lime-Akzent markiert dort die erfolgreiche, automatische Übergabe.",
+        "left_problem": "Vier verstreute, leicht schief angeordnete Icons für die Bestellkanäle: ein Briefumschlag (Mail), ein Dokument-/PDF-Blatt, ein Browser-Fenster (Portal) und ein Stecker-/Austausch-Pfeile-Icon (EDI) — alle als dünne Ink-Linienzeichnung ohne Füllung, ungeordnet über die Fläche verteilt, um ankommende Bestellungen aus verschiedenen, nicht verbundenen Quellen zu zeigen.",
+        "right_solution": "Dieselben vier Format-Icons jetzt in einer geordneten Reihe ausgerichtet, die trichterförmig in ein zentrales Datenbank-/Server-Stack-Icon (das ERP) mündet. Der einzige Lime-Akzent (#CCFF00) sitzt als gefülltes Häkchen-Badge auf diesem ERP-Icon und markiert die abgeschlossene, automatische Übergabe — alle anderen Elemente bleiben reine Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in the style of a premium SaaS one-pager (Stripe/Linear aesthetic), 16:9 format, split into two halves: on the left, four different incoming order-format icons — an envelope for mail, a document/PDF sheet, a browser-window icon for a portal, and a plug-with-exchange-arrows icon for EDI — are scattered messily and slightly tilted across a paper background (#F2F2F2), drawn purely as thin ink line art (#171717) with no fill color, conveying orders arriving unsorted from many disconnected channels; a single thin curved lime arrow (#CCFF00) flows from the left side to the right side of the composition; on the right, the same four format icons reappear neatly aligned in a row, funneling into one clean central database/server-stack icon, still rendered as ink line art, except that this central server-stack icon carries exactly one filled lime (#CCFF00) checkmark badge marking the completed, automatic transfer into the ERP system. The image contains absolutely no readable text, letters, or word fragments — only abstract flat vector icon shapes with a subtle flat drop shadow for depth. Strictly no photography, no 3D render, no glossy chrome, no gradients or glow, no browser or device frame, no fake software dashboard mockup, and strictly no purple, violet, magenta, or teal."
+      }
+    },
+    {
+      "id": "handel-supply-chain-phase-2",
+      "type": "feature",
+      "slug": "handel-supply-chain",
+      "phase": 2,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung handel-supply-chain – Feature 2 (\"Lieferanten bewerten. Automatisch. Objektiv.\")",
+        "visual_metaphor": "Lieferanten als LKW-/Paket-Icons, deren Bewertung von chaotischem Bauchgefühl zu einer geordneten, datenbasierten Rangliste (Scorecard mit ansteigenden Balken) wird — passt zum Inhalt, da es explizit um Lieferanten-Scoring aus Wareneingang, Qualität und Reklamationen geht, nicht um generische Personen oder Dokumente.",
+        "left_problem": "Verstreute, schief angeordnete LKW- und Paket-Icons, jedes begleitet von einem unregelmäßigen, krummen Balkenfragment und vereinzelten Warndreieck-/Fragezeichen-Symbolen dazwischen — reine Ink-Linienzeichnung ohne Füllfarbe, unordentlich verteilt, steht für unklares Bauchgefühl-Rating der Lieferanten.",
+        "right_solution": "Dieselben LKW-/Paket-Icons jetzt in einer sauberen, senkrechten Rangliste angeordnet, jeweils mit einem gleichmäßig ansteigenden Balken verbunden (Scorecard/Leaderboard-Optik), weiterhin Ink-Linienzeichnung — der oberste, bestplatzierte LKW trägt als einziges Element ein gefülltes Lime-Häkchen-Badge, das ihn als verifizierten Top-Lieferanten markiert."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into two halves depicting supplier scoring shifting from chaotic guesswork to automated, objective ranking. On the left: a loose, tilted, disordered cluster of simple truck and package icons, each paired with a small jagged, uneven bar-fragment, with a stray warning-triangle or question-mark symbol scattered among them — all rendered as thin ink line drawings (#171717) on a flat paper background (#F2F2F2), no fill color, slightly crooked and messy arrangement, no readable text anywhere. A single thin, curved lime arrow (#CCFF00) flows from the left cluster to the right side. On the right: the same truck and package icons now arranged in a neat, ordered vertical ranking list, each aligned with a clean, evenly ascending bar forming a simple scorecard/leaderboard, still rendered as ink line drawings only, except the top-ranked truck icon at the top of the list, which carries exactly one filled lime (#CCFF00) checkmark badge marking it as the verified, top-scored supplier — everything else stays unfilled line art. Flat vector icon artwork only, with a subtle drop shadow for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, strictly no purple, violet, magenta, or teal, no photography, no 3D render, no fake software dashboard mockup. No readable text, no paragraphs, no word fragments anywhere in the image — only abstract icon shapes, dots, lines, and symbols as placeholders. Format 16:9."
+      }
+    },
+    {
+      "id": "handel-supply-chain-phase-3",
+      "type": "feature",
+      "slug": "handel-supply-chain",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Handel & Supply Chain — Loesungsseite, Feature 3 (\\\"Wareneingang prüfen — ohne Klemmbrett.\\\")",
+        "visual_metaphor": "Der Drei-Wege-Abgleich (Bestellung / Lieferschein / Wareneingang) ist die Kernaussage — also wird genau dieses Trio zur Bildsprache: links drei einzelne, schief und lose herumliegende Icons (Bestellschein, Lieferschein, Paket), die nicht zueinander passen, dazwischen ein Klemmbrett-Icon fürs manuelle Nachzählen und ein Ungleich-Zeichen als Sinnbild für unbemerkte Abweichungen. Rechts dieselben drei Icons, jetzt exakt übereinander/nebeneinander ausgerichtet und durch dünne Linien zu einem einzigen Prüfpunkt verbunden, der als gefülltes Lime-Schild-Häkchen den automatisch bestätigten Abgleich markiert.",
+        "left_problem": "Drei lose, leicht schräg verstreute Ink-Linien-Icons — ein Bestellschein-Icon, ein Lieferschein-Icon und ein Paket/Karton-Icon — liegen ungeordnet nebeneinander, keins passt exakt zum anderen. Dazwischen ein Klemmbrett-mit-Stift-Icon (manuelles Abhaken) und ein kleines Ungleich-Zeichen (≠) als Symbol für eine unbemerkte Mengen- oder Chargenabweichung. Alles reine Ink-Linienzeichnung auf Paper-Hintergrund, keine Füllfarbe.",
+        "right_solution": "Dieselben drei Icons — Bestellschein, Lieferschein, Paket/Karton — jetzt sauber in einer geraden horizontalen Reihe ausgerichtet und durch dünne Ink-Verbindungslinien zu einem gemeinsamen Prüfpunkt zusammengeführt. Am Ende dieser Reihe sitzt der einzige Lime-Akzent des Bildes: ein gefülltes Schild-Icon mit Häkchen (#CCFF00), das den automatisch bestätigten Drei-Wege-Abgleich markiert. Alles andere bleibt Ink-Linienzeichnung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), strictly two-part before/after composition, 16:9 format, ink line art (#171717) on a paper background (#F2F2F2), no fill color except one single lime accent, absolutely no readable text, no letters, no words, no photography, no 3D render, no fake software dashboard or screenshot UI, no device or browser frame, no gradients, no glow, no glossy chrome, strictly no purple/violet/magenta/teal. LEFT SIDE: three separate ink-line icons scattered loosely and tilted at slightly different angles as if dropped on a table — a purchase-order document icon, a delivery-note document icon, and a package/box icon — none aligned with the others, plus a small clipboard-with-pencil icon nearby suggesting manual checking, and a small not-equal symbol (≠) floating between two of the icons to signal an unnoticed mismatch; everything here is pure thin ink outline with no fill. A single thin, gently curving lime arrow (#CCFF00) sweeps from the left cluster to the right side of the composition. RIGHT SIDE: the exact same three icons — purchase-order document, delivery-note document, package/box — now redrawn perfectly aligned in a neat horizontal row, connected to each other by thin straight ink lines that converge into one single checkpoint icon at the end of the row; that checkpoint is the one and only filled lime element in the entire image, a shield icon with a checkmark inside it (#CCFF00 fill), representing the automatic three-way match confirmation, while the three document/package icons themselves remain plain ink line art with no fill. Subtle flat drop shadow only for depth, no other color anywhere in the image besides ink black, paper off-white, and the single lime accent shield."
+      }
+    },
+    {
+      "id": "professional-services-phase-1",
+      "type": "feature",
+      "slug": "professional-services",
+      "phase": 1,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösungsseite \"professional-services\" — Feature 1 (Datenanalyse & Recherche)",
+        "visual_metaphor": "Recherche vor jeder Beratung läuft heute über mehrere getrennte Quellen (Fachdatenbanken, Mandantenunterlagen, öffentliche Register) verstreut und manuell ab — der KI-Agent bündelt genau diese drei Quellen zu einer einzigen, fertigen Zusammenfassung, die morgens bereits bereitliegt. Die Metapher bildet exakt die drei genannten Quelltypen ab, nicht generische Dokumente.",
+        "left_problem": "Verstreute, schräg angeordnete Ink-Linien-Icons: eine Datenbank-Zylinder-Form (Fachdatenbanken), eine Lupe (Recherche), mehrere lose Ordner-/Dokument-Icons (Mandantenunterlagen) und ein Stempel-/Register-Icon (öffentliche Register) — ungeordnet über die linke Bildhälfte verteilt, keine Füllfarbe.",
+        "right_solution": "Dieselben vier Icon-Elemente (Datenbank, Lupe, Ordner, Register-Stempel), jetzt in einer geordneten, konvergierenden Linie angeordnet und zusammenlaufend zu einem einzigen sauberen Dokumenten-Stapel (die strukturierte Zusammenfassung). Der EINE Lime-Akzent (#CCFF00) sitzt als kleines gefülltes Häkchen-Badge oben auf diesem Stapel — markiert das fertige, bereitliegende Ergebnis."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in the style of a premium SaaS one-pager (Stripe/Linear aesthetic), split into two clear halves on a paper background (#F2F2F2), 16:9 format, absolutely no readable text, no word fragments, no fake software dashboard or screenshot — only abstract icon shapes. On the left: a cluster of scattered, disordered ink-line icons (#171717, no fill, no color) representing multiple disconnected manual research sources — a cylindrical database icon, a magnifying glass, several loose folder/document icons, and a registry stamp/seal icon — each tilted at a different angle and loosely spread apart across the left half to suggest chaotic, scattered research across many separate sources. A single thin, curved lime arrow (#CCFF00) flows smoothly from the left half to the right half of the composition. On the right: the same four icon elements (database cylinder, magnifying glass, folder, registry stamp) now arranged in a neat, orderly line converging into one tidy stacked document icon representing a single structured summary — everything still rendered as clean ink-line icons except for exactly one lime-filled accent, a small checkmark badge (#CCFF00) sitting on top of the stacked document, marking it as the finished, ready result. Flat vector icon artwork only, subtle flat drop shadow for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, no photography, no 3D render, strictly no purple/violet/magenta/teal."
+      }
+    },
+    {
+      "id": "professional-services-phase-2",
+      "type": "feature",
+      "slug": "professional-services",
+      "phase": 2,
+      "status": "replaces_legacy_purple_asset",
+      "replaces_legacy_asset": true,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "painPoints.ts — Loesung \"professional-services\", feature2 (Mandantenkommunikation)",
+        "visual_metaphor": "Sprechblasen-Icons als Mandantenanfragen: Links liegen sie verstreut und schief, jede mit einem kleinen Uhr-/Sanduhr-Symbol als Zeichen des Wartens (Mandanten warten nicht gerne). Rechts sind dieselben Sprechblasen zu einer sauberen, gleichmäßigen Reihe/Warteschlange geordnet, jede jetzt mit Häkchen statt Uhr — Kategorisierung und sofortige Beantwortung sichtbar gemacht.",
+        "left_problem": "Verstreute, unordentlich schräg angeordnete Sprechblasen-Icons (reine Ink-Linienzeichnung #171717 auf Paper-Hintergrund #F2F2F2, keine Füllung), jede mit einem kleinen Uhr-/Sanduhr-Symbol darin als Platzhalter für eine unbeantwortete, wartende Mandantenanfrage — keine lesbaren Wörter, nur abstrakte Punkt-/Strich-Platzhalter als Nachrichtenandeutung.",
+        "right_solution": "Dieselben Sprechblasen-Icons jetzt in einer sauberen, gleichmäßig ausgerichteten vertikalen Reihe/Warteschlange, weiterhin als Ink-Linienzeichnung, jede mit einem kleinen Häkchen statt der Uhr. Die Reihe läuft auf eine letzte Sprechblase zu, die als einziges Element vollflächig in Lime (#CCFF00) gefüllt ist und ein Häkchen enthält — der eine Lime-Akzent, der die sofortige automatisierte Antwort markiert."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into two halves on a paper background (#F2F2F2), depicting a professional-services firm's client-communication chaos being resolved by automation: on the left, a cluster of scattered speech-bubble icons at uneven, tilted angles, each bubble containing a small clock or hourglass symbol to signal an unanswered, waiting client inquiry, drawn purely as thin ink line art (#171717) with no fill, no text, no readable words, just abstract dot and dash placeholders inside the bubbles to suggest a message; a thin curved lime arrow (#CCFF00) sweeps from the left side to the right; on the right, the same speech-bubble icons are now realigned into a neat, evenly spaced vertical row or queue, still rendered as clean ink line art, each bubble now containing a small checkmark instead of a clock, flowing toward one final speech-bubble icon that is fully filled solid lime (#CCFF00) with a checkmark inside it — the single lime accent marking the instant, automated reply — while every other element on both sides stays pure ink-line artwork with zero color fill. The overall composition is strictly flat vector icon artwork with only a subtle drop shadow for depth, no gradients, no glow, no glossy 3D chrome, no device or browser frame, no paper-tear effect, and absolutely no purple, magenta, or teal; no readable text or word fragments appear anywhere in the image; format is 16:9."
+      }
+    },
+    {
+      "id": "professional-services-phase-3",
+      "type": "feature",
+      "slug": "professional-services",
+      "phase": 3,
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "flat_vector_icon_illustration",
+      "concept": {
+        "headline_reference": "Lösung \"professional-services\" — feature3: Report-Erstellung & Compliance (\"Reports schreiben kann auch die KI.\")",
+        "visual_metaphor": "Die Phase behandelt zwei verzahnte Dinge: Reports werden aus mehreren verstreuten Datenquellen automatisch zusammengesetzt, UND das Ergebnis wird automatisch compliance-geprüft. Deshalb: links mehrere unterschiedliche Datenquellen-Icons (Datenbank, Tabelle, Ordner, Balkendiagramm) chaotisch um ein leeres Report-Icon mit Fragezeichen verstreut; rechts dieselben Quellen geordnet, die über ein Template zu einem fertigen Report-Stapel fließen, gekrönt von einem Lime-Schild-Häkchen als Compliance-Siegel — statt eines generischen Dokumentenstapels wie im schon akzeptierten Referenzbeispiel 1.",
+        "left_problem": "Verstreute, leicht schief angeordnete Datenquellen-Icons (Datenbank-Zylinder, Tabellen-/Grid-Icon, Ordner-Icon, kleines Balkendiagramm-Icon) um ein leeres Dokument-Icon mit großem Fragezeichen in der Mitte — alles reine Ink-Linienzeichnung (#171717) ohne Füllung auf Paper-Hintergrund (#F2F2F2), unordentlich verteilt. Steht für die verstreuten Rohdaten aus mehreren Systemen, die bisher manuell zu einem Report zusammengetragen werden müssen.",
+        "right_solution": "Dieselben Datenquellen-Icons jetzt in geordneter Reihe, über dünne Linien verbunden und in ein Template-Icon fließend, das sich zu einem sauberen Stapel fertiger Report-/Dokument-Icons formt — weiterhin reine Ink-Linienzeichnung. Der EINE Lime-Akzent (#CCFF00) sitzt oben auf dem fertigen Stapel: ein gefülltes Schild-mit-Häkchen-Icon als Compliance-Siegel, das anzeigt: Report fertig UND geprüft."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ]
+      },
+      "constraints": [
+        "no readable text, letters or paragraphs anywhere",
+        "no photography, no 3D render, no screenshot",
+        "no fake software dashboard or UI chrome",
+        "no torn paper / rip effects",
+        "no gradients, no glow, no glossy 3D chrome",
+        "exactly one lime-filled accent element, placed only on the result (right) side",
+        "flat vector illustration with soft minimal drop shadow only"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Flat vector icon illustration in a premium SaaS one-pager style (Stripe/Linear aesthetic), split into a clear before/after composition on a flat paper background (#F2F2F2) using only ink-colored line-art icons (#171717) with no fill, no gradients, no glow, no glossy 3D chrome, no photography, no device or browser frames, no fake software dashboard, and absolutely no readable text or word fragments anywhere in the image; on the left side, a scattered, slightly tilted cluster of disconnected data-source icons — a database cylinder, a spreadsheet/grid icon, a folder icon, and a small bar-chart icon — surrounding an empty document icon with a large question mark, all rendered as thin ink line drawings, conveying scattered raw data from multiple systems that has to be manually compiled into a report; a single thin, curved lime arrow (#CCFF00) flows from the left side to the right side; on the right side, the same data-source icons reappear, now arranged in a neat orderly row, connected by thin straight lines flowing into a template icon, which in turn feeds a tidy stack of completed report/document icons, still rendered purely as ink line art, except for exactly one filled lime (#CCFF00) accent: a shield-with-checkmark badge sitting on top of the finished report stack, marking it as both complete and compliance-verified; the whole illustration uses only a subtle flat drop shadow for depth, strictly no purple, violet, magenta, or teal anywhere, composed in 16:9 format."
+      }
+    },
+    {
+      "id": "hochschul-zulassung",
+      "type": "case",
+      "slug": "entscheidungsinstanzen",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"hochschul-zulassung\" (Lösung: entscheidungsinstanzen) — Mini-Case-Bild, Stil A Editorial-Fotografie",
+        "scene": "Zulassungsbüro einer privaten Hochschule: Auf einem großen Schreibtisch liegen dutzende Bewerbungsmappen fein säuberlich in Stapeln sortiert — Zeugnisse, Sprachzertifikate, ausgedruckte Motivationsschreiben und Empfehlungsschreiben, jeder Stapel mit einer kleinen Büroklammer oder einem Haftnotiz-Reiter markiert. Zwei Mitarbeitende des Zulassungsteams sitzen im Gespräch am Tisch, eine Hand blättert prüfend durch ein Zeugnis, die andere zeigt auf einen aufgeklappten Laptop mit einer schlichten Bewerbungsliste. Natürliches Tageslicht fällt seitlich durchs Fenster auf Papier und Hände; im Hintergrund unscharf weitere Aktenstapel, die das hohe Bewerbungsvolumen (rund 3.000 pro Semester) andeuten. Die Stimmung ist konzentriert und ruhig — echte Verwaltungsarbeit, kein gestelltes Business-Stockfoto-Lächeln.",
+        "composition": "Editorial-Stil wie bmp-award-case.jpg / ki-audit-process.webp: leicht erhöhter 3/4-Blickwinkel auf den Tisch (nicht direkt von oben, damit Gesichter/Hände im Gespräch sichtbar bleiben), Querformat, natürliches Seitenlicht vom Fenster, flache Schärfentiefe mit unscharfem Aktenstapel-Hintergrund, gedeckte neutrale Farbgebung (Papier-Weiß, Ink-Grau, Holz-/Schreibtischtöne). Lime taucht höchstens als ein einziges winziges organisches Detail auf — z. B. ein Haftnotiz-Reiter an einer Bewerbungsmappe oder ein kleiner Status-Punkt auf dem unscharfen Laptop-Bildschirm im Hintergrund — niemals als Flächenfarbe oder Wash. Kein 3D-Render, keine Illustration, kein glossy UI-Panel."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial documentary-style photograph of a university admissions office: a wide wooden desk covered with dozens of neatly organized stacks of paper application folders — transcripts, language certificates, printed motivation letters and recommendation letters — each stack marked with a small paperclip or a sticky-note tab; two admissions staff members sit together at the desk in quiet conversation, one hand leafing through a transcript page, the other gesturing toward an open laptop showing a simple, minimal applicant list interface; natural daylight streams in from a side window, softly lighting the paper and hands; in the soft-focus background, more folder stacks suggest a high volume of roughly 3,000 applications per semester; shot at a slightly elevated three-quarter angle (not flat overhead) so faces and hands in conversation remain visible, shallow depth of field, landscape orientation, premium editorial stock-photography aesthetic, candid and unposed, muted neutral color grading (paper off-white, warm wood desk tones, dark ink-gray clothing and accents) — the only color accent permitted is a single tiny lime-green (#CCFF00) detail, such as one sticky-note tab on a folder or a small status dot on the blurred laptop screen, used sparingly and never as a dominant wash or as text color on a light background; strictly no purple, violet, magenta, teal, or cyan anywhere in the image; no 3D render, no illustration, no glossy UI chrome, no generic stock-photo clipart look — real people, real paper, real office environment."
+      }
+    },
+    {
+      "id": "foerderbank-antragspruefung",
+      "type": "case",
+      "slug": "entscheidungsinstanzen",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Bild \"Förderbank — Antragsprüfung\" (id: foerderbank-antragspruefung, Lösung: entscheidungsinstanzen, Case 03)",
+        "scene": "Draufsicht auf einen Schreibtisch im Backoffice einer regionalen Förderbank: gestapelte Förderanträge mit sichtbaren Tabellen zu Schwellenwerten und Branchenausschlüssen, daneben ein aufgeschlagener Ordner mit dem Förderrichtlinien-Regelwerk. Zwei Hände von Sachbearbeitern vergleichen einen Antrag mit der gedruckten Kriterienliste, kleine Papierlaschen markieren fehlende Nachweise. Im leicht unscharfen Hintergrund ein Laptop-Bildschirm mit einer schlichten, priorisierten Entscheidungsliste für das monatliche Bewilligungsgremium. Natürliches Fensterlicht von links, ruhige, sachliche Arbeitsatmosphäre statt Hektik.",
+        "composition": "Overhead/Draufsicht-Aufnahme im Stil von ki-audit-process.webp, Querformat, Schärfe auf Hände und Dokumente im Vordergrund, Hintergrund (Laptop-Screen) leicht defokussiert, ausreichend ruhige Flächen am Bildrand für spätere Textüberlagerung im Case-Karten-Layout."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Top-down editorial photograph of a regional public development bank's back office during funding-application review: a wide desk holds a stack of printed German \"Förderantrag\" funding application forms with visible tables of threshold values and industry-exclusion checklists, next to an open ring binder showing a page of funding guidelines; two case workers' hands are visible cross-referencing a paper application against the printed criteria sheet, one hand holding a pen mid-annotation, several application pages marked with small paper tabs flagging missing supporting documents; in the soft-focus background a laptop screen shows a minimal dashboard-style list of prioritized applications ready for the monthly approval committee meeting; natural window light falling from the left, muted neutral color palette of paper white, warm grey desk wood, and charcoal ink (#171717) tones, no illustration or 3D rendering — authentic candid premium-stock documentary photography, exactly like a real German Förderbank back-office; a single small lime-green (#CCFF00) sticky note or paperclip is the only accent of color in the frame, used sparingly as one organic detail and never as a color wash or dominant hue; absolutely no violet, purple, magenta, teal, or cyan anywhere in the image; shallow depth of field, high-resolution editorial style, calm and orderly working atmosphere conveying quiet competence rather than urgency."
+      }
+    },
+    {
+      "id": "gyn-praxis-muenchen",
+      "type": "case",
+      "slug": "health-care",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"gyn-praxis-muenchen\" (Loesung: health-care) — Mini-Case-Bild",
+        "scene": "Der Empfangstresen einer modernen Frauenarztpraxis in München, Draufsicht/leicht schräger Blickwinkel wie bei ki-audit-process.webp: Eine Hand der Praxismanagerin tippt auf ein Tablet, auf dessen Bildschirm ein aufgeräumter Online-Terminkalender mit Zeitfenstern zu sehen ist (mehrere Slots sind bereits automatisch als gebucht markiert, ein Zeitfenster zeigt \"ausgebucht\"). Daneben liegt ein Ordner mit sieben handschriftlich beschrifteten Reitern für die neu strukturierten Leistungskategorien (Vorsorge, Schwangerschaft, etc., angedeutet, nicht wörtlich lesbar). Das Telefon am Empfang liegt unbenutzt und still daneben — Sinnbild dafür, dass Patientinnen nicht mehr anrufen müssen, weil sie rund um die Uhr online buchen. Natürliches, weiches Tageslicht von einem Fenster seitlich, gedeckte neutrale Farben (Holz, Papier, Ink-Grau), keine Personen-Gesichter erkennbar, nur Hände und Ausschnitt.",
+        "composition": "Editorial-Stock-Aesthetik wie ki-audit-process.webp: Draufsicht bzw. 45-Grad-Blick von oben auf den Tresen/Tisch, Querformat (16:9 oder 3:2), Fokus liegt auf Tablet-Bildschirm und Hand in der Bildmitte/leicht links, Ordner mit den sieben Reitern rechts im Bild, stilles Telefon unten im Bild als ruhiges Detail. Flaches, natürliches Licht ohne harte Schatten, ruhige ungesättigte Farbpalette, sehr geringe Schärfentiefe auf Nebendetails. Kein Gesicht im Bild, keine Markenlogos."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial top-down stock photograph of a reception desk in a modern German gynecology practice: a woman's hand taps a tablet showing a clean, minimalist online booking calendar interface with several time slots already marked as booked and one slot marked \"fully booked\", the screen UI is light with dark ink-gray text and exactly one small lime-green (#CCFF00) accent dot marking the active/available slot — no other bright colors on screen; beside the tablet lies a paper folder with seven neatly labeled tabs representing newly organized service categories, and a traditional office phone sits untouched and silent nearby, symbolizing that patients no longer need to call; natural soft daylight falls from the side across a warm neutral desk surface (wood, paper, muted gray-beige tones), shallow depth of field, realistic candid premium-stock photography aesthetic, no visible faces, only hands and objects in frame, no 3D render, no illustration, no glossy UI chrome, absolutely no purple, violet, lilac, magenta, teal or cyan anywhere in the image, color palette restricted to neutral ink grays, warm paper tones, and a single tiny lime-green accent."
+      }
+    },
+    {
+      "id": "therapiezentrum-onboarding",
+      "type": "case",
+      "slug": "health-care",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"therapiezentrum-onboarding\" (Lösung: health-care) — Bild zur Case-Karte",
+        "scene": "Ein Empfangstisch in einem Therapiezentrum, fotografiert im frühen Morgenlicht, bevor der reguläre Praxisbetrieb beginnt. Auf dem Tisch liegen ein aufgeschlagener Terminplaner mit handschriftlichen Eintragungen, ein Fächer aus beschrifteten Karteireitern für verschiedene Behandlungsbereiche (z. B. Physiotherapie, Ergotherapie, Orthopädie) und ein stummes, unbenutztes Festnetztelefon am Rand. Mittendrin liegt ein Smartphone mit einer schlichten Chat-Oberfläche, auf der bereits automatisch bestätigte Termin-Kurznachrichten zu sehen sind — als einziger Farbakzent ein winziger Lime-Punkt (Benachrichtigung). Am Bildrand greifen leicht unscharf die Hände einer Mitarbeiterin nach den Karteireitern, so als würde der Tag beginnen und die über Nacht eingegangenen, bereits sortierten Anfragen vorfinden.",
+        "composition": "Draufsicht/leicht schräge Overhead-Perspektive (Flatlay), analog zu ki-audit-process.webp; Querformat (ca. 4:3 oder 3:2); Fokus auf die Tischmitte (Planer + Smartphone), Hände und Tischränder in sanfter Unschärfe; ruhiges, natürliches Streiflicht von einer Seite, kein Blitz, kein Studio-Look."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead flat-lay photograph of a therapy center's reception desk captured in soft, natural early-morning window light, showing an open appointment planner notebook with handwritten treatment-slot entries, a neat fan of labeled folder tabs for different treatment departments (physiotherapy, occupational therapy, orthopedics), and a quiet, unused landline phone pushed to one corner; resting among the paper items is a modern smartphone displaying a minimal, clean chat-message interface with short automated appointment-confirmation bubbles on a plain paper-white background with dark ink-gray text, featuring exactly one small lime-green (#CCFF00) notification dot as the sole color accent on the screen; the softly out-of-focus hands of a receptionist enter the frame from the side, gently arranging the folders as the workday begins; muted neutral tones throughout (warm wood desk, paper, off-white #F2F2F2, ink #171717 text), candid editorial premium-stock photography style, shallow depth of field, realistic textures, genuine objects and real hands — no 3D render, no illustration, no glossy UI chrome, no stock-clipart look; absolutely no violet, purple, lilac, magenta, teal or cyan anywhere in the image; the only color accents permitted are the single lime #CCFF00 detail plus ink #171717 and paper #F2F2F2 neutrals."
+      }
+    },
+    {
+      "id": "praxisverbund-kapazitaeten",
+      "type": "case",
+      "slug": "health-care",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"praxisverbund-kapazitaeten\" (Health Care) — Bild für die Case-Karte",
+        "scene": "Draufsicht (Bird's-Eye-View, wie ki-audit-process.webp) auf den Empfangstresen einer Facharztpraxis: eine Praxismitarbeiterin und ein Arzt/eine Ärztin stehen an einem Tresen und vergleichen zwei ausgedruckte Terminlisten von zwei verschiedenen Standorten nebeneinander — die eine Liste zeigt dicht vollgeschriebene, überlastete Zeitslots, die andere freie Lücken. Im Hintergrund/an der Seite ein Monitor mit einer schlichten, hellen Dashboard-Oberfläche, die mehrere Standorte mit Auslastungsbalken zeigt (nur EIN Lime-Akzent auf einem Balken/Status-Punkt sichtbar). Auf dem Tresen liegen Klemmbretter, Terminkalender, ein Telefon, eine Kaffeetasse — reale, ungestellte Alltagsgegenstände einer Arztpraxis, keine Requisiten-Anordnung.",
+        "composition": "Bird's-eye / directly-overhead shot, wie das Referenzbild ki-audit-process.webp — Kamera senkrecht von oben auf den Tresen, Hände und Unterarme der zwei Personen sichtbar (nicht die Gesichter), natürliches Tageslicht von der Seite, leichte weiche Schatten. Querformat, geeignet als Case-Karten-Bild (16:9 oder 3:2). Keine Text-Overlays im Bild selbst."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Top-down bird's-eye photograph, camera directly overhead, of a busy medical practice reception counter where two people — a practice coordinator and a doctor, only their hands, forearms and shoulders visible — are comparing two printed appointment schedules side by side: one sheet densely packed with overlapping time slots (overloaded location), the other showing clear open gaps (location with free capacity). Scattered naturally around the counter: clipboards, a desk phone, a paper appointment calendar, a coffee cup, pens — real, lived-in objects, not staged props. To one side of the frame, a tablet or monitor lies flat on the counter showing a clean, minimal dashboard interface with several rows representing different practice locations and simple horizontal utilization bars in neutral ink-gray tones, with exactly one small lime-green (#CCFF00) accent marking a single status dot or highlighted bar segment — otherwise no colored UI chrome. Overall palette is neutral and documentary: warm off-white paper (#F2F2F2-toned), dark ink-gray (#171717) text and shadows, natural desaturated tones on skin, fabric and wood — absolutely no violet, purple, lila, magenta, teal, or cyan anywhere in the image, and no glossy 3D rendering or illustration. Soft natural daylight falling from one side, gentle authentic shadows, shallow warmth, editorial premium-stock photography aesthetic, high detail, candid unposed feel, shot on a full-frame camera with a slightly desaturated documentary color grade, landscape orientation suitable for a case-study card."
+      }
+    },
+    {
+      "id": "grosshandel-bestelleingabe",
+      "type": "case",
+      "slug": "handel-supply-chain",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"grosshandel-bestelleingabe\" (Case 01, Lösung: handel-supply-chain)",
+        "scene": "Draufsicht auf einen Arbeitsplatz in einem Großhandelsbüro direkt am Lager: Auf dem Tisch liegen drei eingehende Bestellungen in klar unterschiedlichen Formaten ausgebreitet — ein ausgedrucktes E-Mail-Bestellformular, ein Kundenportal-Ausdruck und ein EDI-Beleg mit Barcode-Kopfzeile — daneben eine Lagerbestandsliste auf Papier. Eine Hand hält einen Stift und hakt gerade eine Artikelnummer auf der Bestandsliste ab, am Bildrand stehen eine schlichte Kaffeetasse und ein weiterer Stapel Bestellpapiere. Im leicht unscharfen Hintergrund sind durch eine offene Tür Palettenregale und Kartons eines Großhandelslagers zu erkennen — der Schreibtisch liegt sichtbar direkt an der Warenannahme.",
+        "composition": "Overhead-Draufsicht analog zu ki-audit-process.webp, aber leicht schräger Winkel (ca. 65°) statt exakt senkrecht für mehr Tiefe und Bezug zum Lager im Hintergrund. Querformat (16:9 oder 3:2) für die Case-Karte. Schärfe auf Tisch/Hände im Vordergrund, Lagerregale im Bokeh dahinter. Natürliches Seitenlicht von links, weiche realistische Schatten, keine gestellte Studio-Anmutung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial stock-photography style, high-angle overhead shot at a slight angle (around 65 degrees, not perfectly flat) looking down onto a wholesale distributor's office desk in the DACH region, positioned right next to the warehouse floor: spread across the wooden desktop are three incoming order documents in distinctly different formats — a printed email order confirmation, a customer-portal printout, and an EDI order slip with a barcode header — laid beside a paper warehouse inventory checklist; a person's hand holds a pen mid-motion, ticking off an article number on the inventory sheet, with a plain white coffee mug and a stack of additional order papers at the edge of the frame; in the softly blurred background, out-of-focus pallet racking and cardboard boxes of a wholesale warehouse are visible through an open doorway, making clear this desk sits right at the goods-receiving area; natural daylight falls in from the left creating soft, realistic shadows; muted neutral tones dominate — kraft-paper brown, off-white paper, warm grey desk wood — echoing a paper/ink color mood (light neutral #F2F2F2 paper tones, dark #171717 ink accents in shadows and printed text), with at most one small, incidental lime-green (#CCFF00) accent such as a tiny highlighter mark or sticky-note tab on one document, used sparingly as a natural detail, never as a dominant wash; real, candid, unstaged photography look, shallow depth of field, premium editorial B2B stock-photo aesthetic; no 3D render, no illustration, no glossy UI panels, and absolutely no purple, violet, magenta, or teal anywhere in the image."
+      }
+    },
+    {
+      "id": "maschinenbau-sendungstransparenz",
+      "type": "case",
+      "slug": "handel-supply-chain",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"maschinenbau-sendungstransparenz\" (Lösung: handel-supply-chain), Stil A – Editorial-Fotografie",
+        "scene": "Warenausgang eines mittelständischen Maschinenbauers: Eine sperrige, in Holzkiste/Palette verschraubte Maschinenkomponente wird gerade mit einem Gabelstapler auf einen Container bzw. LKW verladen, im Hintergrund weitere exportfertige Kisten mit Versandaufklebern. Im Vordergrund steht ein Mitarbeiter (Export-/Logistiksachbearbeiter, Arbeitskleidung mit Warnweste über Hemd) am Übergang Lager/Rampe und prüft auf einem robusten Tablet den Freigabestatus der Sendung, bevor sie das Haus verlässt — auf dem Screen ist unscharf ein schlichtes Dashboard mit Statuspunkten/Balken zu erkennen. Eine zweite Person im Hintergrund (Speditionsfahrer oder Kollege) übergibt oder hält Frachtpapiere/einen Lieferschein in der Hand. Stimmung: konzentrierter Arbeitsalltag, kein gestelltes Meeting, natürliches Industrielicht der Halle, gedeckte, leicht kühle Industrie-Farbpalette.",
+        "composition": "Candid Reportage-Perspektive auf Augenhöhe, leicht seitlich/schräg wie mit einer 35–50mm-Linse aus der Hüfte fotografiert, nicht symmetrisch gestellt. Bildwirkung wie bmp-award-case.jpg: dokumentarisch, unaufgeregt, keine direkte Kamera-Interaktion der Personen. Querformat, Fokus auf Tablet-Hand und Kiste im Vorder-/Mittelgrund, Verladeszene und Halle leicht in die Tiefe unscharf. Freiraum für Textüberlagerung eher am oberen Bilddrittel (heller Hallenhintergrund/Oberlicht)."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial documentary photograph at the loading dock of a mid-size German machinery manufacturer: in the foreground, a logistics coordinator in a hi-vis vest over a shirt holds a rugged tablet, checking an export release status on a minimal, calm software dashboard (light paper-grey UI, dark ink-colored text, a single small lime-green #CCFF00 status accent — no purple, no violet, no teal, no magenta anywhere in the image), while behind them a forklift lowers a large crated industrial machine component onto a waiting shipping container; export crates with shipping labels are stacked nearby, and a second person in the mid-ground hands over freight paperwork to a truck driver; candid unposed reportage style, natural overhead warehouse light with soft daylight spilling in from a loading bay door, muted neutral industrial color palette (concrete grey, cardboard brown, worn metal, off-white paper), shallow depth of field with sharp focus on the tablet and crate in the foreground and the loading scene softly blurred behind, shot on a 35–50mm lens at eye level, slightly off-angle candid framing, premium editorial stock photography aesthetic, no 3D render, no illustration, no glossy UI overlays, realistic textures and true-to-life color grading."
+      }
+    },
+    {
+      "id": "fachhaendler-fruehwarnsystem",
+      "type": "case",
+      "slug": "handel-supply-chain",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"Fachhändler — Lieferanten-Frühwarnsystem statt Bauchgefühl\" (handel-supply-chain, id: fachhaendler-fruehwarnsystem)",
+        "scene": "Draufsicht auf einen Wareneingangs-Arbeitsplatz bei einem Fachhändler mit vielen Lieferanten: ein geöffneter Lieferkarton mit Ware steht auf einem Holztisch, daneben liegen Lieferschein, ein handschriftliches Prüfprotokoll und ein ausgedruckter Lieferanten-Scoring-Report mit einfachen Tabellen. Eine Hand bei der Wareneingangsprüfung hält einen Stift und vergleicht Ware mit dem Lieferschein, während im Hintergrund leicht unscharf ein:e Einkäufer:in auf eine Zeile im gedruckten Report zeigt — die Szene verbindet die physische Kontrolle direkt mit der neuen datenbasierten Einkaufsgrundlage. Natürliches Licht, gedeckte neutrale Farben, editorial Stock-Ästhetik wie ki-audit-process.webp.",
+        "composition": "Leichte Overhead-/Draufsicht-Perspektive (wie ein Flat-Lay, nicht ganz senkrecht), Fokus auf Hände + Dokumente in der Bildmitte, Randbereiche leicht unscharf für Tiefe, keine Person blickt in die Kamera (candid, nicht gestellt), Querformat 3:2."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "An overhead, editorial documentary-style photograph of a goods-receiving workstation at a specialty retail wholesaler with dozens of active suppliers: on a plain wooden table, an open cardboard delivery box with packaged goods sits beside a paper delivery note, a handwritten quality-inspection checklist, and a printed supplier-scoring report showing simple tables and figures; a warehouse employee's hand, holding a pen, is caught mid-inspection checking items against the delivery note, while slightly out of focus in the background a purchasing manager leans in and points at a line on the printed report as if discussing a negotiation — the composition is shot from directly above at a slight angle, like a candid flat-lay, natural window light casting soft realistic shadows across the table, muted neutral tones (kraft-brown cardboard, white paper, warm wood, grey-beige textiles) reading as Paper/Neutral #F2F2F2 with Ink #171717 accents in the printed text; this is real candid business photography — real people, real hands, real paper documents and cardboard, no 3D render, no illustration, no glossy UI panels or dashboards; if any small accent color appears at all it should be a single tiny organic detail, such as one lime-green #CCFF00 sticky note or highlighter mark on the checklist, used sparingly and never as a wash or dominant color; strictly no purple, violet, magenta, teal, or cyan anywhere in the image; premium, quiet, trustworthy editorial stock aesthetic, shallow depth of field, 3:2 aspect ratio."
+      }
+    },
+    {
+      "id": "aeskon-prozesslandkarte",
+      "type": "case",
+      "slug": "professional-services",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"aeskon-prozesslandkarte\" (Lösung: professional-services, Case 01 — reales Projekt AESKON GmbH)",
+        "scene": "Draufsicht auf einen Tisch während eines Architektur-Workshops: ausgedruckte Prozessdiagramme und ein handgezeichneter Flowchart-Bogen liegen ausgebreitet, einzelne Schritte sind mit einem Lime-Textmarker als Automatisierungspotenzial eingekreist. Zwei Hände (Berater und Techniker) zeigen im Gespräch auf eine Stelle im Diagramm; daneben liegt ein aufgeschlagenes, eng beschriebenes Pflichtenheft-Dokument und ein Laptop mit einem schlichten Flowchart auf dem Bildschirm. Natürliches Fensterlicht, gedeckte neutrale Farben (Papier, Holztisch, Ink-Text), keine Gesichter sichtbar — reale Arbeitssituation, kein Rendering.",
+        "composition": "Steile Draufsicht/leicht schräg von oben (ca. 60-70°) auf die Tischfläche, Querformat für Case-Karte geeignet; Hände und Dokumente füllen den Bildraum, keine Gesichter im Ausschnitt; seitliches natürliches Licht, ruhige Schärfentiefe mit Fokus auf dem markierten Diagrammausschnitt, editorial/Premium-Stock-Look wie ki-audit-process.webp."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead editorial photograph, shot at a steep angle looking down onto a wooden conference table during a technical architecture workshop at a small industrial consulting and technology firm; the table is covered with printed process-flow diagrams and a hand-sketched flowchart on paper, several process steps circled with a lime-green highlighter marking automation potential, next to an open technical specification document (Pflichtenheft) with dense typed paragraphs and a laptop showing a simple minimal flowchart on its screen; two people's hands and forearms enter the frame from opposite sides, one pointing at a specific box in the diagram mid-discussion, no faces visible; soft natural window light from one side, muted neutral color palette of paper white, warm wood brown, and charcoal ink-black (#171717) text and lines, with the lime-green highlighter (#CCFF00) appearing only as a single small, organic accent — a marker cap, a highlighted circle, a corner of a sticky note — never as a background wash or dominant color; realistic candid documentary photography, premium editorial stock aesthetic, natural shadows, shallow depth of field toward the diagram detail, no 3D render, no illustration, no purple, no violet, no teal, no cyan anywhere in the image."
+      }
+    },
+    {
+      "id": "steuerkanzlei-mandantenkommunikation",
+      "type": "case",
+      "slug": "professional-services",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"Steuerberatungskanzlei — Mandantenkommunikation\" (Case 02, Lösung: professional-services)",
+        "scene": "Draufsicht auf den Schreibtisch einer Steuerberatungskanzlei mitten in der Steuersaison: mehrere aufgeschlagene Mandantenordner mit Register-Trennblättern und kleinen Klebezetteln für Fristen liegen gestapelt neben einem Kalenderblatt, auf dem mehrere Abgabetermine markiert sind. Ein Smartphone auf dem Tisch zeigt eine lange Liste ungelesener Nachrichten und verpasster Anrufe. Im Vordergrund zeigen zwei Hände – eine Beraterin und ein Mandant – gemeinsam auf ein Dokument, im leicht unscharfen Hintergrund ist ein Laptop-Bildschirm mit einem vollen E-Mail-Postfach zu erkennen. Die Szene wirkt konzentriert und arbeitsintensiv, aber geordnet – keine hektische Chaos-Optik, sondern die reale Verdichtung der Standardanfragen (Fristen, Unterlagen, Bearbeitungsstand), die im Case beschrieben wird.",
+        "composition": "Editorial-Draufsicht (Overhead/Flatlay, ca. 80–90° von oben), analog zu ki-audit-process.webp und bmp-award-case.jpg; Querformat (16:9 oder 4:3) für die Case-Karte; Fokus auf Ordnern/Dokumenten und den Händen im Vordergrund, Laptop-Bildschirm im Hintergrund leicht unscharf gehalten; natürliches Fensterlicht von einer Seite, weiche Schatten, kein hartes Studiolicht, kein Blitz."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead flat-lay photograph of a busy tax advisory office desk during peak tax season: several open client folders with labeled tab dividers and small paper sticky notes marking deadlines are stacked next to a desk calendar with multiple filing dates circled in pen, a smartphone lying on the desk shows a long list of unread messages and missed calls, and in the soft-focus background a laptop screen displays a crowded email inbox; in the foreground the hands of a tax advisor and a client both point at a document as if reviewing a filing status together, suggesting a real in-person consultation mid-conversation; natural window light falls diagonally across the scene creating soft, realistic shadows, shot in an editorial premium-stock photography style with a muted, neutral color palette of warm paper white, warm greys and ink-black (#171717) tones for pen marks and folder labels, with a single small lime-green (#CCFF00) sticky note or folder tab as the only accent color providing a subtle brand touch — never used as a wash or dominant color; realistic paper and skin textures, candid and unstaged, resembling genuine editorial business photography; strictly no illustration, no 3D render, no glossy UI overlays, and no purple, violet, magenta, cyan, or teal anywhere in the image."
+      }
+    },
+    {
+      "id": "personalberatung-screening",
+      "type": "case",
+      "slug": "professional-services",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"personalberatung-screening\" (Lösung: professional-services, Case 03) — Editorial-Foto",
+        "scene": "Draufsicht auf den Schreibtisch einer Personalberaterin: mehrere ordentlich sortierte Stapel ausgedruckter Lebensläufe und Bewerbungsmappen liegen in Gruppen gebündelt neben einem geöffneten Laptop — ein visueller Hinweis auf die rund 200 Bewerbungen pro ausgeschriebener Stelle. Auf dem Laptop-Bildschirm ist eine schlichte, strukturierte Kandidaten-Übersicht mit kurzen vergleichbaren Zusammenfassungen zu erkennen, statt loser Einzeldokumente. Eine Hand hält einen Stift über einem Notizblock mit abgehakten Punkten; im unscharfen Hintergrund sitzt eine zweite Person am Tisch, als Hinweis darauf, dass die gewonnene Zeit jetzt ins Gespräch mit Kandidaten fließt statt in die Sichtung. Natürliches Tageslicht, gedeckte neutrale Farbgebung, real fotografiert wie ki-audit-process.webp.",
+        "composition": "Draufsicht bzw. leicht schräger Blick von oben (wie ki-audit-process.webp), Querformat passend zur Case-Karte. Papierstapel und Laptop-Screen bilden den Bildmittelpunkt, Hände sorgen für Lebendigkeit ohne Gesicht im Fokus. Viel freie Tischfläche/Weißraum für Ruhe, keine Personen frontal/zentral, zweite Person nur angedeutet im unscharfen Hintergrund."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "A high-angle editorial photograph looking down at a recruitment consultant's desk in a professional services office: several neatly organized clusters of printed resumes and application folders are stacked in groups, visually suggesting a large volume of roughly 200 candidate applications for a single open role, arranged next to an open laptop; the laptop screen shows a clean, minimal candidate shortlist interface with short, structured, comparable summaries per candidate instead of scattered raw documents — if any UI text is legible it should use a geometric sans-serif like Outfit; a real hand holds a pen just above a notepad with checked-off items, and slightly out of focus in the background a second person sits at the table, hinting that the freed-up time is now spent in candidate conversations rather than manual screening; soft natural daylight from a window, shallow depth of field, warm neutral desk surface (wood or light paper tones), candid premium editorial stock-photography aesthetic in the style of a high-end business magazine — real people, real paper, real objects, absolutely no 3D render, no illustration, no clipart, no glossy UI panels; strict color discipline: neutral paper-white and ink-gray tones throughout the physical scene, and if the laptop screen UI is visible it uses Ink #171717 text on a light Paper #F2F2F2 background with only one small Lime #CCFF00 accent such as a single highlighted status dot or button — never Lime as a wash or as text on light background, and absolutely no purple, violet, magenta, teal, or cyan anywhere in the image."
+      }
+    },
+    {
+      "id": "maschinenbau-dokumente",
+      "type": "case",
+      "slug": "compliance",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study-Karte \"maschinenbau-dokumente\" (Lösung: Compliance, Case 01) — src/content/collections/miniCases.ts",
+        "scene": "Draufsicht auf einen Besprechungstisch bei einem Maschinenbau-Exporteur, der eine Sendung für den internationalen Versand vorbereitet. Auf dem Tisch liegen mehrsprachige Handelsdokumente — Rechnungen, Zollpapiere, Ursprungszeugnisse in sichtbar unterschiedlichen Schriften/Sprachen — neben einer technischen Explosionszeichnung eines Maschinenteils, die die Branche verankert. Zwei Hände sind im Bild: eine hält ein Zolldokument zum Abgleich, eine liegt auf einem geöffneten Laptop; ein Smartphone daneben deutet das Telefonat mit dem Zollagenten an. Der Laptop-Bildschirm zeigt eine schlichte Sendungsstatus-Liste mit genau einem Lime-Akzent (ein Status-Häkchen), sonst keine Signalfarbe im Bild.",
+        "composition": "Leicht schräge Draufsicht wie bei ki-audit-process.webp, Querformat für die Case-Karte. Dokumente füllen die Bildmitte, Laptop-Screen und Smartphone am Bildrand als sekundäre Elemente. Ausreichend ruhiger Raum an den Rändern, falls die Karte Text überlagert. Flaches, seitliches Tageslicht für weiche Schatten zwischen den Papierstapeln, kein direktes Blitzlicht."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead editorial photograph, shot from a slightly angled top-down perspective, of a wooden meeting table at a mechanical-engineering export company preparing an international shipment bound for one of many destination countries. Spread across the table are multilingual trade documents — commercial invoices, customs declarations, and certificates of origin in visibly different scripts and languages (Latin, Cyrillic, Arabic characters) — alongside a technical exploded-view drawing of a machine part that signals the manufacturing context. Two people's hands are in frame: one hand holds a customs document up for comparison, another rests on the trackpad of an open laptop; a smartphone lies on the table nearby, hinting at a phone call with a customs agent coordinating the shipment. The laptop screen shows a clean, minimal shipment-status list on a light interface with dark ink-gray (#171717) text and exactly one small lime-green (#CCFF00) accent — a single status checkmark or dot — no other bright color anywhere in the scene. Soft natural daylight falls from one side, creating gentle shadows across the paper stacks; the overall palette stays neutral and muted — warm paper white (#F2F2F2), ink-gray, light wood tones, soft gray folder tabs — with absolutely no purple, violet, magenta, teal, or cyan anywhere in the image. Documentary, premium editorial-stock photography style, realistic, candid, real people and real objects only, no 3D render, no illustration, no glossy UI panels, no graphic overlays, shallow depth of field toward the foreground documents, image quality reminiscent of a high-end business editorial photo shoot."
+      }
+    },
+    {
+      "id": "aeskon-bafa-compliance",
+      "type": "case",
+      "slug": "compliance",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Bild „AESKON GmbH – BAFA-Compliance\" (Case 02, Lösungsseite compliance, miniCasesBySlug)",
+        "scene": "Der Case dreht sich um ein Beratungsunternehmen (AESKON), das bei einem BAFA-Förderantrag eine strikt vorgeschriebene Reihenfolge einhalten muss: Der Beratungsvertrag darf erst NACH der behördlichen Freigabe unterschrieben werden – vorher wäre die Förderfähigkeit gefährdet. Das Bild zeigt eine Draufsicht auf einen Schreibtisch mit dem Förderantrag-Formular in Bearbeitung und einem separat danebenliegenden, noch ungesigneten Beratungsvertrag (Stift bewusst nicht am Vertrag, sondern beim Antrag liegend), dazu eine nummerierte Prozess-Checkliste, bei der ein späterer Schritt sichtbar noch gesperrt/nicht abgehakt ist. Hände zweier Personen (Berater und Sachbearbeiter/in) zeigen gemeinsam auf eine Zeile im Antrag – konzentrierte, ruhige Arbeitsatmosphäre, kein gestelltes Lächeln.",
+        "composition": "Overhead/Flat-Lay-Perspektive senkrecht von oben auf den Tisch, analog zu ki-audit-process.webp; Querformat für Case-Karte; natürliches Streiflicht von einer Seite, das Papierstruktur und Handschrift-Details betont; ruhige, gedeckte Farbgebung (Papierweiß, Ink-Dunkelgrau, warmes Holz/Beige), kein Studio-Blitzlicht."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead flat-lay photograph, shot straight down at a wooden desk, showing a German government funding application form (a formal multi-page document with official letterhead and a checkbox/signature field) being filled out by hand, positioned next to — but clearly separate from — a consultancy services contract that remains visibly unsigned, its signature line empty; a pen rests on the funding application, deliberately not touching the contract, to signal the required sequence; beside both documents lies a printed numbered process checklist with several steps checked off in ink and one later step still marked as locked or pending; the hands of two professionals, one gesturing with a pen and the other pointing a finger, are visible at the edges of the frame reviewing a specific line of the application together, no faces shown; soft natural daylight falls across the desk from one side, casting gentle shadows that reveal paper texture and handwriting; muted, neutral editorial color palette of warm paper white, soft beige desk wood, and dark charcoal ink (#171717) for printed text, with at most one tiny lime-green (#CCFF00) accent visible only as a small detail such as a single sticky-note tab or a thin highlighter mark on the checklist — never as a wash or dominant color; realistic candid premium stock photography style, like genuine office documentation, not a 3D render, not an illustration, no glossy UI panels; absolutely no violet, purple, magenta, teal, or cyan tones anywhere in the image."
+      }
+    },
+    {
+      "id": "grosshaendler-zollpraeferenzen",
+      "type": "case",
+      "slug": "compliance",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"Großhändler — Zollpräferenzen\" (Lösung: compliance), miniCases.ts / id: grosshaendler-zollpraeferenzen",
+        "scene": "Ein Arbeitstisch im Wareneingang/Büro eines Großhändlers mit hohem Importvolumen: ausgebreitete Zollunterlagen, Ursprungszeugnisse, Handelsrechnungen mit Länderflaggen/Stempeln und Packlisten mit Sendungs-Barcodes. Zwei Personen prüfen im Vordergrund Dokumente per Hand gegen einen Laptop-Bildschirm mit einer schlichten Sendungsliste ab — sichtbares, konkretes Detail zur \"automatischen Erkennung anwendbarer Freihandelsabkommen\" aus dem Case. Im unscharfen Hintergrund deuten Lagerregale mit Paletten und Kartons das hohe Importvolumen an. Natürliches Seitenlicht, gedeckte, neutrale Farbgebung — editorial, nicht gestellt.",
+        "composition": "Draufsicht bzw. leicht schräger Blickwinkel auf den Tisch, wie bei ki-audit-process.webp; Querformat 16:9 für die Case-Karte; Fokus/Schärfe auf Hände und Dokumente im Vordergrund, Lagerregale mit geringer Tiefenschärfe im Hintergrund; genug ruhige Fläche im oberen Bilddrittel für eventuelle Textüberlagerung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Top-down editorial photograph of a wholesale import-documentation desk: a natural, slightly cluttered spread of customs paperwork, certificates of origin, commercial invoices bearing small country-flag stamps, and packing lists with shipment barcode labels, with a pair of hands cross-checking a stack of certificates against a laptop screen displaying a clean, minimal shipment-tracking list; in the softly blurred background, warehouse shelving stacked with pallets and cardboard boxes suggests a high-volume import operation; natural daylight falls from a large warehouse window at a low side angle, casting soft realistic shadows across the desk; muted, neutral color palette of paper white, cardboard brown, and warm grey, with a single small lime-green (#CCFF00) sticky note or folder tab as the only accent of color — no other bright colors, absolutely no purple, violet, magenta, teal, or cyan anywhere in the image; candid, authentic premium-stock editorial photography style with real people and real objects, no 3D render, no illustration, no glossy UI overlays or dashboard graphics, shallow depth of field, high realistic detail, natural imperfect arrangement rather than a staged flat-lay, horizontal 16:9 composition suitable for a case-study card."
+      }
+    },
+    {
+      "id": "mehrstandort-dashboard",
+      "type": "case",
+      "slug": "kpi-dashboard",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Bild \"Mehrstandort-Praxis-Dashboard\" (miniCases id: mehrstandort-dashboard, unter Lösung kpi-dashboard)",
+        "scene": "Draufsicht auf den Koordinationstisch eines Facharztpraxis-Verbunds: Ausgedruckte Tagespläne von drei verschiedenen Standorten liegen nebeneinander, eine Hand markiert mit einem kleinen Klebezettel eine Terminlücke an einem Standort, während eine zweite Hand zum Smartphone greift, um telefonisch einen Alternativtermin an einem Nachbarstandort anzubieten. Am Bildrand ist der Rand eines Laptop-Bildschirms sichtbar, auf dem eine schlichte Kalender-/Auslastungsübersicht mit einem einzelnen Lime-Akzent auf dem markierten Zeitslot zu erkennen ist. Kaffeetasse, Kugelschreiber und ein Patienten-Klemmbrett liegen als authentische Alltagsdetails am Tischrand.",
+        "composition": "Overhead-Flatlay-Perspektive wie ki-audit-process.webp, Querformat (3:2 oder 16:9) für Case-Karte. Bildmitte: die drei nebeneinanderliegenden Standort-Zeitpläne als Hauptmotiv. Hände und Laptop-Ecke rahmen die Szene an, viel freie Tischfläche für Ruhe/Whitespace. Natürliches Streiflicht von links (Fensterlicht), weiche Schatten, leicht candid/organisch arrangiert statt symmetrisch-gestellt."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead flatlay photograph of a coordination desk inside a multi-location medical specialist practice network, shot in natural daylight from a window at a low angle casting soft directional shadows across a warm wooden desk; three printed daily appointment schedules from three different practice locations lie side by side, each with visible header labels and rows of appointment time blocks, one schedule showing a gap circled in pen; a pair of hands belonging to a practice manager is placing a small paper flag or sticky note on that gap while a second hand reaches for a smartphone lying nearby, as if about to call a neighboring location to offer a patient an alternative appointment slot; at the edge of the frame the corner of a laptop screen is visible, displaying a minimal, calm calendar and utilization overview interface in ink-gray text on a paper-white background, with exactly one small lime-green (#CCFF00) highlight marking the flagged time slot — this is the only accent color in the entire image, used as a tiny precise UI marker, never as a wash or dominant tone; also on the desk: a plain white coffee mug, a pen, and a patient intake clipboard, adding authentic everyday texture; the overall palette stays neutral and desaturated — warm wood tones, paper white (#F2F2F2), ink gray/near-black (#171717) — with the single lime accent as the only saturated color in the frame; the image reads as premium editorial documentary stock photography, candid and real, shot with a shallow depth of field on a full-frame camera, absolutely no 3D rendering, no illustration, no glossy UI chrome or particle effects, and critically no violet, purple, magenta, teal, or cyan anywhere in the image."
+      }
+    },
+    {
+      "id": "vertrieb-pipeline-reporting",
+      "type": "case",
+      "slug": "kpi-dashboard",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"vertrieb-pipeline-reporting\" (Lösung: kpi-dashboard), Case 02 — Editorial-Foto, Stil A",
+        "scene": "Ein Vertriebsteam trifft sich für das wöchentliche Pipeline-Meeting an einem Besprechungstisch. Auf dem Tisch liegt ein aufgeklapptes Laptop mit einem schlichten Dashboard-Screen, der Pipeline-Stufen, Forecast und Conversion-Zahlen zeigt — daneben liegen ein paar alte ausgedruckte Excel-Reporting-Bögen, unscharf beiseite geschoben, weil sie nicht mehr gebraucht werden. Zwei bis drei Kolleg:innen beugen sich über den Screen, eine Hand zeigt gerade auf eine Zahl im Diagramm, Gesichter im Hintergrund angeschnitten oder unscharf. Natürliches Tageslicht von der Seite, kein gestelltes Business-Stock-Lächeln, sondern eine echte, konzentrierte Arbeitssituation.",
+        "composition": "Halbtotale, leicht erhöhter Blickwinkel (ca. 45° von oben) auf den Tisch, wie bei ki-audit-process.webp; Querformat (16:9 oder 3:2); Laptop-Screen und zeigende Hand im Vorder-/Mittelgrund scharf, Gesichter und Tischende dahinter mit leichter Unschärfe; natürliches Seitenlicht, gedeckte, neutrale Farbgebung (Holz, Grau, Ink), kein Lila/Violett/Magenta/Teal/Cyan im Bild."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial overhead-angle photograph, roughly 45-degree top-down view, of a small sales team's weekly pipeline review meeting at a wooden conference table, shot in natural daylight falling in from a side window, with a muted neutral color palette of warm wood tones, soft grays, and dark ink-colored clothing — absolutely no purple, violet, magenta, teal, or cyan anywhere in the frame; on the table sits an open laptop displaying a clean, minimal software dashboard interface with sales-pipeline stages, a forecast chart, and conversion-rate figures, the interface itself on a bright paper-white background with dark ink-colored text and exactly one small lime-green (#CCFF00) accent — a single active status dot or highlighted bar in the chart, nothing more; beside the laptop lie a few printed spreadsheet pages, pushed slightly aside and softly out of focus, quietly signaling the old manual-Excel habit being replaced, plus a coffee cup and an open notebook; two or three real colleagues' hands and forearms enter the frame from the sides, one finger pointing at a number on the laptop screen mid-discussion, with faces cropped out of frame or softly defocused in the background so the scene reads as candid documentary business photography rather than a staged stock photo; sharp foreground detail on the hands and screen with a shallow depth of field falling off toward the back of the table, calm and focused premium-editorial mood, natural unretouched skin and fabric texture — no 3D render, no illustration, no glossy UI chrome, no lens flare or glow."
+      }
+    },
+    {
+      "id": "logistik-lieferanten-kpi",
+      "type": "case",
+      "slug": "kpi-dashboard",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"Logistikdienstleister — Lieferanten-KPIs automatisiert statt im Quartalsbericht\" (Loesung kpi-dashboard, Case 03, id: logistik-lieferanten-kpi)",
+        "scene": "Ein Einkäufer bzw. eine Einkäuferin steht direkt am Wareneingang eines Logistik-Lagers, an der offenen Laderampe, und prüft auf einem Tablet die laufend aktualisierten Lieferanten-Kennzahlen — Pünktlichkeit, Qualität, Reklamationen — statt wie früher erst Wochen später im Quartalsbericht davon zu erfahren. Im Hintergrund bewegt ein Gabelstapler gerade eine Palette, ein Lkw steht offen an der Rampe, Frachtpapiere und ein Klemmbrett liegen griffbereit auf Kartons. Die Stimmung ist sachlich-konzentriert: jemand reagiert in Echtzeit auf ein aufkommendes Warnmuster direkt im Tagesgeschäft, nicht auf einen historischen Report im Meetingraum. Auf dem Tablet-Screen ist ein reduziertes Dashboard mit einer einzigen dezenten Lime-Akzentmarkierung (ein Warnpunkt bei einem auffälligen Lieferanten) zu erkennen — der Rest des Bildes bleibt in gedeckten, neutralen Lager-/Business-Tönen.",
+        "composition": "Querformat (3:2 oder 16:9), candid Editorial-Stil wie bmp-award-case.jpg — keine gestellte Studio-Pose, echte Reportage-Anmutung. Halbnahe Einstellung schräg von hinten/seitlich über die Schulter, sodass Tablet-Screen UND Lagerumgebung (Rampe, Stapler, Lkw) gemeinsam im Bild sind. Schärfentiefe: Person und Tablet scharf, Hintergrundaktivität (Stapler, Lkw) leicht unscharf mit dezenter Bewegungsunschärfe. Natürliches, kühles Tageslicht durch die offene Rampe, weiche gerichtete Schatten, keine harten Studioblitze, keine Draufsicht-Flatlay."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial documentary-style photograph inside a logistics distribution warehouse, shot candidly like real reportage photography, not a stock-photo pose: a procurement manager in business-casual clothing stands near an open loading dock, holding a tablet and reviewing a clean, minimal supplier-KPI dashboard on screen — small line charts and a supplier score list with a single subtle lime-green (#CCFF00) alert dot highlighting one flagged supplier, the only accent color in the entire frame, while the rest of the tablet UI is neutral off-white with dark ink-gray (#171717) text and no other hue. In the mid-ground a forklift is moving a wrapped pallet and a truck trailer sits open at the dock, captured with slight motion blur to suggest real ongoing activity; stacked cardboard boxes, a clipboard with delivery paperwork, and a hi-vis vest add authentic warehouse texture and realism. Natural, cool daylight spills in through the open dock doors, creating soft directional light and long warehouse shadows; the overall palette stays muted and neutral — concrete gray, cardboard brown, dark ink — with the lime accent appearing only as that one tiny UI highlight, never as a color wash or dominant hue anywhere else in the image. Composition is a medium shot from slightly behind and to the side of the person, shallow depth of field keeping the person and tablet screen sharp while the dock activity behind blurs gently, 3:2 or 16:9 landscape framing, realistic editorial photojournalism aesthetic, natural skin tones and real fabric texture, no 3D render, no illustration, no glossy UI chrome, no futuristic HUD, no purple, no violet, no lilac, no magenta, no teal, no cyan anywhere in the image."
+      }
+    },
+    {
+      "id": "eos-therapiezentrum",
+      "type": "case",
+      "slug": "ki-kundensupport",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"eos-therapiezentrum\" (Lösungsseite ki-kundensupport, Case 01)",
+        "scene": "Ein Smartphone mit einer geöffneten Chat-Unterhaltung liegt auf dem Empfangstresen eines kleinen Physiotherapie-/Therapiezentrums, fotografiert in warmem Abendlicht durch ein Fenster — ein visueller Hinweis darauf, dass hier auch außerhalb der Sprechzeiten jemand (die automatisierte WhatsApp-Anfrage) antwortet. Im unscharfen Hintergrund sind echte Praxis-Gegenstände zu erkennen: eine zusammengerollte Gymnastikmatte, Widerstandsbänder, ein Anatomie-Wandposter, die Kante einer Behandlungsliege. Auf dem Tresen liegt griffbereit ein Terminkalender/Klemmbrett mit einer kleinen Lime-farbenen Notiz-Lasche als einzigem Farbakzent. Die Stimmung ist ruhig, candid, editorial — kein gestelltes Business-Meeting, sondern ein realer Moment aus dem Praxisalltag am Empfang.",
+        "composition": "Querformat, editoriale Reportage-Fotografie (wie bmp-award-case.jpg / ki-audit-process.webp), mittlere Nahaufnahme leicht von oben/seitlich auf den Empfangstresen, geringe Schärfentiefe (Vordergrund Smartphone + Klemmbrett scharf, Praxisraum dahinter weich verschwommen als Kontext), warmes, natürliches Abendlicht von links, gedeckte neutrale Farbpalette (Holz, Off-White, Ink-Grau), kein Blitzlicht/kein Studio-Look, kein sichtbares Markenlogo auf dem Handy-Bildschirm."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial documentary-style photograph, warm late-afternoon light streaming through a window onto the reception counter of a small physiotherapy and therapy practice; in soft focus in the foreground, a smartphone lies face-up on the wooden counter showing a generic messaging-app chat conversation with a few short text bubbles, next to it a paper appointment clipboard with a single small lime-green (#CCFF00) sticky note tab as the only bright color accent; in the softly blurred background, real practice objects are visible — a rolled-up exercise mat, resistance therapy bands hanging on a hook, a faint anatomical wall chart, the edge of a treatment table; muted neutral color palette of warm wood tones, off-white walls, and dark ink-gray shadows, no other saturated colors, absolutely no purple, violet, magenta, teal or cyan anywhere in the image; candid real-world photography aesthetic, shallow depth of field, natural indoor light, no 3D render, no illustration, no glossy UI overlays, no stock-photo clichés, shot like a premium editorial reportage image, medium-close angle slightly from above, horizontal composition, quiet and calm mood conveying after-hours availability and quick, human-feeling responsiveness."
+      }
+    },
+    {
+      "id": "onlinehaendler-support",
+      "type": "case",
+      "slug": "ki-kundensupport",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"onlinehaendler-support\" (Case 02, Lösung ki-kundensupport) — Bild-Slot, Stil A Editorial-Fotografie",
+        "scene": "Draufsicht auf einen Kundensupport-Arbeitsplatz eines Online-Händlers: ein halb geöffnetes Retouren-Paket mit einem Produkt darin, ein Versandetikett und ein handschriftlich ausgefüllter Retourenschein liegen daneben. Die Hände einer Person prüfen gerade den zurückgesendeten Artikel — das ist der komplexe Einzelfall, der nicht automatisch gelöst werden konnte. Im Hintergrund/Bildrand ein unscharfer Laptop-Bildschirm mit einer generischen Bestell-/Trackingübersicht sowie ein ordentlicher kleiner Stapel bereits abgehakter Versandlabels als Hinweis auf die vielen automatisch bearbeiteten Routinefälle. Natürliches Tageslicht, ruhige, konzentrierte Alltagsszene, kein Callcenter-Trubel.",
+        "composition": "Overhead-/Flatlay-Perspektive wie bei ki-audit-process.webp, leicht schräger Blickwinkel möglich, Querformat für Case-Karte. Fokus auf Paket, Hände und Etiketten in der Bildmitte; Laptop-Screen und Label-Stapel angeschnitten am Rand, leicht unscharf, damit kein UI-Text lesbar sein muss. Viel Weißraum/Tischfläche für ruhige, editoriale Wirkung."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead editorial photograph of a calm e-commerce customer-support desk: a half-open cardboard return parcel with a product inside sits on a light wood or neutral desk surface, next to a shipping label and a handwritten return form; a person's hands are carefully inspecting the returned item, conveying focused attention on one complex individual case; at the edge of frame a softly out-of-focus laptop screen shows a generic, illegible order-tracking dashboard, and a small neat stack of already-processed shipping labels sits nearby, hinting at many routine cases already resolved automatically; soft natural window light, muted neutral color palette (warm white, grey, kraft-paper brown), realistic candid premium-stock photography, no 3D render, no illustration, no glossy UI panels; a single tiny lime-green (#CCFF00) accent appears only as one small status sticker on the shipping label, never as a color wash or dominant hue, no purple, no violet, no magenta, no teal, no cyan anywhere in the image."
+      }
+    },
+    {
+      "id": "steuerkanzlei-fristen",
+      "type": "case",
+      "slug": "ki-kundensupport",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"steuerkanzlei-fristen\" (Lösung: ki-kundensupport) — Editorial-Foto, Stil A",
+        "scene": "Draufsicht auf den Schreibtisch einer Steuerkanzlei mitten in der Steuersaison: mehrere Mandats-Ordner mit farbigen Fristen-Reitern liegen gestapelt neben einem Fristenkalender, auf dem mehrere Abgabetermine rot eingekreist sind. Zwei Paar Hände beugen sich über die Unterlagen — die Steuerberaterin zeigt auf einen komplexen Einzelfall, während im Hintergrund leicht unscharf ein Laptop-Bildschirm mit einer schlichten Chat-Oberfläche zu sehen ist (steht für den automatisierten Assistenten, der die Standardfragen zu Fristen und Bearbeitungsstand bereits abgefangen hat). Die Stimmung ist konzentriert statt gehetzt: kein Papierchaos, kein Telefon-Dauerklingeln, sondern fokussierte Arbeit an dem einen Fall, der wirklich Beratung braucht.",
+        "composition": "Top-down / Overhead-Flatlay, Kamera senkrecht über dem Tisch (wie ki-audit-process.webp), Querformat 16:9 oder 4:3, mittlerer Bildausschnitt der die ganze Tischfläche zeigt, Hände und Dokumente im Zentrum, Laptop-Screen mit Chat-UI leicht angeschnitten am Bildrand als sekundäres Detail, keine Gesichter nötig (nur Hände/Unterarme), natürliches Fensterlicht von einer Seite für weiche Schatten."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Overhead top-down flat-lay photograph of a busy tax advisory office desk during the peak spring filing season, shot straight down with a slightly wide lens like premium editorial business stock photography (comparable to a top-down desk photo of paperwork and hands in conversation); the desk surface holds several neatly stacked client folders with color-coded deadline tabs, an open paper desk calendar with a few filing-deadline dates circled in red ink, loose tax-return forms and a pen, and a partially visible laptop screen at the edge of frame showing a clean minimal chat/support interface on a light background with dark ink-grey text and exactly one small lime-green (#CCFF00) accent dot marking an active status, nothing else lime; two people's hands and forearms lean into frame from opposite sides, one pointing at a specific figure on a document as if discussing a genuinely complex case rather than a routine question, conveying calm focus instead of chaotic overtime stress; soft natural window light from the left casts gentle realistic shadows, color palette is muted and neutral — warm paper white, soft grey, dark ink-black folder spines and pen, no purple, no violet, no magenta, no teal, no cyan anywhere in the image; photorealistic documentary editorial photography, shallow-to-medium depth of field, slightly desaturated premium stock-photo grade, no 3D render, no illustration, no glossy UI chrome, no clipart icons."
+      }
+    },
+    {
+      "id": "340-consultancy-funnel",
+      "type": "case",
+      "slug": "unassigned",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"340 Consultancy — Website-Funnel\" (unassignedMiniCases, id: 340-consultancy-funnel), Stil A Editorial-Fotografie",
+        "scene": "Draufsicht auf einen Holztisch während eines Strategie-Workshops: ausgebreitete Papierskizzen einer neuen Website-Seitenstruktur (Boxen und Pfeile, handgezeichnet) liegen neben einer Reihe Sticky Notes, die in einer klaren Linie von \"Erstkontakt\" bis \"qualifizierte Anfrage\" angeordnet sind — sichtbar als eine Art Funnel-Spur aus Papier, nicht als Diagramm-Icon. Zwei Paar Hände zeigen auf die Notizen und diskutieren, ein Stift liegt griffbereit, eine Kaffeetasse und ein aufgeschlagenes Notizbuch stehen am Rand. Im oberen Bildrand ist unscharf ein Laptop-Bildschirm mit einer schlicht gehaltenen, minimalistischen Sitemap-Ansicht zu erkennen, auf der ein einzelner kleiner Lime-Punkt den \"qualifiziert\"-Endpunkt markiert — der einzige Farbakzent im Bild. Natürliches, weiches Seitenlicht, gedeckte neutrale Töne (Papier, helles Holz, Ink-Grau).",
+        "composition": "Hohe Draufsicht (Overhead-/Flatlay-Perspektive wie bei ki-audit-process.webp), leicht schräger Winkel statt exakt 90°, damit Hände und Tiefe erkennbar bleiben. Querformat, 16:9 oder 3:2, für Nutzung als Case-Bild in einer Karte. Fokus liegt auf der Papierstruktur/Sticky-Note-Reihe in der Bildmitte, Laptop und Kaffeetasse als unscharfe Randelemente. Keine Gesichter nötig, nur Hände/Unterarme im Bild."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial top-down flatlay photograph of a consulting workshop in progress on a warm light-wood table: hand-sketched paper diagrams of a website page structure (simple boxes connected by pencil-drawn arrows) lie next to a neat row of plain sticky notes arranged in a single deliberate line suggesting a customer journey from \"first contact\" to \"qualified inquiry\", the notes handwritten with short German labels, slightly overlapping and imperfectly aligned as in a real working session rather than a staged graphic; two people's hands and forearms enter the frame from opposite sides, one pointing at a sticky note mid-discussion, a pen resting nearby, an open notebook with handwritten notes, a plain white ceramic coffee cup, and loose printed pages with simple wireframe boxes scattered at the edges; in the soft-focus upper part of the frame a laptop screen is partially visible showing a minimal, clean sitemap or flow interface with a light paper-white background, dark ink-gray text and lines, and exactly one small lime-green (#CCFF00) accent dot marking the \"qualified\" endpoint of the flow — the only saturated color note in the entire image; lighting is soft natural daylight from one side, creating gentle realistic shadows across the paper texture; overall palette is muted and neutral — warm off-white paper, light oak wood grain, charcoal ink-gray pencil and text, soft warm grays — with zero purple, violet, magenta, cyan, or teal anywhere in the image; shot in a premium editorial stock-photography style, realistic and candid, genuine physical materials, shallow depth of field toward the edges, absolutely no 3D render, no glossy UI chrome, no illustration, no icon clipart, no vector graphics."
+      }
+    },
+    {
+      "id": "b2b-lead-qualifizierung",
+      "type": "case",
+      "slug": "unassigned",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Case-Study \"b2b-lead-qualifizierung\" (B2B-Dienstleister — Lead-Qualifizierung vor dem Vertrieb), noch ohne eigene Lösungsseite zugeordnet",
+        "scene": "Draufsicht auf einen Schreibtisch im Vertriebsbüro: Ein Laptop zeigt eine schlichte Übersicht eingehender Kontaktanfragen, bei der nur wenige Zeilen als qualifiziert markiert hervorstechen, der Rest ist ausgegraut. Daneben liegt ein handschriftliches Notizblatt mit den Kriterien Budget, Zeitrahmen und Bedarf — manche Anfragen sind durchgestrichen, wenige eingekreist. Ein Smartphone zeigt einen Kalender mit ein bis zwei bestätigten Terminvorschlägen. Zwei Vertriebsmitarbeitende beugen sich mit echten Händen über den Tisch, zeigen auf die Liste und sprechen darüber — dazu Kaffeetasse, Stift, Notizbuch als beiläufige Requisiten.",
+        "composition": "Editorial Flatlay/Draufsicht auf den Tisch, leicht schräger Blickwinkel erlaubt (wie bei ki-audit-process.webp), Querformat (ca. 3:2 oder 16:9) für das Case-Bild-Modul, Hände und Gegenstände im Vordergrund scharf, natürliches Licht von oben/seitlich mit weichen Schatten, kein zentrierter Fokus auf ein einzelnes Gerät — die Szene soll als Ganzes lesbar sein, genug ruhige Fläche am Rand falls Text überlagert wird."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Top-down editorial flat-lay photograph of a B2B sales team's desk during a lead-review session: an open laptop displays a clean, minimalist inbox-style interface listing incoming contact-form inquiries, most rows greyed out and only a few rows highlighted as qualified leads with a small lime-green status dot or checkmark; beside it lies a handwritten notepad listing qualification criteria — budget, timeframe, need — with several entries crossed out in pen and a couple circled; a smartphone next to it shows a calendar app with one or two confirmed appointment slots; two real sales professionals' hands (one holding a pen, one pointing) are caught mid-conversation leaning over the desk discussing the shortlist, with a coffee cup, a pen, and an open notebook as incidental props; soft natural daylight from above with gentle shadows, muted neutral color palette of warm greys and off-white paper tones (#F2F2F2) with charcoal ink-black (#171717) text and objects; the only color accent is one small lime-green (#CCFF00) highlight — a status dot on the laptop screen or a sticky-note corner — used sparingly and never as a color wash; strictly no purple, violet, magenta, teal, or cyan anywhere in the image; realistic documentary premium-stock editorial photography, candid and true-to-life, no 3D render, no illustration, no glossy UI chrome, no particle effects; shot from directly above or at a slight angle typical of business flat-lay photography, landscape orientation."
+      }
+    },
+    {
+      "id": "handwerk-funnel",
+      "type": "case",
+      "slug": "unassigned",
+      "status": "new",
+      "replaces_legacy_asset": false,
+      "style": "editorial_photography",
+      "concept": {
+        "headline_reference": "Mini-Case \"handwerk-funnel\" (Case 03, noch ohne eigene Lösungsseite) — Bildslot im Case-Karten-Format wie bmp-award-case.jpg",
+        "scene": "Im kleinen Büro eines regionalen Handwerksbetriebs (angrenzend an eine Werkstatt) sitzt eine Person am Empfangs-/Bürotisch und schaut auf ein Tablet, auf dem eine frisch eingegangene, bereits automatisch nach Gewerk und Dringlichkeit sortierte Kundenanfrage angezeigt wird. Auf dem Tisch liegen noch die alten Papierzettel und ein Ordner mit handschriftlichen Notizen als Kontrast zur neuen digitalen Anfrage. Im Hintergrund unscharf Werkzeuge, ein Blaumann an der Garderobe oder eine Werkbank – die reale Handwerks-Umgebung bleibt sichtbar. Natürliches, warmes Tageslicht durch ein Fensterfront, ruhige, konzentrierte Alltagsszene ohne inszenierte Business-Pose.",
+        "composition": "Halbnahe Perspektive, leicht seitlich über die Schulter oder von schräg vorne auf Tisch und Tablet, ähnlich der Draufsicht-Logik von ki-audit-process.webp aber mit sichtbarem Gesicht/Person wie bei bmp-award-case.jpg; Querformat für Case-Karte; Tablet-Bildschirm als klarer Fokuspunkt, Tiefenschärfe auf Hände/Screen, Werkstatt-Kontext dezent im unscharfen Hintergrund; kein aufgeräumtes Studio-Setting, sondern glaubwürdiges kleines Handwerksbüro."
+      },
+      "palette": {
+        "ink": "#171717",
+        "paper": "#F2F2F2",
+        "lime_accent": "#CCFF00",
+        "forbidden_colors": [
+          "purple",
+          "violet",
+          "magenta",
+          "teal",
+          "cyan",
+          "lila"
+        ],
+        "lime_accent_usage": "tiny organic detail only (e.g. sticky note, tab) — never a color wash"
+      },
+      "constraints": [
+        "no readable/legible words rendered as text — avoid dense paragraph text",
+        "no 3D render, no illustration, no glossy UI panels",
+        "no torn paper / rip effects",
+        "realistic candid business-editorial stock-photography aesthetic, shallow depth of field",
+        "real hands / real environment, no fake screenshots"
+      ],
+      "generation": {
+        "model": "nano_banana_pro",
+        "resolution": "4k",
+        "aspect_ratio": "16:9",
+        "prompt": "Editorial documentary-style photograph inside the small office of a regional German craftsman/trade business (Handwerksbetrieb), adjoining a workshop: a real person sits at a modest desk near a window, looking at a tablet screen displaying a newly arrived customer inquiry that has been automatically sorted by trade and urgency, small clean interface with dark ink-grey text on a light paper-grey background and a single small lime-green (#CCFF00) accent dot or button on the screen as the only pop of color; on the desk beside the tablet lie a few old paper request slips and a well-worn binder with handwritten notes, a subtle visual contrast between the old manual process and the new digital one; blurred in the soft-focus background are authentic workshop elements — hanging work jackets, tools on a pegboard, a workbench — grounding the scene in a real trade business rather than a generic office; natural warm daylight streaming through a window, candid unposed body language, shallow depth of field on the hands and tablet, muted neutral color palette (warm greys, wood tones, off-white) with ink-black and paper-grey dominating and lime used only as a tiny, deliberate interface accent — never as a wash or dominant hue; no purple, violet, magenta, or teal anywhere in the image; premium editorial stock photography aesthetic, real people, real objects, no 3D render, no illustration, no glossy UI chrome."
+      }
+    }
+  ],
+  "count": 47,
+  "brand": {
+    "ink": "#171717",
+    "paper": "#F2F2F2",
+    "lime_accent": "#CCFF00",
+    "forbidden_colors": [
+      "purple",
+      "violet",
+      "magenta",
+      "teal",
+      "cyan",
+      "lila"
+    ]
+  },
+  "generation_defaults": {
+    "model": "nano_banana_pro",
+    "resolution": "4k",
+    "aspect_ratio": "16:9"
+  }
+}

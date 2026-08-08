@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "ki_glossar_entries",
+  "info": {
+    "singularName": "ki-glossar",
+    "pluralName": "ki-glossar-entries",
+    "displayName": "Ki Glossar",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "toolbar": {
+      "type": "json"
+    },
+    "countLabel": {
+      "type": "json"
+    },
+    "emptyTemplate": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "json"
+    },
+    "calendlyUrl": {
+      "type": "string"
+    },
+    "glossary": {
+      "type": "json"
+    }
+  }
+}

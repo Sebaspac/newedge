@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "mini_case_detail_entries",
+  "info": {
+    "singularName": "mini-case-detail",
+    "pluralName": "mini-case-detail-entries",
+    "displayName": "Mini Case Detail",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "exampleBadge": {
+      "type": "string"
+    },
+    "backLink": {
+      "type": "json"
+    },
+    "labels": {
+      "type": "json"
+    },
+    "notFound": {
+      "type": "json"
+    }
+  }
+}

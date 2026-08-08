@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "ki_audit_en_entries",
+  "info": {
+    "singularName": "ki-audit-en",
+    "pluralName": "ki-audit-en-entries",
+    "displayName": "Ki Audit En",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "problem": {
+      "type": "json"
+    },
+    "solution": {
+      "type": "json"
+    },
+    "ablauf": {
+      "type": "json"
+    },
+    "warum": {
+      "type": "json"
+    },
+    "garantie": {
+      "type": "json"
+    },
+    "fit": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "json"
+    }
+  }
+}

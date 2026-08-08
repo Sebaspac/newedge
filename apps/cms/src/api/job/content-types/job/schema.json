@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": "Offene Positionen (frei anlegbar)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "mailto": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tag"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.job-section"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

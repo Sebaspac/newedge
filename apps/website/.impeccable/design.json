@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-12T00:00:00.000Z",
+  "title": "Design System: New Edge",
+  "extensions": {
+    "colorMeta": {
+      "violet-edge": {
+        "role": "primary",
+        "displayName": "Violet Edge",
+        "canonical": "oklch(35% 0.20 295)",
+        "tonalRamp": [
+          "oklch(15% 0.08 295)",
+          "oklch(22% 0.14 295)",
+          "oklch(28% 0.18 295)",
+          "oklch(35% 0.20 295)",
+          "oklch(45% 0.20 295)",
+          "oklch(58% 0.18 295)",
+          "oklch(72% 0.14 295)",
+          "oklch(92% 0.04 295)"
+        ]
+      },
+      "violet-glow": {
+        "role": "primary",
+        "displayName": "Violet Glow",
+        "canonical": "oklch(65% 0.16 295)",
+        "tonalRamp": [
+          "oklch(20% 0.06 295)",
+          "oklch(32% 0.12 295)",
+          "oklch(45% 0.16 295)",
+          "oklch(55% 0.16 295)",
+          "oklch(65% 0.16 295)",
+          "oklch(75% 0.13 295)",
+          "oklch(85% 0.08 295)",
+          "oklch(95% 0.03 295)"
+        ]
+      },
+      "ink-deep": {
+        "role": "neutral",
+        "displayName": "Ink Deep",
+        "canonical": "oklch(14% 0.05 295)",
+        "tonalRamp": [
+          "oklch(14% 0.05 295)",
+          "oklch(22% 0.04 295)",
+          "oklch(32% 0.03 295)",
+          "oklch(45% 0.02 295)",
+          "oklch(60% 0.015 295)",
+          "oklch(75% 0.01 295)",
+          "oklch(88% 0.008 295)",
+          "oklch(96% 0.005 295)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(35% 0.005 295)",
+        "tonalRamp": [
+          "oklch(20% 0.005 295)",
+          "oklch(28% 0.005 295)",
+          "oklch(35% 0.005 295)",
+          "oklch(48% 0.005 295)",
+          "oklch(60% 0.005 295)",
+          "oklch(75% 0.005 295)",
+          "oklch(88% 0.005 295)",
+          "oklch(96% 0.005 295)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(98.5% 0.003 295)",
+        "tonalRamp": [
+          "oklch(82% 0.003 295)",
+          "oklch(88% 0.003 295)",
+          "oklch(92% 0.003 295)",
+          "oklch(95% 0.003 295)",
+          "oklch(97% 0.003 295)",
+          "oklch(98.5% 0.003 295)",
+          "oklch(99% 0.002 295)",
+          "oklch(100% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single oversized italic statement per section. DM Serif Display italic, no other use of italic in the system."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Secondary statements inside sections: case study titles, founder quotes."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card and list-item titles, service names, testimonial author lines."
+      },
+      "body": {
+        "displayName": "Body (Monospace)",
+        "purpose": "All running text. Consolas, never sans. Brand commitment."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "ALL-CAPS metadata, eyebrows, category tags. Letter-spaced 0.2em."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for state transitions and entrance reveals. Strong exponential ease-out, no overshoot."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Used for the scan-shimmer on the dark hero card only."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Text color crossfades, focus state shifts."
+      },
+      {
+        "name": "duration-normal",
+        "value": "300ms",
+        "purpose": "Default for button hover, link underline reveals."
+      },
+      {
+        "name": "duration-slow",
+        "value": "500ms",
+        "purpose": "Bento cell hover sweep, large card enter animations."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Sharp violet button with ALL-CAPS Consolas label. Hover fills to ink-deep, no lift, no glow.",
+      "html": "<button class=\"ds-btn-primary\">GESPRÄCH STARTEN</button>",
+      "css": ".ds-btn-primary { background: #5B21B6; color: #FFFFFF; padding: 16px 32px; font-family: Consolas, ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; border: none; border-radius: 0; cursor: pointer; transition: background 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: #1A0A2E; } .ds-btn-primary:focus-visible { outline: 2px solid #5B21B6; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Transparent button, ink-deep text. Hover swaps text to violet.",
+      "html": "<button class=\"ds-btn-ghost\">MEHR LESEN</button>",
+      "css": ".ds-btn-ghost { background: transparent; color: #1A0A2E; padding: 16px 32px; font-family: Consolas, ui-monospace, monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; border: none; border-radius: 0; cursor: pointer; transition: color 300ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-ghost:hover { color: #5B21B6; }"
+    },
+    {
+      "name": "Section Eyebrow",
+      "kind": "custom",
+      "description": "Signature section header. 32px violet rule + ALL-CAPS Consolas label. Used above every section's Display headline.",
+      "html": "<div class=\"ds-eyebrow\"><span class=\"ds-eyebrow-rule\"></span><span class=\"ds-eyebrow-text\">NEW EDGE — SYSTEM</span></div>",
+      "css": ".ds-eyebrow { display: flex; align-items: center; gap: 12px; } .ds-eyebrow-rule { display: block; width: 32px; height: 1px; background: #5B21B6; flex-shrink: 0; } .ds-eyebrow-text { font-family: Consolas, ui-monospace, monospace; font-size: 11px; color: #5B21B6; letter-spacing: 0.2em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Light Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Flat paper-pure surface. 1px hairline border. Zero radius. No shadow.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-card-label\">KLARHEIT</span><h3 class=\"ds-card-title\">Brand Identity & Brand System</h3><p class=\"ds-card-body\">Marke, Tone of Voice und visuelles System aus einer Hand.</p></article>",
+      "css": ".ds-card { background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 0; padding: 32px; color: #1A0A2E; } .ds-card-label { display: block; font-family: Consolas, monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #3A3A3A; opacity: 0.45; margin-bottom: 16px; } .ds-card-title { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; font-size: 1.4rem; line-height: 1.2; color: #1A0A2E; margin: 0 0 12px 0; } .ds-card-body { font-family: Consolas, monospace; font-size: 14px; line-height: 1.7; color: #3A3A3A; margin: 0; }"
+    },
+    {
+      "name": "Dark Card",
+      "kind": "card",
+      "refersTo": "card-dark",
+      "description": "Ink-deep surface with paper text. Used for hero cells, featured case studies. Optional violet glow blob inside.",
+      "html": "<article class=\"ds-card-dark\"><div class=\"ds-card-dark-glow\"></div><span class=\"ds-card-dark-label\">FALLSTUDIE</span><h3 class=\"ds-card-dark-title\">AlbaNova</h3></article>",
+      "css": ".ds-card-dark { position: relative; background: #1A0A2E; border: none; border-radius: 0; padding: 40px; color: #FFFFFF; overflow: hidden; } .ds-card-dark-glow { position: absolute; right: -5rem; top: -5rem; width: 22rem; height: 22rem; background: #5B21B6; opacity: 0.18; border-radius: 50%; filter: blur(80px); pointer-events: none; } .ds-card-dark-label { position: relative; font-family: Consolas, monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.30); } .ds-card-dark-title { position: relative; font-family: 'DM Serif Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(2.1rem, 4vw, 3.25rem); line-height: 0.95; color: #FFFFFF; margin: 20px 0 0 0; }"
+    },
+    {
+      "name": "Display Headline",
+      "kind": "custom",
+      "description": "The signature DM Serif italic statement. One per section.",
+      "html": "<h2 class=\"ds-display\">Was unsere <em>Kunden</em> sagen</h2>",
+      "css": ".ds-display { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: clamp(2.75rem, 6vw, 4.5rem); line-height: 0.92; letter-spacing: -0.01em; color: #1A0A2E; margin: 0; } .ds-display em { font-style: italic; color: #5B21B6; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Flat input. 1px hairline. Zero radius. Focus shifts border to violet.",
+      "html": "<label class=\"ds-input-wrap\"><span class=\"ds-input-label\">E-MAIL</span><input type=\"email\" class=\"ds-input\" placeholder=\"name@firma.de\"></label>",
+      "css": ".ds-input-wrap { display: flex; flex-direction: column; gap: 8px; } .ds-input-label { font-family: Consolas, monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #3A3A3A; } .ds-input { background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 0; padding: 12px 16px; font-family: Consolas, monospace; font-size: 14px; color: #1A0A2E; outline: none; transition: border-color 150ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-input:focus { border-color: #5B21B6; } .ds-input::placeholder { color: rgba(58,58,58,0.4); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Ink & Edge — A Statement Press",
+    "overview": "New Edge looks like a high-end editorial press that also happens to ship software. The typography behaves like a magazine masthead: DM Serif Display italic at oversized scale. The grid behaves like an engineer's drawing: zero border-radius, 1px hairlines, no decorative chrome. Every section is one printed page with one moment that surprises. Cards do not soften, they cut.",
+    "keyCharacteristics": [
+      "Light parchment surface (#FCFCFC), pure white cards, deep ink (#1A0A2E) for editorial weight",
+      "DM Serif Display italic as the only display face; Consolas as the only body/label face",
+      "Zero border-radius everywhere — sharp corners are brand law",
+      "Hairline borders (1px) replace shadows for separation",
+      "One violet accent that earns its appearance; never a gradient, never glow as default",
+      "Asymmetric editorial grids over identical card decks",
+      "Motion is functional: reveal on enter, sweep on hover, scan-shimmer on dark hero"
+    ],
+    "rules": [
+      { "name": "The Single Cut Rule", "body": "Violet Edge appears on a maximum of 15% of any screen. The rarity is what makes it land.", "section": "colors" },
+      { "name": "The No-Black Rule", "body": "#000 is prohibited. All deep surfaces use Ink Deep (#1A0A2E), which carries the violet hue at ~3% chroma.", "section": "colors" },
+      { "name": "The No-Gradient Rule", "body": "Background gradients are prohibited as decoration. The single permitted gradient is the ThreeStepsCTA section's directional violet wash.", "section": "colors" },
+      { "name": "The One-Italic Rule", "body": "Display is always italic; nothing else is. Italic earns gravity because it is rare.", "section": "typography" },
+      { "name": "The Eyebrow Rule", "body": "Every section announces itself with a Label-cased eyebrow preceded by a 32px violet hairline.", "section": "typography" },
+      { "name": "The Monospace-for-Voice Rule", "body": "Body copy is Consolas, not a sans-serif. This is a brand commitment, not an oversight.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat. No drop shadow on cards, no inner shadow on inputs, no glow on hover.", "section": "elevation" },
+      { "name": "The Glow Exemption", "body": "The hero card and dark featured cases may carry one blurred violet blob behind their content. Reads as light leak, not elevation.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do treat each section as a magazine spread: one Display moment, one supporting passage, one CTA.",
+      "Do lead every section with the Section Eyebrow signature.",
+      "Do keep DM Serif Display italic large (clamp(2.75rem, 6vw, 4.5rem) minimum).",
+      "Do use 1px Hairline borders for separation.",
+      "Do flatten everything; change background to differentiate, not shadow.",
+      "Do let Violet Edge appear once per fold. The single cut.",
+      "Do respect prefers-reduced-motion: kill scan shimmers, parallax, and bento hover sweeps.",
+      "Do write Body copy in Consolas. Always."
+    ],
+    "donts": [
+      "Don't round corners. Zero radius is brand law.",
+      "Don't use border-left greater than 1px as a colored accent stripe.",
+      "Don't use background gradients as decoration.",
+      "Don't apply box-shadow for ambient elevation.",
+      "Don't use glassmorphism.",
+      "Don't use pure #000 or pure #fff for text or major surfaces.",
+      "Don't stack identical cards in a deck-of-six grid.",
+      "Don't use em dashes in UI copy.",
+      "Don't write headings in non-italic display type.",
+      "Don't introduce a new font. DM Serif Display + Consolas is the entire family.",
+      "Don't decorate KI/AI references with neon, glow orbs, or 'Powered by AI' badges.",
+      "Don't use stock photos of laughing teams in front of laptops."
+    ]
+  }
+}

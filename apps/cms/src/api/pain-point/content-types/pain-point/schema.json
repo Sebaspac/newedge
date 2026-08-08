@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pain_points",
+  "info": {
+    "singularName": "pain-point",
+    "pluralName": "pain-points",
+    "displayName": "Pain Point",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "trustBar": {
+      "type": "json"
+    },
+    "definition": {
+      "type": "json"
+    },
+    "feature1": {
+      "type": "json"
+    },
+    "feature2": {
+      "type": "json"
+    },
+    "feature3": {
+      "type": "json"
+    },
+    "integrations": {
+      "type": "json"
+    },
+    "compare": {
+      "type": "json"
+    },
+    "featureCards": {
+      "type": "json"
+    },
+    "testimonialHero": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "json"
+    },
+    "closingCta": {
+      "type": "json"
+    },
+    "miniCases": {
+      "type": "json"
+    },
+    "aliases": {
+      "type": "json"
+    },
+    "howTo": {
+      "type": "json"
+    }
+  }
+}

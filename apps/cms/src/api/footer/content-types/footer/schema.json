@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_entries",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footer-entries",
+    "displayName": "Footer",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "json"
+    },
+    "meta": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "json"
+    },
+    "rebrush": {
+      "type": "json"
+    },
+    "copyrightTemplate": {
+      "type": "string"
+    },
+    "legalLinks": {
+      "type": "json"
+    },
+    "cookieSettingsLabel": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,1079 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✨ MODERN MOTION-FIRST DESIGN SYSTEM ✨ */
+
+@layer base {
+  :root {
+    /* ══════════════════════════════════════════════════════════════════════
+       🎨 NEWEDGE — KANONISCHE PALETTE (Brandboard 2026-07)
+       Einzige Quelle der Wahrheit für Farbe. Verwendungszwecke, Kontrast-
+       werte und Verbote pro Ton: FARBPALETTE.md in der Repo-Wurzel.
+       Merksatz: Lime ist eine FLÄCHE, kein Text auf hellem Grund (1,1:1).
+       Textakzent auf hell = Flash. Text auf Lime = Ink.
+       ══════════════════════════════════════════════════════════════════════ */
+
+    /* — Kern (4) ————————————————————————————————————————————————— */
+    --ne-lime:  #CCFF00; /* Flächen, CTA-Füllung, Badges, Washes */
+    --ne-ink:   #171717; /* Headlines, Icons, dunkle Sektionsflächen */
+    --ne-paper: #F2F2F2; /* Seitenhintergrund; Text auf Ink */
+    --ne-flash: #FF1E00; /* Textakzent + Link-/Nav-Hover auf hell */
+
+    /* — Stütz-Töne (5) ——————————————————————————————————————————— */
+    --ne-white:     #FFFFFF; /* Karten auf Paper, Text auf Ink */
+    --ne-ink-soft:  #3C3C3C; /* Fließtext auf hell (9,9:1) */
+    --ne-ink-muted: #5E5E5A; /* Meta, Labels, Captions (5,8:1) */
+    --ne-ink-deep:  #101010; /* NUR unterer Gradient-Stop + tiefste Fläche */
+    --ne-ink-raise: #1F1F1F; /* NUR oberer Gradient-Stop */
+
+    /* — Status (genau 1 je Zustand) —————————————————————————————— */
+    --ne-error:   #B91C1C; /* Formularfehler, negative Vergleichs-Icons */
+    --ne-success: #15803D; /* Erfolgsmeldung, positive Vergleichs-Icons */
+
+    /* — Abgeleitete Ink-Alphas (6 Stufen, ersetzen 42 Ad-hoc-Alphas) —— */
+    --ne-ink-06:          rgba(23, 23, 23, 0.06); /* Wash, Zebra, Hover */
+    --ne-hairline:        rgba(23, 23, 23, 0.14); /* Standard-Border */
+    --ne-hairline-strong: rgba(23, 23, 23, 0.22); /* aktive/hover-Border */
+    --ne-ink-quiet:       rgba(23, 23, 23, 0.45); /* Deko — KEIN Fließtext */
+    --ne-ink-secondary:   rgba(23, 23, 23, 0.68); /* Sekundärtext (5,8:1) */
+    --ne-scrim:           rgba(23, 23, 23, 0.92); /* Modal-Backdrop */
+
+    /* — Spiegelsatz Weiß (auf dunklen Flächen) ——————————————————— */
+    --ne-white-06:          rgba(255, 255, 255, 0.06);
+    --ne-white-hairline:    rgba(255, 255, 255, 0.14);
+    --ne-white-hairline-strong: rgba(255, 255, 255, 0.22);
+    --ne-white-quiet:       rgba(255, 255, 255, 0.45);
+    --ne-white-secondary:   rgba(255, 255, 255, 0.68);
+    --ne-white-scrim:       rgba(255, 255, 255, 0.92);
+
+    /* — Spiegelsatz Lime (Washes/Glows, nie Text auf hell) ——————— */
+    --ne-lime-06:        rgba(204, 255, 0, 0.06);
+    --ne-lime-hairline:  rgba(204, 255, 0, 0.14);
+    --ne-lime-wash:      rgba(204, 255, 0, 0.22);
+    --ne-lime-soft:      rgba(204, 255, 0, 0.45);
+    --ne-lime-strong:    rgba(204, 255, 0, 0.68);
+
+    /* — Verläufe & Schatten (zentral — nie inline duplizieren) ——— */
+    --ne-ink-gradient:  linear-gradient(160deg, #1F1F1F 0%, #171717 45%, #101010 100%);
+    --ne-lime-gradient: linear-gradient(120deg, #CCFF00 0%, #D9F53A 45%, #CCFF00 100%);
+    --ne-showcase-gradient: linear-gradient(150deg, #171717 0%, #333A00 45%, #CCFF00 100%);
+    --ne-shadow-card: 0 1px 2px rgba(23, 23, 23, 0.06);
+    --ne-shadow-lift: 0 24px 56px -18px rgba(23, 23, 23, 0.18);
+
+    /* ══════════════════════════════════════════════════════════════════════
+       shadcn/Tailwind-Brücke — dieselben Töne in HSL-Kanalnotation.
+       hsl(var(--token)) erwartet „H S% L%" ohne hsl()-Wrapper.
+       ══════════════════════════════════════════════════════════════════════ */
+
+    /* 🎨 CORE COLORS */
+    --background: 0 0% 95%;      /* #F2F2F2 ne-paper */
+    --foreground: 0 0% 23.5%;    /* #3C3C3C ne-ink-soft (vorher #3D3D48) */
+    --surface: 0 0% 100%;        /* #FFFFFF ne-white — Karten/erhöhte Flächen */
+    --surface-elevated: 0 0% 100%;
+
+    /* 🔮 BRAND COLORS
+       primary = Ink, NICHT Lime: `--primary` wird von shadcn immer mit
+       `--primary-foreground` (weiß) gepaart, und Weiß auf Lime ist 1,1:1.
+       Lime lebt deshalb auf `--accent` (dort ist die Textfarbe Ink). */
+    --primary: 0 0% 9%;              /* #171717 ne-ink (vorher #5658DF) */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF auf Ink = 17,9:1 */
+    --primary-glow: 72 100% 50%;     /* #CCFF00 ne-lime (vorher #8476EF) */
+    --primary-subtle: 0 0% 12.2%;    /* #1F1F1F ne-ink-raise */
+
+    /* secondary = neutrale Ink-Wash-Fläche (shadcn-Semantik: stiller Grund
+       für Tracks/Badges), bewusst NICHT Lime — sonst würden Progress-/
+       Slider-Tracks vollflächig leuchten. */
+    --secondary: 0 0% 86.3%;         /* #DCDCDC = Ink 10 % auf Paper */
+    --secondary-foreground: 0 0% 9%; /* #171717 (vorher Weiß = 2,6:1) */
+    --secondary-glow: 0 0% 89.7%;    /* #E5E5E5 */
+    --secondary-subtle: 0 0% 82.9%;  /* #D3D3D3 */
+
+    /* accent = Lime. Textfarbe darauf ist immer Ink. */
+    --accent: 72 100% 50%;           /* #CCFF00 ne-lime (vorher Electric Yellow) */
+    --accent-foreground: 0 0% 9%;    /* #171717 auf Lime = 15,3:1 */
+    --accent-glow: 72 100% 50%;
+    /* --accent-subtle entfernt: war #ABD600, ein zwölfter Ton außerhalb der
+       Palette und ohne einen einzigen Consumer. Gedämpfte Lime-Flächen
+       entstehen über die Lime-Alpha-Leiter (--ne-lime-wash/-soft). */
+
+    /* Shugar Design System Colors */
+    --context-card-border: hsla(0, 0%, 92%, 1);
+    --ds-red-800: oklch(58.19% 0.2482 25.15);
+    --ds-red-900: oklch(54.99% 0.232 25.29);
+    --ds-amber-800: oklch(77.21% 0.1991 64.28);
+    --ds-amber-850: hsl(33, 96%, 42%);
+    --ds-gray-100: hsla(0, 0%, 95%, 1);
+    --ds-gray-400: hsla(0, 0%, 92%, 1);
+    --ds-gray-700: hsla(0, 0%, 56%, 1);
+    --ds-gray-1000: hsla(0, 0%, 9%, 1);
+    --ds-gray-1000-h: hsl(0, 0%, 22%);
+    --ds-gray-alpha-200: hsla(0, 0%, 9%, 0.08);
+    --ds-gray-alpha-400: hsla(0, 0%, 9%, 0.08);
+    --ds-background-100: hsla(0, 0%, 100%, 1);
+    --ds-focus-ring: 0 0 0 2px var(--ds-background-100), 0 0 0 4px hsl(var(--primary));
+    --ds-shadow-border-small: 0 0 0 1px rgba(23, 23, 23, 0.08);
+
+    /* 🌈 GRADIENT DEFINITIONS — es gibt nur den Ink-Verlauf, den Lime-Verlauf
+       und den Ink→Lime-Showcase-Verlauf. Keine neuen erfinden. */
+    --gradient-primary: var(--ne-ink-gradient);
+    --gradient-accent: var(--ne-showcase-gradient);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
+    --gradient-glow: radial-gradient(circle at 50% 50%, rgba(204, 255, 0, 0.3), transparent 60%);
+
+    /* 💫 EFFECTS & SHADOWS — Ink-basiert, nie #000 */
+    --shadow-soft: 0 4px 20px rgba(23, 23, 23, 0.08);
+    --shadow-strong: var(--ne-shadow-lift);
+    --shadow-glow: 0 0 60px rgba(204, 255, 0, 0.3);
+    --shadow-accent: 0 8px 32px rgba(204, 255, 0, 0.25);
+
+    /* 🎭 UI ELEMENT COLORS */
+    --card: 0 0% 100%;              /* #FFFFFF ne-white */
+    --card-foreground: 0 0% 9%;     /* #171717 ne-ink (vorher #212121) */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;  /* #171717 ne-ink */
+    --muted: 0 0% 89.7%;            /* #E5E5E5 = ne-ink-06 auf Paper (vorher #F5F5F5) */
+    --muted-foreground: 60 2.2% 36.1%; /* #5E5E5A ne-ink-muted, 5,8:1 (vorher #737373, 4,2:1) */
+    --border: 0 0% 82.9%;           /* #D3D3D3 = ne-hairline auf Paper (vorher #E6E6E6) */
+    --input: 0 0% 82.9%;            /* Input-Rahmen = gleiche Hairline (vorher Weiß = unsichtbar) */
+    --ring: var(--primary);         /* Fokusring = Ink */
+    --destructive: 0 73.7% 41.8%;   /* #B91C1C ne-error, 5,8:1 auf Paper / 6,5:1 auf Weiss (vorher #EF4444, 3,4:1) */
+    --destructive-foreground: 0 0% 100%;
+    --success: 142.4 71.8% 29.2%;   /* #15803D ne-success */
+    --success-foreground: 0 0% 100%;
+
+    /* 🔧 DESIGN TOKENS */
+    --radius: 16px; /* Increased for modern feel */
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    /* ⚡ ANIMATION TIMING */
+    --duration-fast: 0.15s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.6s;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* 📱 MOBILE OPTIMIZATIONS */
+    --scroll-padding: 1rem;
+    
+    /* 📐 SECTION SPACING SYSTEM */
+    --section-py-sm: clamp(2rem, 5vw, 4rem);
+    --section-py-md: clamp(3rem, 8vw, 6rem);
+    --section-py-lg: clamp(4rem, 10vw, 8rem);
+
+    /* 🍎 iOS SAFE AREA */
+    --safe-area-top: env(safe-area-inset-top, 0px);
+    --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+    
+    /* 📏 CONTAINER FLUID PADDING */
+    --container-px: clamp(1rem, 4vw, 3rem);
+  }
+
+  .dark {
+    /* Shugar Design System Dark Mode Colors */
+    --context-card-border: hsla(0, 0%, 18%, 1);
+    --ds-red-800: oklch(58.01% 0.227 25.12);
+    --ds-red-900: oklch(69.96% 0.2136 22.03);
+    --ds-amber-800: oklch(77.21% 0.1991 64.28);
+    --ds-gray-100: hsla(0, 0%, 10%, 1);
+    --ds-gray-400: hsla(0, 0%, 18%, 1);
+    --ds-gray-700: hsla(0, 0%, 56%, 1);
+    --ds-gray-1000: hsla(0, 0%, 93%, 1);
+    --ds-gray-1000-h: hsl(0, 0%, 80%);
+    --ds-gray-alpha-200: hsla(0, 0%, 100%, 0.09);
+    --ds-gray-alpha-400: hsla(0, 0%, 100%, 0.14);
+    --ds-background-100: hsla(0,0%,4%, 1);
+    --ds-shadow-border: 0 0 0 1px rgba(255, 255, 255, 0.145);
+    --ds-shadow-small: 0px 1px 2px rgba(23, 23, 23, 0.16);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  /* 🛡️ OVERFLOW PROTECTION */
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-display: swap;
+    font-optical-sizing: auto;
+    line-height: var(--lh-body);
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* 🖼️ MEDIA MAX-WIDTH PROTECTION */
+  img, video, iframe, embed, object, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 🎯 NEWEDGE GLOBAL TYPE SCALE — einzige Quelle der Wahrheit für Schriftgröße,
+     -stärke, Zeilenhöhe und Laufweite. Breakpoints: Mobile <768px · Tablet
+     768–1023px · Desktop ≥1024px (deckungsgleich mit den Tailwind-Breakpoints
+     md/lg, die im restlichen Layout bereits verwendet werden).
+     Jede Komponente erbt automatisch von h1/h2/h3/p — keine Inline-Overrides
+     für fontSize/fontWeight/lineHeight/letterSpacing mehr nötig. Für Text, der
+     visuell wie eine Überschrift wirkt, aber semantisch keine ist (z. B. ein
+     <span> als Riesen-Zahl), stehen die .text-h1/.text-h2/.text-h3-Klassen
+     zur Verfügung — gleiche Werte, andere Selektoren. */
+  :root {
+    --font-h1: 2rem;      /* 32px Mobile */
+    --font-h2: 1.75rem;   /* 28px Mobile */
+    --font-h3: 1.375rem;  /* 22px Mobile */
+    --font-body: 1rem;    /* 16px Mobile */
+    --font-small: 0.875rem; /* 14px — breakpoint-invariant */
+    --lh-heading: 1.15;
+    --lh-body: 1.7;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --font-h1: 2.5rem;    /* 40px Tablet */
+      --font-h2: 2rem;      /* 32px Tablet */
+      --font-h3: 1.5rem;    /* 24px Tablet */
+      --font-body: 1.0625rem; /* 17px Tablet */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --font-h1: 3.5rem;    /* 56px Desktop */
+      --font-h2: 2.5rem;    /* 40px Desktop */
+      --font-h3: 1.75rem;   /* 28px Desktop */
+      --font-body: 1.125rem;  /* 18px Desktop */
+    }
+  }
+
+  h1, .text-h1 {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: var(--font-h1);
+    font-weight: 800;
+    line-height: var(--lh-heading);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5em;
+  }
+  h2, .text-h2 {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: var(--font-h2);
+    font-weight: 700;
+    line-height: var(--lh-heading);
+    letter-spacing: -0.015em;
+    margin-bottom: 0.5em;
+  }
+  h3, .text-h3 {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: var(--font-h3);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.4em;
+  }
+  p, .text-body {
+    font-size: var(--font-body);
+    font-weight: 400;
+    line-height: var(--lh-body);
+  }
+  small, .text-small {
+    font-size: var(--font-small);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Mobile-optimized touch targets */
+  @media (max-width: 768px) {
+    /* Nur Tap-Delay entfernen — KEINE global erzwungene Mindesthöhe/-breite mehr
+       (die brach Footer-Notch + Akkordeon-Höhen). Touch-Ziele lösen die
+       Komponenten über Padding/Höhe. */
+    button, a[role="button"] {
+      touch-action: manipulation;
+    }
+
+    /* Improved mobile spacing */
+    .container-xl { padding: 0 1rem; }
+    .section-padding { padding: 2rem 0; }
+
+    /* Horizontalen Overflow verhindern — gezielt auf overflow-anfällige Elemente
+       statt `* { max-width: 100% }`. Der Universal-Selektor klemmte JEDES Element
+       auf Containerbreite und brach Marquee/Footer-Notch/Ticker. */
+    body { overflow-x: hidden; }
+    img, svg, video, canvas, table, pre { max-width: 100%; }
+    /* Marquee-Kopien dürfen breiter als der Viewport bleiben (sonst kein Scroll). */
+    .marquee-track, .marquee-track > * { max-width: none; }
+
+    /* Mobile grid improvements */
+    .grid { gap: 0.75rem; }
+
+    /* Mobile card adjustments */
+    .card-modern {
+      padding: 1rem;
+      border-radius: var(--radius);
+    }
+
+    /* Smaller interactive modules on mobile */
+    .hover-lift { transform: none; }
+    .hover-lift:active { transform: translateY(-2px) scale(1.01); }
+
+    /* Reduced motion on mobile for better performance */
+    .animate-float, .animate-rotate, .animate-parallax {
+      animation: none;
+    }
+
+    /* Better mobile navigation */
+    nav { padding: 0.75rem 0; }
+
+    /* Touch-friendly buttons */
+    .btn-primary, .btn-secondary, .btn-ghost {
+      padding: 0.875rem 1.5rem;
+      font-size: 0.9375rem;
+    }
+  }
+
+  /* Tablet optimizations */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container-xl { padding: 0 1.5rem; }
+    .grid { gap: 1.5rem; }
+  }
+}
+
+/* 🚀 MODERN MOTION SYSTEM */
+
+/* ✨ SMOOTH ENTRANCE ANIMATIONS */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(60px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-60px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(60px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.8) rotate(-5deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+/* 🌊 FLUID INTERACTIVE ANIMATIONS */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow-pulse-modern {
+  0%, 100% { 
+    box-shadow: 0 0 30px hsl(var(--primary-glow) / 0.3),
+                0 0 60px hsl(var(--primary-glow) / 0.1);
+  }
+  50% { 
+    box-shadow: 0 0 50px hsl(var(--primary-glow) / 0.6),
+                0 0 100px hsl(var(--primary-glow) / 0.2);
+  }
+}
+
+/* 🎨 TEXT & GRADIENT EFFECTS */
+@keyframes text-reveal {
+  from { 
+    opacity: 0; 
+    transform: translateY(100%);
+    filter: blur(4px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes gradient-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes shimmer-effect {
+  0% { 
+    background-position: -1000px 0;
+    opacity: 0;
+  }
+  30% { opacity: 1; }
+  100% { 
+    background-position: 1000px 0;
+    opacity: 0;
+  }
+}
+
+/* 🎯 SCROLL-TRIGGERED EFFECTS */
+@keyframes parallax-float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-10px) translateX(5px); }
+  50% { transform: translateY(0px) translateX(10px); }
+  75% { transform: translateY(10px) translateX(5px); }
+}
+
+/* 💫 MAGNETIC HOVER EFFECTS */
+@keyframes magnetic-hover {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.05) rotate(2deg); }
+  100% { transform: scale(1.1) rotate(0deg); }
+}
+
+/* 🎬 MOTION UTILITY CLASSES */
+
+/* ⚡ Core Animations */
+.animate-slide-up { animation: slide-up var(--duration-slow) var(--ease-out); }
+.animate-slide-left { animation: slide-in-left var(--duration-slow) var(--ease-out); }
+.animate-slide-right { animation: slide-in-right var(--duration-slow) var(--ease-out); }
+.animate-scale-in { animation: scale-in var(--duration-normal) var(--ease-bounce); }
+.animate-text-reveal { animation: text-reveal 0.8s var(--ease-out); }
+
+/* 🌊 Continuous Animations */
+.animate-float { animation: float-soft 6s ease-in-out infinite; }
+.animate-rotate { animation: rotate-slow 20s linear infinite; }
+.animate-glow { animation: glow-pulse-modern 3s ease-in-out infinite; }
+.animate-gradient { 
+  animation: gradient-flow 8s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+.animate-shimmer {
+  animation: shimmer-effect 3s ease-in-out infinite;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    hsl(var(--foreground) / 0.8) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+}
+.animate-parallax { animation: parallax-float 8s ease-in-out infinite; }
+
+/* 🎨 ANIMATED BACKGROUND ELEMENTS */
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  25% { transform: translateY(-20px) translateX(10px) rotate(90deg); }
+  50% { transform: translateY(0px) translateX(20px) rotate(180deg); }
+  75% { transform: translateY(20px) translateX(10px) rotate(270deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  33% { transform: translateY(15px) translateX(-15px) rotate(120deg); }
+  66% { transform: translateY(-10px) translateX(15px) rotate(240deg); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  50% { transform: translateY(-25px) translateX(-10px) scale(1.1); }
+}
+
+@keyframes drift-slow {
+  0%, 100% { transform: translateX(0px) translateY(0px); }
+  25% { transform: translateX(30px) translateY(-20px); }
+  50% { transform: translateX(-20px) translateY(10px); }
+  75% { transform: translateX(10px) translateY(-30px); }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 0.4; 
+    transform: scale(1);
+    filter: blur(20px);
+  }
+  50% { 
+    opacity: 0.8; 
+    transform: scale(1.2);
+    filter: blur(30px);
+  }
+}
+
+/* Animation utility classes */
+.animate-float-1 { animation: float-1 12s ease-in-out infinite; }
+.animate-float-2 { animation: float-2 15s ease-in-out infinite; }
+.animate-float-3 { animation: float-3 10s ease-in-out infinite; }
+.animate-drift { animation: drift-slow 20s ease-in-out infinite; }
+.animate-orbit { animation: orbit 25s linear infinite; }
+.animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+
+/* 🎯 Interactive States */
+.hover-magnetic { 
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+.hover-magnetic:hover { 
+  animation: magnetic-hover 0.6s var(--ease-bounce) forwards;
+}
+
+.hover-glow {
+  transition: all var(--duration-normal) var(--ease-out);
+}
+.hover-glow:hover {
+  filter: drop-shadow(0 0 20px rgba(204, 255, 0, 0.5));
+  transform: translateY(-2px) scale(1.02);
+}
+
+.hover-lift {
+  transition: all var(--duration-normal) var(--ease-out);
+}
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-strong);
+}
+
+/* 🎨 MODERN UI COMPONENTS */
+
+/* 🌈 Gradient System */
+.gradient-primary { background: var(--gradient-primary); }
+.gradient-accent { background: var(--gradient-accent); }
+.gradient-subtle { background: var(--gradient-subtle); }
+.gradient-glow { background: var(--gradient-glow); }
+
+/* ✨ Glass Morphism - Safari Compatible */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-soft);
+  transform: translate3d(0, 0, 0); /* Safari stacking context fix */
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-strong);
+  transform: translate3d(0, 0, 0); /* Safari stacking context fix */
+}
+
+/* Safari backdrop-filter support */
+@supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
+  .backdrop-blur-sm,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl,
+  .backdrop-blur-2xl,
+  .backdrop-blur-3xl,
+  [class*="backdrop-blur"] {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, blur(8px));
+    backdrop-filter: var(--tw-backdrop-blur, blur(8px));
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Safari fallback for content-visibility */
+@supports not (content-visibility: auto) {
+  .hero-image,
+  .standard-image,
+  [class*="content-visibility"] {
+    content-visibility: visible;
+  }
+}
+
+/* 🎯 Modern Cards */
+.card-modern {
+  background: hsl(var(--surface));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.card-modern:hover {
+  border-color: hsl(var(--primary) / 0.5);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* 🔲 Grid Layouts */
+.grid-modern {
+  display: grid;
+  gap: clamp(1rem, 3vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-masonry {
+  display: grid;
+  gap: clamp(1rem, 3vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: masonry;
+}
+
+/* 📱 Mobile Touch Targets */
+@media (hover: none) {
+  .hover-lift:active {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .hover-magnetic:active {
+    transform: scale(0.98);
+  }
+}
+
+/* 🎯 LAYOUT & SPACING SYSTEM */
+
+/* 📏 Container System */
+.container-xl { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
+.container-modern { max-width: 1200px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
+.container-narrow { max-width: 800px; margin: 0 auto; padding: 0 clamp(1rem, 2vw, 1.5rem); }
+
+/* 📱 Mobile-First Responsive Spacing */
+.section-padding { padding: clamp(3rem, 8vw, 8rem) 0; }
+.section-padding-sm { padding: clamp(2rem, 5vw, 4rem) 0; }
+.gap-modern { gap: clamp(1rem, 3vw, 2rem); }
+.gap-large { gap: clamp(2rem, 5vw, 4rem); }
+
+/* 🎨 Visual Hierarchy */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔘 Modern Buttons - Unified Styling */
+.btn-primary {
+  @apply px-8 py-4 bg-primary text-primary-foreground font-semibold;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-lg hover:bg-primary/90;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  @apply px-8 py-4 bg-transparent border-2 border-foreground text-foreground font-semibold;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:bg-foreground hover:text-background;
+  border-radius: var(--radius);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  @apply px-6 py-3 bg-transparent text-muted-foreground font-medium;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:text-foreground;
+  border-radius: var(--radius);
+}
+
+.btn-ghost:hover {
+  background: hsl(var(--muted) / 0.5);
+}
+
+/* 🎬 SCROLL FADE-IN SYSTEM */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GPU-accelerated animations */
+.animate-gpu {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.animate-gpu.complete {
+  will-change: auto;
+}
+
+/* Section spacing utilities */
+.section-py-sm { padding-block: var(--section-py-sm); }
+.section-py-md { padding-block: var(--section-py-md); }
+.section-py-lg { padding-block: var(--section-py-lg); }
+
+/* Container fluid */
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding-inline: var(--container-px);
+}
+
+/* 🚀 PERFORMANCE & ACCESSIBILITY */
+
+/* ⚡ Smooth Scrolling */
+html { 
+  scroll-behavior: smooth; 
+  scrollbar-width: none;
+}
+
+/* 🙈 Hide Scrollbars */
+::-webkit-scrollbar { 
+  width: 0px; 
+  background: transparent; 
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ⚡ Performance Optimizations */
+.will-change-transform { will-change: transform; }
+.will-change-opacity { will-change: opacity; }
+.will-change-filter { will-change: filter; }
+
+/* 🎯 Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .parallax-element {
+    transform: none !important;
+  }
+}
+
+/* 🎯 Focus States for Accessibility
+   Ink-Ring + Lime-Halo: der Ink-Ring trägt den Fokus auf hellen Flächen
+   (Lime ist auf Paper mit 1,05:1 unsichtbar), der Lime-Halo trägt ihn auf
+   dunklen Sektionsflächen (dort verschwindet Ink). Zusammen sichtbar auf
+   beidem — vorher machte das ein einzelnes Violett. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--ne-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(204, 255, 0, 0.85);
+}
+
+/* 🌟 Selection Styling — Lime als Fläche, Ink als Schrift (15,7:1) */
+::selection {
+  background: var(--ne-lime);
+  color: var(--ne-ink);
+}
+
+/* 🚀 LOADING & SKELETON STATES */
+
+/* ⚡ IMAGE OPTIMIZATION & LAZY LOADING */
+.lazy-img {
+  opacity: 0;
+  transition: opacity 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+  transform: scale(1.02);
+  filter: blur(2px);
+}
+
+.lazy-img.is-loaded {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+/* Hero image specific optimizations */
+.hero-image {
+  content-visibility: visible;
+  contain-intrinsic-size: 1280px 720px;
+}
+
+/* Standard image optimizations */
+.standard-image {
+  content-visibility: auto;
+  contain-intrinsic-size: 640px 400px;
+}
+
+/* Performance optimizations for images */
+.lazy-img {
+  will-change: opacity, transform, filter;
+}
+
+.lazy-img.is-loaded {
+  will-change: auto;
+}
+
+/* Prevent layout shift with aspect-ratio support */
+img[width][height] {
+  height: auto;
+}
+
+/* Modern image formats progressive enhancement */
+picture {
+  display: contents;
+}
+
+/* Shimmer effect for loading states */
+@keyframes shimmer-load {
+  0% { 
+    background-position: -200% 0;
+    opacity: 0.8;
+  }
+  100% { 
+    background-position: 200% 0;
+    opacity: 1;
+  }
+}
+
+/* Loading skeleton utility */
+.loading-skeleton {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted-foreground) / 0.3) 50%,
+    hsl(var(--muted)) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-load 2s ease-in-out infinite;
+}
+
+/* Image loading states */
+.img-loading {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--surface)) 0%,
+    hsl(var(--muted)) 50%,
+    hsl(var(--surface)) 100%
+  );
+  animation: shimmer-load 1.5s ease-in-out infinite;
+}
+
+/* Blur-up effect for images */
+.blur-up {
+  filter: blur(8px);
+  transform: scale(1.02);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blur-up.loaded {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+/* Content loading states */
+.content-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.content-loaded {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.4s ease-out;
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ⚡ PERFORMANCE OPTIMIZATIONS */
+
+/* Hardware acceleration for animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* will-change optimization - only for actively animating elements */
+.animating {
+  will-change: transform, opacity;
+}
+
+.animating-complete {
+  will-change: auto;
+}
+
+/* Scroll performance */
+.scroll-optimized {
+  will-change: scroll-position;
+  transform: translateZ(0);
+}
+
+/* Video performance */
+video {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Reduce motion for accessibility and performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 768px) {
+  /* Touch action optimization */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  /* Disable expensive animations on mobile */
+  .animate-float,
+  .animate-rotate,
+  .animate-parallax,
+  .animate-orbit {
+    animation: none;
+  }
+  
+  /* Simplify hover effects to active states */
+  .hover-lift,
+  .hover-magnetic,
+  .hover-glow {
+    transition-duration: 0.15s;
+  }
+  
+  /* Remove will-change on mobile to save memory */
+  motion-div,
+  .animate,
+  [data-framer-motion] {
+    will-change: auto !important;
+  }
+  
+  /* Optimize video playback on mobile */
+  video {
+    object-fit: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  /* Fast tap response */
+  button,
+  a,
+  [role="button"] {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  /* Optimize scrolling performance */
+  * {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/* ── Edge-Mark: handgemalter Lime-Strich hinter Akzentwörtern (Brandboard 2026-07).
+   Zeichnet sich scroll-getrieben von unten nach oben ein (Chromium); Browser ohne
+   animation-timeline zeigen den fertigen Strich. Text bleibt dabei immer lesbar. ── */
+.edge-mark {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20200%2060'%20preserveAspectRatio%3D'none'%3E%3Cpath%20d%3D'M5%2037%20C28%2030%2068%2022%20118%2015%20C152%2010%20182%207%20193%209%20C199%2011%20197%2016%20192%2020%20C168%2028%20128%2037%2084%2044%20C52%2049%2022%2052%209%2049%20C2%2047%201%2041%205%2037%20Z'%20fill%3D'%23CCFF00'%2F%3E%3Cpath%20d%3D'M18%2040%20C52%2032%20120%2020%20172%2014%20C182%2013%20186%2016%20181%2020%20C150%2030%2092%2040%2040%2046%20C26%2047%2012%2044%2018%2040%20Z'%20fill%3D'%23B4E600'%20opacity%3D'0.55'%2F%3E%3Cpath%20d%3D'M186%205%20L199%202%20L191%2013%20L193%207%20Z'%20fill%3D'%23CCFF00'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 100%;
+  color: var(--ne-ink);
+  padding: 0.08em 0.28em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+@supports (animation-timeline: view()) {
+  .edge-mark {
+    animation: edge-mark-in linear both;
+    animation-timeline: view();
+    animation-range: entry 15% entry 70%;
+  }
+}
+@keyframes edge-mark-in {
+  from { background-size: 100% 0%; }
+  to { background-size: 100% 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .edge-mark { animation: none; }
+}
+
+/* Statische Edge-Mark-Variante für die fixe Navigation (Logo): gleicher
+   Lime-Strich, aber ohne Scroll-Animation — animation-timeline: view()
+   liefert in fixed-Elementen keinen Fortschritt, der Strich bliebe unsichtbar. */
+.edge-mark-static {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20200%2060'%20preserveAspectRatio%3D'none'%3E%3Cpath%20d%3D'M5%2037%20C28%2030%2068%2022%20118%2015%20C152%2010%20182%207%20193%209%20C199%2011%20197%2016%20192%2020%20C168%2028%20128%2037%2084%2044%20C52%2049%2022%2052%209%2049%20C2%2047%201%2041%205%2037%20Z'%20fill%3D'%23CCFF00'%2F%3E%3Cpath%20d%3D'M18%2040%20C52%2032%20120%2020%20172%2014%20C182%2013%20186%2016%20181%2020%20C150%2030%2092%2040%2040%2046%20C26%2047%2012%2044%2018%2040%20Z'%20fill%3D'%23B4E600'%20opacity%3D'0.55'%2F%3E%3Cpath%20d%3D'M186%205%20L199%202%20L191%2013%20L193%207%20Z'%20fill%3D'%23CCFF00'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 100%;
+  padding: 0.32em 0.55em 0.38em;
+}
+
+/* Handgemalter Lime-Unterstrich für reine Text-CTAs (EdgeTextButton).
+   Zeichnet sich scroll-getrieben von links nach rechts ein (Chromium);
+   Browser ohne animation-timeline zeigen den fertigen Strich. */
+.edge-underline {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20120%2010'%20preserveAspectRatio%3D'none'%3E%3Cpath%20d%3D'M2%206%20C30%203%2070%203%20118%205%20C119%205.5%20119%207%20117%207%20C70%208%2030%208%203%208%20C1%207.5%201%206.5%202%206%20Z'%20fill%3D'%23CCFF00'%20fill-opacity%3D'0.92'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.3em;
+  padding-bottom: 0.16em;
+}
+@supports (animation-timeline: view()) {
+  .edge-underline {
+    animation: edge-underline-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% entry 75%;
+  }
+}
+@keyframes edge-underline-in {
+  from { background-size: 0% 0.3em; }
+  to { background-size: 100% 0.3em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .edge-underline { animation: none; }
+}

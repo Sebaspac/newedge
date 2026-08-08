@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_bullets",
+  "info": {
+    "displayName": "Bullet",
+    "icon": "bulletList",
+    "description": "Einzelner Stichpunkt"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

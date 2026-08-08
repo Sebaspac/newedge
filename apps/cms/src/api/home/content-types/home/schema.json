@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_entries",
+  "info": {
+    "singularName": "home",
+    "pluralName": "home-entries",
+    "displayName": "Home",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "loadingLogo": {
+      "type": "string"
+    },
+    "loadingAlt": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "json"
+    },
+    "toast": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "impactCounter": {
+      "type": "json"
+    },
+    "problemJourney": {
+      "type": "json"
+    },
+    "tickerScroll": {
+      "type": "json"
+    },
+    "cortex": {
+      "type": "json"
+    },
+    "positionedForImpact": {
+      "type": "json"
+    },
+    "horizontalScroll": {
+      "type": "json"
+    },
+    "derSchnitt": {
+      "type": "json"
+    },
+    "embeddedAI": {
+      "type": "json"
+    },
+    "threeStepsCTA": {
+      "type": "json"
+    },
+    "testimonialsSection": {
+      "type": "json"
+    },
+    "clients": {
+      "type": "json"
+    },
+    "structuredData": {
+      "type": "json"
+    }
+  }
+}

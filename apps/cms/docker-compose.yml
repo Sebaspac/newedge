@@ -1,0 +1,110 @@
+# NEWEDGE — Produktions-Stack: Strapi 5 + Postgres 16 + Lead-Service
+#
+#   Normaler Betrieb / Update:       docker compose up -d --build   (seedet NIE)
+#   Erststart inkl. Content-Seed:    sudo ./deploy/setup.sh <domain> --webserver=caddy
+#   Seed nachholen / erneuern:       sudo ./deploy/update.sh reseed
+#
+# Den Seed schalten AUSSCHLIESSLICH diese beiden Skripte ein — warum, steht
+# ausführlich beim SEED-Eintrag des strapi-Service weiter unten. Kurz: ein von
+# Hand mit SEED=1 erzeugter Container seedet bei jedem Neustart wieder.
+#
+# EIN Stack, EINE Domain: Website (statisch), CMS und Lead-Service liegen hinter
+# demselben Reverse Proxy — je nach Server nginx (deploy/nginx.conf) oder Caddy
+# (deploy/Caddyfile.newedge, auf diesem Server der Fall). Alle Container binden
+# bewusst NUR an 127.0.0.1 — nach außen geht ausschließlich der Proxy.
+#
+# Zwei .env-Dateien, bewusst getrennt:
+#   ./.env                 CMS-Secrets      (Vorlage: .env.production.example)
+#   ../lead-api/.env       Lead-Service     (Vorlage: ../lead-api/.env.example)
+# Fehlt die zweite, startet der Stack trotzdem (required: false) — der
+# Lead-Service läuft dann ohne SMTP-Zugang, sichtbar in /health ("mail": false).
+# Braucht Docker Compose ≥ 2.24 (`required:`); get.docker.com liefert das.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-strapi}
+      POSTGRES_USER: ${DATABASE_USERNAME:-strapi}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:?DATABASE_PASSWORD fehlt in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USERNAME:-strapi} -d ${DATABASE_NAME:-strapi}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  strapi:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: "5432"
+      # ── SEED: gilt für GENAU EINEN Lauf, niemals dauerhaft ────────────────
+      # compose löst diesen Wert beim ANLEGEN des Containers auf und friert ihn
+      # in dessen Konfiguration ein. Ein einmal mit SEED=1 erzeugter Container
+      # seedet deshalb bei JEDEM weiteren Start erneut — und `restart:
+      # unless-stopped` (oben) startet ihn nach Reboot, Docker-Neustart oder
+      # Absturz von ganz allein. Der Seed in src/index.ts überschreibt dabei
+      # alle Single Types und Collections mit dem Code-Stand: die redaktionelle
+      # Arbeit von Wochen wäre weg, ohne dass jemand einen Befehl abgesetzt hat.
+      #
+      # Deshalb schalten den Seed NUR deploy/setup.sh (Erstlauf) und
+      # deploy/update.sh reseed ein — über eine Ad-hoc-Override-Datei, die
+      # zusätzlich `restart: "no"` setzt (ein abgebrochener Seed-Lauf kann sich
+      # dann nicht selbst wiederbeleben). Unmittelbar danach erzeugen beide
+      # Skripte strapi ohne SEED neu und kontrollieren per `docker inspect`,
+      # dass SEED=1 wirklich aus der Container-Konfiguration verschwunden ist.
+      #
+      # Wer den Seed trotzdem von Hand einschaltet (so steht es noch in älteren
+      # Anleitungen wie DEPLOY.md), MUSS unmittelbar danach aufräumen:
+      #     docker compose up -d --no-deps --force-recreate strapi
+      #     docker inspect --format '{{range .Config.Env}}{{println .}}{{end}}' \
+      #       $(docker compose ps -q strapi) | grep '^SEED='     → muss SEED=0 sein
+      SEED: ${SEED:-0}
+    ports:
+      - "127.0.0.1:1337:1337"
+    volumes:
+      - uploads:/app/public/uploads
+
+  # ── Lead-Service: Kontaktformular + ROI-Report + Follow-ups ────────────────
+  # BEWUSST OHNE depends_on. Der Service braucht weder Postgres noch Strapi:
+  # Primärablage sind die .jsonl-Dateien im data/-Mount, das CMS ist nur
+  # optionale Zweitablage (STRAPI_URL/STRAPI_TOKEN, Fehler werden nur geloggt).
+  # Fällt das CMS aus, nehmen die Formulare weiter Leads an und mailen weiter.
+  lead-api:
+    build: ../lead-api        # Build-Kontext = apps/lead-api (relativ zu DIESER Datei)
+    restart: unless-stopped
+    env_file:
+      # required:false — eine fehlende Lead-.env darf nicht den ganzen Stack
+      # (und damit das CMS) am Hochfahren hindern.
+      - path: ../lead-api/.env
+        required: false
+    ports:
+      # Wie Strapi: nur lokal gebunden, nach außen über nginx (deploy/nginx.conf)
+      - "127.0.0.1:8090:8090"
+    volumes:
+      # Bind-Mount statt Named Volume: Leads, PDF-Archiv, Follow-up-Warteschlange
+      # und suppressed.txt liegen direkt im Repo-Ordner apps/lead-api/data und
+      # sind ohne Docker-Umweg les-, grep- und sicherbar. Enthält personenbezogene
+      # Daten → per .gitignore ausgeschlossen, ins Backup gehört der Ordner trotzdem.
+      - ../lead-api/data:/data
+    healthcheck:
+      # urllib statt curl: im python:3.12-slim-Image ist kein curl/wget installiert.
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  pgdata:
+  uploads:

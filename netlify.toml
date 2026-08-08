@@ -1,0 +1,43 @@
+# Netlify baut nur die Website — CMS und Lead-Service laufen auf dem VPS.
+# `base` zeigt in den Website-Ordner des Monorepos; alle Pfade unten sind
+# relativ dazu (publish → apps/website/dist, Edge Functions →
+# apps/website/netlify/edge-functions).
+
+[build]
+  base = "apps/website"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Passwort-Gate ist ABGESCHALTET (auf Wunsch, 30.07.2026) — die Staging-Seite ist
+# öffentlich erreichbar. Die Edge Function liegt weiter im Repo unter
+# netlify/edge-functions/auth.ts; zum Wiedereinschalten diese drei Zeilen
+# einkommentieren und APP_PASSWORD in den Netlify-Env-Vars belassen:
+#
+# [[edge_functions]]
+#   path = "/*"
+#   function = "auth"
+
+# Suchmaschinen AUSGESPERRT. Gilt NUR für diesen Netlify-Deploy — der VPS läuft
+# über Caddy und kennt diese Datei nicht, newedgebrand.com bleibt indexierbar.
+#
+# Warum: Die Seite trägt index,follow im HTML und eine robots.txt, die alles
+# erlaubt. Ohne diesen Header indexiert Google newedgebrand.netlify.app als
+# zweite vollständige Kopie der Website.
+#
+# Zum Abschalten der Netlify-Site: diesen Block STEHEN LASSEN, De-Indexierung in
+# der Search Console anstoßen und erst danach die Site löschen. Wer direkt löscht,
+# hinterlässt indexierte URLs, die ins Leere laufen — das räumt sich erst über
+# Wochen ab.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# SPA fallback — all routes serve index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,47 @@
+{
+  "name": "Dr. Anna Beispiel",
+  "company": "Praxis Beispiel MVZ",
+  "email": "anna@praxis-beispiel.de",
+  "lang": "de",
+  "branche": "Gesundheitswesen",
+  "brancheCool": "Die Praxis",
+  "team": 12,
+  "maturity": "some",
+  "realism": 45,
+  "usedApps": ["Doctolib", "DATEV"],
+  "totalNet": 17300,
+  "netLo": 11000,
+  "netHi": 23000,
+  "fullNet": 24000,
+  "share": 68,
+  "hoursYear": 662,
+  "fte": 0.41,
+  "invest": 10700,
+  "payback": 7.4,
+  "entryPrice": 3200,
+  "entryNote": "staatlich förderfähig (BAFA)",
+  "estimated": false,
+  "rows": [
+    {
+      "name": "Der Kassenwart",
+      "sub": "Rechnungen & Zahlungseingang",
+      "prozess": "Automatische Abrechnung nach Terminart und -dauer",
+      "net": 10400,
+      "hoursWeek": 8,
+      "effort": 7,
+      "quickWin": false,
+      "tools": ["PVS Verrechnungsstelle", "BFS health finance", "DZR", "DATEV", "Optica"]
+    },
+    {
+      "name": "Der Concierge",
+      "sub": "Support & Service",
+      "prozess": "Terminbuchung & Erinnerungen rund um die Uhr",
+      "net": 6900,
+      "hoursWeek": 6,
+      "effort": 8,
+      "quickWin": true,
+      "tools": ["Doctolib", "RED connect", "arztkonsultation", "aaron.ai", "KIM"]
+    }
+  ],
+  "submittedAt": "2026-07-27T18:00:00Z"
+}

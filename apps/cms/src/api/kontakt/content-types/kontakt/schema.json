@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontakt_entries",
+  "info": {
+    "singularName": "kontakt",
+    "pluralName": "kontakt-entries",
+    "displayName": "Kontakt",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "video": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Build-Kontext: seit der Zusammenlegung baut apps/cms/docker-compose.yml mit
+# `build: ../lead-api` aus diesem Ordner. Alles hier Gelistete geht gar nicht
+# erst an den Docker-Daemon.
+
+# Secrets — kommen zur Laufzeit als env_file, nie ins Image
+.env
+.env.*
+!.env.example
+
+# Laufzeitdaten: Leads, PDF-Archiv, Follow-up-Warteschlange, Abmeldungen.
+# Personenbezogene Daten — dürfen weder in den Kontext noch in ein Image.
+# Kommen zur Laufzeit als Volume-Mount auf /data.
+data/
+
+# Betriebs-/Doku-Kram, den das Image nicht braucht
+README-DEPLOY.md
+Caddyfile.example
+docker-compose*.yml
+.git
+.gitignore
+
+# Python-Artefakte
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv
+venv/
