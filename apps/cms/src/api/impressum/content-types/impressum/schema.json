@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "impressum_entries",
+  "info": {
+    "singularName": "impressum",
+    "pluralName": "impressum-entries",
+    "displayName": "Impressum",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "page": {
+      "type": "json"
+    },
+    "impressumSection": {
+      "type": "json"
+    },
+    "datenschutzSection": {
+      "type": "json"
+    }
+  }
+}

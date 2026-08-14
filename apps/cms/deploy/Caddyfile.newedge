@@ -1,0 +1,234 @@
+# NEWEDGE — Caddy-Site-Block (Same-Origin-Setup)
+# ==============================================================================
+# Gleiche Aufgabe wie deploy/nginx.conf, nur für Caddy: EINE Domain für alles —
+# statische Website + CMS-Pfade auf Strapi + Formular-Pfade auf den Lead-Service.
+#
+# WARUM es diese Datei gibt:
+# Auf dem Zielserver hält bereits Caddy die Ports 80 und 443 und bedient dort ein
+# PRODUKTIVES Mattermost. nginx könnte 80/443 gar nicht mehr binden, und certbot
+# würde Caddys eigener Zertifikatsverwaltung ins Handwerk pfuschen (beide wollen
+# ACME für dieselbe Domain fahren). `deploy/nginx.conf` und `deploy/setup.sh`
+# sind auf so einem Server also unbrauchbar — sie bleiben für frische Server.
+#
+# Diese Datei ist BEWUSST NUR EIN SITE-BLOCK:
+#   * keine globalen Optionen (der `{ … }`-Block am Dateianfang) — die dürfen im
+#     Caddyfile nur EINMAL vorkommen und stehen bereits in der Mattermost-Config
+#   * keine Snippets (`(name) { … }`) — Snippet-Namen sind konfigurationsweit
+#     eindeutig und könnten mit bestehenden kollidieren
+#   * nichts, was einen bestehenden Block anfasst oder umdefiniert
+# Eingehängt wird sie ADDITIV per `import`. Wie genau: CADDY-KOEXISTENZ.md.
+# Die bestehende Konfiguration wird dabei weder ersetzt noch gestoppt.
+#
+# TLS: Caddy holt und erneuert das Zertifikat selbst. KEIN certbot, kein
+# `certbot --nginx`, keine Zeile in dieser Datei dafür.
+#
+# Pfad-Aufteilung — 1:1 wie in nginx.conf, nur andere Syntax:
+#   /health                                → Lead-Service :8090, NUR lokal
+#   /contact, /roi-report                  → Lead-Service :8090
+#   /abmelden/<token>                      → Lead-Service :8090
+#   /api /uploads /upload /admin /content-manager /content-type-builder
+#     /users-permissions /i18n /_health    → Strapi       :1337
+#   /assets/…                              → dist/, mit Caching, 404 statt SPA
+#   alles andere                           → dist/ (SPA-Fallback)
+#
+# Strapis Healthcheck heißt /_health (mit Unterstrich), der des Lead-Service
+# /health — beide kollidieren nicht. Die SPA-Routen sind deutsch (/kontakt,
+# /roi-rechner), belegen also keinen der Service-Pfade.
+#
+# Vor jedem Reload PFLICHT (Details in CADDY-KOEXISTENZ.md):
+#   caddy validate --config /etc/caddy/Caddyfile
+# ==============================================================================
+
+# ACHTUNG www: Caddy versucht für JEDE hier genannte Domain sofort ein
+# Zertifikat zu holen. Existiert für www.newedgebrand.com noch kein A-Record,
+# scheitert die Ausstellung dafür dauerhaft und Caddy protokolliert das im
+# Minutentakt — die Hauptdomain läuft trotzdem, aber das Log ist voll. Solange
+# www nicht im DNS steht: www hier entfernen und später ergänzen.
+newedgebrand.com, www.newedgebrand.com {
+
+	# ── Ausrollverzeichnis der Website (Vite-Build) ──────────────────────────
+	# Muss zu deploy/update.sh und setup.sh passen (dort: /var/www/newedgebrand).
+	root * /var/www/newedgebrand/dist
+
+	# Kompression. Steht so nicht in nginx.conf — dort kam gzip aus dem
+	# http-Block der Distributions-Default-Config. Caddy komprimiert von sich aus
+	# gar nichts, deshalb hier explizit. Bereits komprimierte Antworten
+	# (Content-Encoding gesetzt) lässt Caddy in Ruhe.
+	encode zstd gzip
+
+	# ── Upload-Limit für die CMS-Media-Library ───────────────────────────────
+	# Caddys Pendant zu `client_max_body_size 64m`. Gilt wie dort für die ganze
+	# Site; die Lead-Endpunkte setzen es unten bewusst wieder herunter.
+	# Caddy rechnet dezimal: 64MB = 64.000.000 Bytes gegenüber nginx' 64m =
+	# 67.108.864 Bytes. Minimal strenger, für die Media Library irrelevant.
+	# Ohne diese Direktive wäre Caddy UNBEGRENZT — nicht weglassen.
+	request_body {
+		max_size 64MB
+	}
+
+	# ── Named Matcher ────────────────────────────────────────────────────────
+	# Müssen am Site-Anfang stehen, nicht in den handle-Blöcken.
+
+	# Eine Direktive verträgt immer nur EINEN Matcher-Token. Mehrere Pfade
+	# (`handle /contact /roi-report`) sind deshalb ein Syntaxfehler — sie müssen
+	# über einen benannten Matcher gehen. Daher @lead_forms und @strapi.
+
+	# /health nur vom Server selbst. `remote_ip` ist die IP der tatsächlichen
+	# TCP-Verbindung (nicht X-Forwarded-For) — genau das Pendant zu nginx'
+	# `allow 127.0.0.1; allow ::1; deny all;`.
+	@fremd not remote_ip 127.0.0.0/8 ::1
+
+	# Formular-Endpunkte des Lead-Service, beide exakt (kein `*`) — wie nginx'
+	# `location ~ ^/(contact|roi-report)$`.
+	@lead_forms path /contact /roi-report
+
+	# CMS-Pfade. `/pfad*` entspricht nginx' Präfix-Regex `^/(api|…)`: /api,
+	# /api/…, aber eben auch /apifoo — genau wie vorher. /uploads* ist von
+	# /upload* schon abgedeckt; beide stehen hier, weil beide in vite.config.ts
+	# und in der Routing-Tabelle von DEPLOY.md auftauchen.
+	@strapi path /api* /uploads* /upload* /admin* /content-manager* /content-type-builder* /users-permissions* /i18n* /_health*
+
+	# In dist/assets/ liegen ZWEI sehr verschiedene Sorten Dateien; die beiden
+	# Matcher trennen sie überschneidungsfrei, damit die Reihenfolge der
+	# header-Direktiven unten egal ist:
+	#   @assets_medien   ~160 Dateien aus public/assets/ mit FESTEM Namen
+	#                    (Bilder, Videos, Logos)
+	#   @assets_bundles  alles Übrige unter /assets/ — Vite-Bundles der Form
+	#                    name-<hash>.js/.css
+	# (?i) = case-insensitive, entspricht nginx' `~*`.
+	@assets_medien path_regexp "(?i)^/assets/.+\.(png|jpe?g|gif|webp|avif|svg|ico|mp4|webm)$"
+	@assets_bundles {
+		path /assets/*
+		not path_regexp "(?i)^/assets/.+\.(png|jpe?g|gif|webp|avif|svg|ico|mp4|webm)$"
+	}
+
+	# ══════════════════════════════════════════════════════════════════════════
+	# handle-Blöcke schließen sich gegenseitig aus — der erste passende gewinnt,
+	# wie nginx' location.
+	#
+	# Zur Reihenfolge: Caddy sortiert zwei handle-Blöcke nur dann um, wenn beide
+	# GENAU EINEN Pfad-Matcher haben (dann gewinnt der längere Pfad). In allen
+	# anderen Fällen — benannte Matcher, mehrere Pfade, gar kein Matcher — bleibt
+	# die Reihenfolge aus dieser Datei erhalten (stabile Sortierung). Es zählt
+	# also, was hier steht. Die Blöcke überschneiden sich ohnehin nicht; einzig
+	# der Block ohne Matcher ganz unten fängt alles Übrige ab und MUSS zuletzt
+	# stehen.
+	# ══════════════════════════════════════════════════════════════════════════
+
+	# ── Health des Lead-Service — absichtlich NICHT öffentlich ───────────────
+	# /health verrät Betriebsinterna (SMTP an/aus, CMS-Kopplung, Anzahl offener
+	# und verwaister Follow-ups). `handle /health` ohne `*` ist eine EXAKTE
+	# Pfadangabe — der Pfad kann nie versehentlich woanders landen.
+	# Für den Alltag ist ohnehin `curl -s http://127.0.0.1:8090/health` der
+	# kürzere Weg: ohne Proxy, ohne TLS, auch wenn Caddy gerade nicht mag.
+	# Externes Uptime-Monitoring: die Monitor-IP in @fremd ausnehmen.
+	handle /health {
+		respond @fremd 403
+		reverse_proxy 127.0.0.1:8090
+	}
+
+	# ── Formulare → Lead-Service ─────────────────────────────────────────────
+	# Same-Origin: die Website ruft /contact und /roi-report auf derselben Domain
+	# auf (VITE_API_URL=https://newedgebrand.com) → kein CORS nötig.
+	handle @lead_forms {
+		# Nur JSON rein — der PDF-Report geht als Mail-Anhang RAUS, nicht rein.
+		# Bewusst weit unter den 64MB der Site: kleinere Angriffsfläche.
+		request_body {
+			max_size 1MB
+		}
+
+		reverse_proxy 127.0.0.1:8090 {
+			# Caddy setzt X-Forwarded-For, -Proto und -Host von sich aus und
+			# reicht den Original-Host durch. Das Rate-Limit im Lead-Service
+			# liest X-Forwarded-For (server.py) — ohne den Header sähe er nur
+			# die Proxy-IP und würde alle Besucher als einen zählen.
+			# X-Real-IP braucht der Service nicht (nachgesehen, wird nirgends
+			# gelesen) — deshalb hier auch keins gesetzt.
+			transport http {
+				# nginx: proxy_read_timeout 120s. PDF-Erzeugung + SMTP-Versand
+				# dauern. Caddys Default wäre unbegrenzt.
+				response_header_timeout 120s
+			}
+		}
+	}
+
+	# ── Abmeldelink aus Follow-up-Mails (DSGVO) → Lead-Service ───────────────
+	# MUSS hier stehen: ohne diesen Block greift der SPA-Fallback und der
+	# Abmeldelink liefert index.html statt der Abmeldeseite. Der Pfad ist in
+	# bereits versendeten Mails festgeschrieben (FOLLOWUP_UNSUBSCRIBE_BASE) —
+	# er darf sich nie wieder ändern.
+	handle /abmelden/* {
+		request_body {
+			max_size 1MB
+		}
+
+		# Einmal-Token: nichts zwischenspeichern (Proxies, Browser, PWA-Cache).
+		header Cache-Control "no-store"
+
+		reverse_proxy 127.0.0.1:8090 {
+			transport http {
+				response_header_timeout 30s
+			}
+		}
+	}
+
+	# ── CMS-Pfade → Strapi (identisch zum Vite-Dev-Proxy) ────────────────────
+	# Pfadliste: siehe @strapi oben.
+	# Websockets (Admin-Panel): Caddy erkennt Upgrade-Anfragen selbst, die
+	# nginx-Zeilen `proxy_set_header Upgrade/Connection` haben kein Pendant und
+	# sind hier nicht nötig.
+	# Kein eigenes Body-Limit: dieser Block soll die 64MB der Site erben.
+	handle @strapi {
+		# Optional: Admin-Panel zusätzlich per IP-Allowlist absichern. Dazu oben
+		# bei den Named Matchern ergänzen …
+		#     @admin_fremd {
+		#         path /admin*
+		#         not remote_ip 203.0.113.10   # Büro-IP
+		#     }
+		# … und hier einkommentieren. `respond` läuft in Caddys
+		# Direktiven-Reihenfolge vor `reverse_proxy`, der Block darunter kommt
+		# für gesperrte IPs also nicht mehr dran:
+		#     respond @admin_fremd 403
+		reverse_proxy 127.0.0.1:1337 {
+			transport http {
+				# nginx: proxy_read_timeout 60s
+				response_header_timeout 60s
+			}
+		}
+	}
+
+	# ── /assets/ — zwei sehr verschiedene Sorten Dateien ─────────────────────
+	# Eigener Block, weil hier BEWUSST KEIN SPA-Fallback gilt: fehlt die Datei,
+	# gibt file_server 404 (nginx: `try_files $uri =404`). Ohne diesen Block
+	# bekäme ein fehlendes Bundle eine HTML-Seite mit Status 200 zurück — der
+	# Fehler wäre im Browser nur als kryptischer MIME-Type-Abbruch sichtbar.
+	handle /assets/* {
+		# Vite-Bundles heißen name-<hash>.js/.css — bei jeder Änderung ändert
+		# sich der Dateiname. Die dürfen ewig im Cache liegen. (1 Jahr)
+		header @assets_bundles Cache-Control "public, max-age=31536000, immutable"
+
+		# ABER: in dist/assets/ liegen auch ~160 Dateien aus public/assets/ mit
+		# FESTEM Namen. „immutable" auf einem festen Namen bedeutet: ein
+		# ausgetauschtes Bild erreicht wiederkehrende Besucher ein Jahr lang
+		# nicht — auch nicht per Reload. Für diese Typen deshalb kürzer und
+		# revalidierbar. (30 Tage)
+		header @assets_medien Cache-Control "public, max-age=2592000, must-revalidate"
+
+		file_server
+	}
+
+	# ── Statische Website + SPA-Fallback ─────────────────────────────────────
+	# Der Vite-Build legt für jede Route einen vorgerenderten Ordner an
+	# (dist/cortex/index.html, dist/en/ki-audit/index.html …). Deshalb drei
+	# Kandidaten, in genau dieser Reihenfolge:
+	#   {path}/index.html  vorgerenderte Route → wird UNTER /cortex ausgeliefert,
+	#                      ohne 301 auf /cortex/ (wie nginx' `$uri/` + index)
+	#   {path}             echte Datei (favicon.ico, sw.js, robots.txt, …)
+	#   /index.html        alles Übrige: die SPA übernimmt
+	# {path}/index.html steht bewusst VOR {path}: sonst hinge das Verhalten für
+	# Verzeichnisse an der Caddy-Version.
+	handle {
+		try_files {path}/index.html {path} /index.html
+		file_server
+	}
+}

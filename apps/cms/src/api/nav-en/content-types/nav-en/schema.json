@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "nav_en_entries",
+  "info": {
+    "singularName": "nav-en",
+    "pluralName": "nav-en-entries",
+    "displayName": "Nav En",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "json"
+    },
+    "filterButtons": {
+      "type": "json"
+    },
+    "megaMenu": {
+      "type": "json"
+    },
+    "painPoints": {
+      "type": "json"
+    },
+    "industrien": {
+      "type": "json"
+    },
+    "featured": {
+      "type": "json"
+    },
+    "angebot": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "json"
+    },
+    "mobile": {
+      "type": "json"
+    }
+  }
+}

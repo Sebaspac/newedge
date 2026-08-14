@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "case_spotlight_entries",
+  "info": {
+    "singularName": "case-spotlight",
+    "pluralName": "case-spotlight-entries",
+    "displayName": "Case Spotlight",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "painPointSlug": {
+      "type": "string"
+    },
+    "caseId": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "headlinePrefix": {
+      "type": "string"
+    },
+    "headlineClient": {
+      "type": "string"
+    },
+    "headlineSuffix": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "string"
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorRole": {
+      "type": "string"
+    },
+    "authorInitials": {
+      "type": "string"
+    },
+    "image": {
+      "type": "json"
+    }
+  }
+}

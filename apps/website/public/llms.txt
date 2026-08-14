@@ -1,0 +1,56 @@
+# NEWEDGE
+
+> Wir bauen die KI-Abteilung für den Mittelstand. Nicht noch ein KI-Tool — eine operative Kapazität, die Arbeit übernimmt.
+
+NEWEDGE ist ein Unternehmen aus München (DACH-Raum). Mittelständische Unternehmen mieten bei NEWEDGE eine KI-Abteilung, statt sie selbst aufzubauen: kein Einstellen, kein Einarbeiten, keine Individualsoftware je Kunde. Der Aufbau ist immer derselbe — ein Cortex als gemeinsamer Operating Layer, darauf vier standardisierte Blueprints, konfiguriert für den fachlichen Kontext des Kunden. Leitsatz: „Wir standardisieren wiederkehrende Unternehmensfunktionen und konfigurieren sie für den fachlichen Kontext des Kunden."
+
+## Cortex — der Operating Layer
+
+Cortex ist kein Unternehmens-Chatbot, sondern die Ebene über den Tools, die bereits laufen. Auf ihr liegen Unternehmenswissen, Berechtigungen, Integrationen in bestehende Systeme, die Orchestrierung von Aufgaben, menschliche Freigaben an kritischen Schritten, Protokollierung, Betriebsüberwachung und die Wahl des jeweils eingesetzten KI-Modells. Die Infrastruktur läuft im Haus des Kunden — DSGVO-konform und jederzeit nachvollziehbar. Welcher KI-Dienst im Hintergrund arbeitet, bleibt austauschbar.
+
+- Cortex: https://newedgebrand.com/cortex
+
+## Vier Blueprints
+
+Die Blueprints sind das Produkt. Jeder ist eine standardisierte Unternehmensfunktion auf derselben Infrastruktur; die Entscheidung bleibt beim Menschen.
+
+- Entscheidungen & Fallprüfung — Fälle aufnehmen, Unterlagen prüfen, Kriterien anwenden, Ausnahmen erkennen, Entscheidung vorbereiten: https://newedgebrand.com/loesungen/entscheidungen-fallpruefung
+- Dokumente & Prozesse — erfassen, klassifizieren, extrahieren, auf Vollständigkeit und Regeln prüfen, abgleichen, Abweichungen eskalieren: https://newedgebrand.com/loesungen/dokumente-prozesse
+- Steuerung & Reporting — Daten konsolidieren, Kennzahlen überwachen, Abweichungen erkennen, Managemententscheidungen vorbereiten: https://newedgebrand.com/loesungen/steuerung-reporting
+- Service & Fallbearbeitung — Anfragen aufnehmen, verstehen, bearbeiten, routen, mit vollständigem Kontext eskalieren: https://newedgebrand.com/loesungen/service-fallbearbeitung
+
+## Vier Branchen
+
+Branchen sind keine eigenen Produkte, sondern Konfigurationen derselben vier Blueprints. NEWEDGE expandiert nach Prozessähnlichkeit, nicht mit neuer Individualsoftware je Branche.
+
+- Versicherungen (Versicherer, Makler, Assekuradeure): https://newedgebrand.com/industrien/versicherungen
+- Bildung (Hochschulen, Akademien, Bildungsträger, Schulträger): https://newedgebrand.com/industrien/bildung
+- Förderungen & Entscheidungsinstanzen (Förderstellen, Vergabestellen, Jurys, Awards): https://newedgebrand.com/industrien/foerderungen-entscheidungsinstanzen
+- Immobilien (Hausverwaltungen, Bestandshalter, Asset- und Property-Management): https://newedgebrand.com/industrien/immobilien
+
+## Zusammenarbeit in drei Phasen
+
+Analyse (wo lohnt sich KI wirklich?) → Umsetzung (Cortex als Fundament, dann die Abläufe mit dem größten Hebel) → Skalierung (laufender Betrieb und Weiterentwicklung durch das NEWEDGE-Team). Der Einstieg ist der KI-Audit; er kann staatlich gefördert werden (BAFA).
+
+- Methodik / die drei Phasen: https://newedgebrand.com/methodik
+- KI-Audit (Einstieg): https://newedgebrand.com/ki-audit
+
+## Weitere Seiten
+
+- ROI-Rechner: https://newedgebrand.com/roi-rechner
+- KI-Glossar: https://newedgebrand.com/ki-glossar
+- Websites & Web-Plattformen: https://newedgebrand.com/websites
+- Kontakt: https://newedgebrand.com/kontakt
+- Englische Fassung der Website: https://newedgebrand.com/en
+
+## Kontakt
+
+- Website: https://newedgebrand.com
+- E-Mail: info@newedgebrand.com
+- Telefon: +49 176 60 431 467
+- Standort: München, Deutschland
+- LinkedIn: https://www.linkedin.com/company/new-edge-brand/
+
+## Weiterführende Informationen
+
+- Detaillierte Informationen: https://newedgebrand.com/llms-full.txt

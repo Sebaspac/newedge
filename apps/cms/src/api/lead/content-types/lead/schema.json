@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Lead",
+    "description": "Eingegangene Leads aus ROI-Rechner (quelle: \"roi\") und Kontaktformular (quelle: \"kontakt\"). Wird vom Lead-Service (FastAPI) per API-Token befüllt — data/leads.jsonl und data/contacts.jsonl bleiben die Primärablage. ACHTUNG: personenbezogene Daten, KEINE öffentlichen Leserechte vergeben."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quelle": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "telefon": {
+      "type": "string"
+    },
+    "firma": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "nachricht": {
+      "type": "text"
+    },
+    "leadId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "potenzialEur": {
+      "type": "integer",
+      "required": false
+    },
+    "payloadJson": {
+      "type": "json"
+    },
+    "eingegangenAm": {
+      "type": "datetime"
+    }
+  }
+}

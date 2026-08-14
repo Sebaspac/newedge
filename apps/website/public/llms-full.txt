@@ -1,0 +1,222 @@
+# NEWEDGE – Vollständige Unternehmensübersicht
+
+> Wir bauen die KI-Abteilung für den Mittelstand. Nicht noch ein KI-Tool — eine operative Kapazität, die Arbeit übernimmt.
+
+## Über NEWEDGE
+
+NEWEDGE ist ein Unternehmen aus München, das für mittelständische Unternehmen im deutschsprachigen Raum eine KI-Abteilung aufbaut und betreibt. Der Kern des Angebots: Sie mieten diese Abteilung, statt sie selbst aufzubauen — ohne Neueinstellungen, ohne Einarbeitung, ohne für jedes Haus neue Individualsoftware.
+
+Die Beobachtung dahinter, so wie NEWEDGE sie formuliert: Die meisten Unternehmen scheitern nicht an der Technologie, sondern daran, dass KI isoliert eingeführt wird. Tools werden gekauft, einzelne Automatisierungen umgesetzt — ohne Verantwortung, Struktur und ein gemeinsames Fundament bleibt der Effekt klein.
+
+Deshalb baut NEWEDGE nicht je Kunde von vorn, sondern standardisiert wiederkehrende Unternehmensfunktionen und konfiguriert sie für den fachlichen Kontext des Kunden. Der Aufbau ist immer derselbe:
+
+**Ein Cortex → vier Blueprints → konfiguriert für vier Branchen.**
+
+Typische Größenordnung der Kunden: Unternehmen mit etwa 10 bis 150 Mitarbeitenden, bei denen KI teils schon verstreut genutzt wird, aber niemand sie zentral steuert.
+
+## Cortex — der gemeinsame Operating Layer
+
+Cortex ist keine weitere KI und kein „Unternehmens-GPT". Es ist die Ebene über dem, was im Unternehmen bereits läuft: die gemeinsame Betriebsebene, auf der KI im Haus gesteuert, betrieben und nachvollzogen wird. Bestehende Tools müssen dafür nicht abgeschaltet werden.
+
+Auf dieser Ebene liegen:
+
+- **Unternehmenswissen** — Dokumente, Prozesse und vorhandenes Wissen werden angebunden und nutzbar gemacht.
+- **Berechtigungen** — festgelegt wird, wer was darf; Nutzung wird sichtbar statt Schatten-IT.
+- **Integrationen** — bestehende Fachanwendungen, Ablagen und Postfächer werden angebunden, nicht ersetzt.
+- **Orchestrierung** — Aufgaben und Abläufe werden koordiniert, statt als Insellösungen nebeneinander zu stehen.
+- **Human Review** — kritische Schritte laufen über eine menschliche Freigabe.
+- **Audit** — was passiert, wird protokolliert und bleibt nachvollziehbar.
+- **Monitoring** — der laufende Betrieb wird überwacht.
+- **Modellauswahl** — welches KI-Modell bzw. welcher KI-Dienst im Hintergrund arbeitet, bleibt austauschbar.
+
+Die Infrastruktur läuft im Haus des Kunden: DSGVO-konform, mit Rollen- und Zugriffsrechten, ohne Blackbox und ohne ungewollten Datenabfluss. Auf Wunsch in deutscher Cloud oder in der eigenen Infrastruktur des Kunden.
+
+So kommt Cortex ins Haus (vier Schritte): Setup mit klaren Regeln, wer was darf → zentrale, freigegebene Zugänge für die Mitarbeiter → Transparenz darüber, wer KI wofür nutzt → schrittweiser Ausbau der Automatisierungen auf derselben Basis.
+
+Cortex passt, wenn im Haus bereits mehrere Leute KI nutzen, aber niemand den Überblick hat; wenn KI im Haus bleiben soll; wenn ein Fundament gesucht wird, auf dem Automatisierungen wachsen. Cortex passt nicht, wenn ein einzelnes Tool zum Ausprobieren gesucht wird oder Daten bewusst in beliebige externe Tools fließen sollen.
+
+Seite: https://newedgebrand.com/cortex
+
+## Die vier Blueprints
+
+Die Blueprints sind das Produkt: vier standardisierte Unternehmensfunktionen auf derselben Infrastruktur, einzeln aktivierbar oder zusammen. Sie übernehmen die Vorarbeit — die fachliche Entscheidung bleibt beim Menschen.
+
+### 1. Entscheidungen & Fallprüfung
+
+Fälle aufnehmen, Unterlagen prüfen, Kriterien anwenden, Ausnahmen erkennen, Entscheidung vorbereiten. Einreichungen, Anträge und Fälle werden unabhängig vom Format erfasst und vergleichbar gemacht, nach den Kriterien des Hauses bewertet, Abweichungen und Sonderfälle gekennzeichnet, und jeder Schritt wird revisionssicher dokumentiert — vom ersten Eingang bis zur begründeten Entscheidung. Die Entscheidung selbst trifft weiterhin das Gremium, die Kommission oder die zuständige Person.
+
+Seite: https://newedgebrand.com/loesungen/entscheidungen-fallpruefung
+
+### 2. Dokumente & Prozesse
+
+Erfassen, klassifizieren, extrahieren, auf Vollständigkeit und Regeln prüfen, abgleichen, Abweichungen eskalieren. Unterlagen treffen als Scan, Foto, Formular oder Mailanhang ein; erkannt wird der Inhalt, nicht der Dateiname. Jede Unterlage wird dem richtigen Fall, Antrag oder Objekt zugeordnet, gegen Checklisten, interne Regeln und Nachweispflichten geprüft und mit vorhandenen Daten abgeglichen. Fehlendes wird angefordert und nachverfolgt; Widersprüche und abgelaufene Nachweise werden markiert und der zuständigen Person vorgelegt statt stillschweigend übernommen. Jeder Bearbeitungsschritt bleibt protokolliert.
+
+Seite: https://newedgebrand.com/loesungen/dokumente-prozesse
+
+### 3. Steuerung & Reporting
+
+Daten konsolidieren, Kennzahlen überwachen, Abweichungen erkennen, Managemententscheidungen vorbereiten. Werte aus den bestehenden Fachsystemen, Ablagen und Postfächern laufen laufend in einer Sicht zusammen, nach den Definitionen des Hauses ausgelegt und bis zum einzelnen Vorgang zurückverfolgbar. Schwellen legt der Kunde fest; Auffälligkeiten gehen an die zuständige Rolle statt in einen Sammelverteiler. Zu jeder Auffälligkeit gehört ihre Herkunft: welcher Bereich, welche Vorgänge, seit wann. Kein Ersatz für Bestandsführung oder Aktenverwaltung, keine Datenmigration.
+
+Seite: https://newedgebrand.com/loesungen/steuerung-reporting
+
+### 4. Service & Fallbearbeitung
+
+Anfragen aufnehmen, verstehen, bearbeiten, routen, mit vollständigem Kontext eskalieren. Wiederkehrende Anfragen kommen über Telefon, Mail und Portal herein; das Anliegen wird erkannt, dem laufenden Vorgang zugeordnet und aus dem geprüften Wissensstand des Hauses beantwortet oder bearbeitet — in dessen Tonalität, auch außerhalb der Bürozeiten. Alles, was eine fachliche Entscheidung braucht, geht mit vollständigem Kontext an die zuständige Person.
+
+Seite: https://newedgebrand.com/loesungen/service-fallbearbeitung
+
+## Die vier Branchen
+
+Branchen sind keine eigenen Produkte, sondern Konfigurationen derselben vier Blueprints. Ein Kunde kann mehrere Blueprints gleichzeitig nutzen. NEWEDGE expandiert nach Prozessähnlichkeit, nicht mit neuer Individualsoftware je Branche.
+
+### Versicherungen
+
+Für Versicherer, Makler und Assekuradeure. Keine neue Kernanwendung, sondern eine Schicht über dem Bestehenden: Schadenmeldungen, Anträge und Anfragen werden aufgenommen, Unterlagen auf Vollständigkeit geprüft, gegen Bedingungswerk und Bestandsdaten abgeglichen und der Fall aufbereitet vorgelegt. Bewertet, freigegeben und reguliert wird weiterhin im Haus des Kunden.
+
+Seite: https://newedgebrand.com/industrien/versicherungen
+
+### Bildung
+
+Für Hochschulen, Akademien, Bildungsträger und Schulträger. Bewerbungen und Nachweise werden aufgenommen, auf Vollständigkeit geprüft und an den Zulassungskriterien gespiegelt, Sonderfälle gekennzeichnet, wiederkehrende Fragen des Studierendenservice beantwortet oder weitergeleitet. Über die Zulassung entscheidet die Kommission.
+
+Seite: https://newedgebrand.com/industrien/bildung
+
+### Förderungen & Entscheidungsinstanzen
+
+Für Förderstellen, Vergabestellen, Hochschulen, Verbände und Award-Organisationen. Anträge und Einreichungen werden erfasst, das Gremium wird durch einen einheitlichen Prüf- und Bewertungsprozess geführt — gleiche Kriterien, gleiche Gewichtung, gleiche Skala — und jede Entscheidung revisionssicher dokumentiert, von der ersten Bewertung bis zum Bescheid.
+
+Seite: https://newedgebrand.com/industrien/foerderungen-entscheidungsinstanzen
+
+### Immobilien
+
+Für Hausverwaltungen, Bestandshalter sowie Asset- und Property-Management. Mietverträge, Nebenkostenbelege, Übergabeprotokolle, Mieterhöhungen und Schadensmeldungen werden erfasst, abgeglichen, Fristen und Auffälligkeiten gekennzeichnet, Meldungen aufgenommen und weitergeleitet. Die Entscheidung trifft weiterhin die Verwaltung.
+
+Seite: https://newedgebrand.com/industrien/immobilien
+
+## Die Zusammenarbeit: drei Phasen
+
+### Phase 01 — Analyse: „Wo lohnt sich KI wirklich?"
+
+Betrachtet werden Prozesse, Datenflüsse, Wissensstrukturen, Entscheidungswege, wiederkehrende Aufgaben und Wirtschaftlichkeit. Ergebnis: eine Potenzialanalyse, priorisierte Handlungsfelder, eine Kosten-Nutzen-Rechnung je Vorhaben und ein Fahrplan für die Umsetzung — bevor investiert wird.
+
+### Phase 02 — Umsetzung: aus der Analyse wird ein laufendes System
+
+Zuerst entsteht das Fundament: Cortex — der Ort, an dem Mitarbeiter, Daten, Prozesse und KI-Assistenten zusammenlaufen. Darauf werden die digitalen Systeme gebaut und die Abläufe mit dem größten Mehrwert automatisiert, in der Reihenfolge aus der Analyse: Kundenportale und Plattformen, Web-Anwendungen, Dokumentenverarbeitung, Kundenservice, Auswertungen und Verwaltung.
+
+### Phase 03 — Skalierung: eine arbeitsfähige Abteilung, ohne einzustellen
+
+Eine Ansprechperson beim Kunden koordiniert, dahinter arbeitet das NEWEDGE-Team. Übernommen werden strategische Priorisierung, laufende Systempflege, Potenzialerkennung und Weiterentwicklung, klare Regeln und Datenhoheit, Schulung und Befähigung des Teams sowie der Ausbau der technischen Basis. Was aufgebaut wird, gehört dem Kunden: nachvollziehbar, kontrollierbar, erweiterbar. Die laufende Betreuung läuft unter dem Namen Embedded AI.
+
+Das Ziel: nicht ein einzelnes Tool, sondern eine Organisation, die KI dauerhaft produktiv einsetzt — Wissen schneller nutzbar, Prozesse kontinuierlich verbessert, Automatisierung systematisch vorangetrieben. Aus einzelnen Projekten wird eine dauerhafte Unternehmensfähigkeit. Das ist die KI-Abteilung.
+
+Seite: https://newedgebrand.com/methodik
+
+## Der KI-Audit — der Einstieg
+
+Der KI-Audit ist der Einstiegspunkt in die Zusammenarbeit. Er zeigt, welche drei Prozesse im Unternehmen den größten Hebel haben — mit Aufwand-Nutzen-Schätzung je Anwendung und einem Report, der intern weitergereicht werden kann.
+
+Ablauf in vier Schritten:
+
+1. **Vorbereitung** — kurzer Fragebogen vorab, damit das Gespräch auf die tatsächlichen Prozesse ausgerichtet ist.
+2. **Prozessaufnahme-Gespräch** — mit den Leuten, die die Abläufe wirklich kennen.
+3. **Bewertung & Priorisierung** — jeder identifizierte Prozess wird nach Aufwand und Nutzen bewertet, die drei mit dem höchsten Hebel priorisiert.
+4. **Report & Fahrplan-Übergabe** — der vollständige Report plus ein Gespräch, in dem der Fahrplan gemeinsam durchgegangen wird.
+
+Das Erstgespräch ist kostenlos und unverbindlich; der Preis für das Audit wird dort offen genannt. Der Audit ist staatlich förderfähig (BAFA). NEWEDGE gibt für das Audit eine Zusage: Werden keine drei umsetzbaren KI-Anwendungen gefunden, zahlt der Kunde nicht. Die Analyse ist herstellerunabhängig.
+
+Passt, wenn: 10 bis 150 Mitarbeitende, erste Erfahrungen mit ChatGPT oder Automatisierungs-Tools ohne System dahinter, Bedarf an einer Entscheidungsgrundlage. Passt nicht, wenn: ein fertiges Tool zum Sofortkauf gesucht wird, keine eigene Zeit investiert werden soll oder bereits eine KI-Strategie steht und nur Umsetzung gesucht wird.
+
+Seite: https://newedgebrand.com/ki-audit
+
+## Integrationen
+
+NEWEDGE ersetzt keine Fachanwendung und verlangt keinen Systemwechsel. Die Blueprints docken an das an, womit die Teams heute arbeiten — Postfach, Dokumentenablage, Signatur, Bestands- und Verwaltungssysteme — und übernehmen die Schritte dazwischen. Auf den Lösungsseiten genannte Beispiele: Microsoft Outlook, Microsoft Teams, Microsoft SharePoint, Google Workspace, DocuSign, DATEV, lexoffice, Salesforce, Notion, Calendly, Zoom, Zapier, Make. Fachsysteme ohne Schnittstelle werden über die bestehenden Ablagen, Formulare und Exporte angebunden.
+
+## Datenschutz und Betrieb
+
+Die Verarbeitung erfolgt DSGVO-konform, mit Rollen- und Zugriffsrechten und auf Wunsch in deutscher Cloud oder in der eigenen Infrastruktur des Kunden. Jeder Bearbeitungsschritt wird protokolliert, damit Auskunfts-, Nachweis- und Aufbewahrungspflichten erfüllbar bleiben. Grundsatz über alle Blueprints hinweg: Das System bereitet vor, prüft, ordnet zu und eskaliert — die fachliche Entscheidung bleibt beim Menschen.
+
+## Referenzen
+
+- **BMP Award** — reales Projekt zum Blueprint „Entscheidungen & Fallprüfung": Bewerbungen eines Auswahlzyklus werden strukturiert geprüft, aufbereitet und für die Jury nachvollziehbar zusammengeführt.
+- **AlbaNova Consulting**, **Elite Aesthetic**, **Becoming You** — Website- und Plattformprojekte (siehe /websites).
+
+Weitere auf den Lösungs- und Branchenseiten gezeigte Fallbeispiele sind ausdrücklich als illustrative Anwendungsfälle gekennzeichnet und keine Kundendaten.
+
+## Websites & Web-Plattformen
+
+Neben der KI-Abteilung entwickelt NEWEDGE Websites und Web-Plattformen: Strategie und Branding, Webdesign und Entwicklung aus einer Hand. Was gebaut wird, gehört am Ende dem Kunden — ohne Agentur-Abhängigkeit.
+
+Seite: https://newedgebrand.com/websites
+
+## Werkzeuge auf der Website
+
+- **ROI-Rechner** — Selbstauskunft zum möglichen Hebel von KI im eigenen Betrieb, branchenspezifisch: https://newedgebrand.com/roi-rechner
+- **KI-Glossar** — die wichtigsten KI-Begriffe, verständlich erklärt für Entscheider: https://newedgebrand.com/ki-glossar
+
+## Häufig gestellte Fragen (FAQ)
+
+**Was ist NEWEDGE?**
+NEWEDGE baut die KI-Abteilung für den Mittelstand: einen Cortex als gemeinsamen Operating Layer und darauf vier standardisierte Blueprints, konfiguriert für den fachlichen Kontext des Kunden. Sitz ist München.
+
+**Was ist Cortex?**
+Die gemeinsame Betriebsebene für KI im Unternehmen — Unternehmenswissen, Berechtigungen, Integrationen, Orchestrierung, menschliche Freigaben, Protokollierung, Betriebsüberwachung und Modellauswahl an einem Ort. Kein einzelnes KI-Tool, sondern die Ebene darüber.
+
+**Ersetzt Cortex ChatGPT oder Copilot?**
+Nein. Cortex verbindet Unternehmenswissen, Systeme und Berechtigungen, steuert die Abläufe und protokolliert, was passiert — welche KI-Dienste dahinter arbeiten, bleibt austauschbar.
+
+**Baut NEWEDGE für jede Branche eine eigene Software?**
+Nein. Es sind dieselben vier standardisierten Funktionen; für das jeweilige Haus werden sie auf dessen Unterlagenarten, Kriterien, Prüfregeln und Steuerungsgrößen konfiguriert.
+
+**Müssen bestehende Systeme abgelöst werden?**
+Nein. NEWEDGE ersetzt keine Fachanwendung und verlangt keine Datenmigration. Die Blueprints legen sich über die vorhandenen Systeme und schreiben geprüfte Daten dorthin zurück, wo die Teams sie erwarten.
+
+**Trifft das System Entscheidungen?**
+Nein. Es nimmt auf, prüft, ordnet zu, bereitet vor und eskaliert Abweichungen mit Fundstelle. Die fachliche Entscheidung trifft weiterhin das Team, das Gremium oder die Kommission.
+
+**Bleiben unsere Daten im Haus?**
+Ja. Die Infrastruktur läuft im Haus des Kunden, DSGVO-konform, mit Rollen- und Zugriffsrechten und lückenloser Protokollierung — auf Wunsch in deutscher Cloud oder in der eigenen Infrastruktur.
+
+**Wie fängt eine Zusammenarbeit an?**
+Mit dem KI-Audit. Das Erstgespräch ist kostenlos und unverbindlich; der Audit ist staatlich förderfähig (BAFA).
+
+**Für welche Unternehmensgröße ist das gedacht?**
+Vor allem für Unternehmen mit etwa 10 bis 150 Mitarbeitenden im deutschsprachigen Raum.
+
+**Was kostet das?**
+Preise werden nicht pauschal genannt: Umfang, Nutzerzahl und Ausgangslage bestimmen sie. Im kostenlosen Erstgespräch wird offen besprochen, was sinnvoll ist.
+
+## Kontakt
+
+- Website: https://newedgebrand.com
+- E-Mail: info@newedgebrand.com
+- Telefon: +49 176 60 431 467
+- Standort: München, Deutschland
+- LinkedIn: https://www.linkedin.com/company/new-edge-brand/
+- Kontaktformular / Erstgespräch: https://newedgebrand.com/kontakt
+- KI-Audit anfragen: https://newedgebrand.com/ki-audit
+
+## Anbieter
+
+Angaben gemäß § 5 TMG: NEWEDGE Brand – Creative Tech Agentur, Inhaber: Wenjamin Zabezhanskiy, München, Deutschland, info@newedgebrand.com. Die vollständigen rechtlichen Angaben samt Datenschutzerklärung stehen unter /impressum auf der Website (per robots.txt von der Indexierung ausgenommen).
+
+## Seitenübersicht
+
+- Startseite: https://newedgebrand.com/
+- Methodik (die drei Phasen): https://newedgebrand.com/methodik
+- Cortex: https://newedgebrand.com/cortex
+- KI-Audit: https://newedgebrand.com/ki-audit
+- ROI-Rechner: https://newedgebrand.com/roi-rechner
+- Websites & Web-Plattformen: https://newedgebrand.com/websites
+- KI-Glossar: https://newedgebrand.com/ki-glossar
+- Kontakt: https://newedgebrand.com/kontakt
+- Entscheidungen & Fallprüfung: https://newedgebrand.com/loesungen/entscheidungen-fallpruefung
+- Dokumente & Prozesse: https://newedgebrand.com/loesungen/dokumente-prozesse
+- Steuerung & Reporting: https://newedgebrand.com/loesungen/steuerung-reporting
+- Service & Fallbearbeitung: https://newedgebrand.com/loesungen/service-fallbearbeitung
+- Versicherungen: https://newedgebrand.com/industrien/versicherungen
+- Bildung: https://newedgebrand.com/industrien/bildung
+- Förderungen & Entscheidungsinstanzen: https://newedgebrand.com/industrien/foerderungen-entscheidungsinstanzen
+- Immobilien: https://newedgebrand.com/industrien/immobilien
+- Englische Fassung: https://newedgebrand.com/en (dieselben Seiten unter /en/…)
+- Kurzfassung dieser Übersicht: https://newedgebrand.com/llms.txt

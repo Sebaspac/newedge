@@ -1,0 +1,8 @@
+# Die CMS-Übertragung (Strapi) nutzt urllib aus der Standardbibliothek —
+# bewusst keine zusätzliche Abhängigkeit für einen optionalen Nebenpfad.
+fastapi==0.115.*
+uvicorn[standard]==0.32.*
+reportlab==4.4.*
+# Zeitzonen für das Follow-up-Versandfenster (python:3.12-slim bringt keine
+# System-Zeitzonendatenbank mit; ohne tzdata liefe das Fenster in UTC).
+tzdata>=2024.1

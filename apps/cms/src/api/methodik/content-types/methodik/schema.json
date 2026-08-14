@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "methodik_entries",
+  "info": {
+    "singularName": "methodik",
+    "pluralName": "methodik-entries",
+    "displayName": "Methodik",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "manifest": {
+      "type": "json"
+    },
+    "stufenSection": {
+      "type": "json"
+    },
+    "stufen": {
+      "type": "json"
+    },
+    "ziel": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "json"
+    },
+    "contact": {
+      "type": "json"
+    },
+    "toast": {
+      "type": "json"
+    }
+  }
+}

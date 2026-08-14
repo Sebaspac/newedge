@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "web_design_entries",
+  "info": {
+    "singularName": "web-design",
+    "pluralName": "web-design-entries",
+    "displayName": "Web Design",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "showreel": {
+      "type": "json"
+    },
+    "prozess": {
+      "type": "json"
+    },
+    "cases": {
+      "type": "json"
+    },
+    "finalCta": {
+      "type": "json"
+    }
+  }
+}

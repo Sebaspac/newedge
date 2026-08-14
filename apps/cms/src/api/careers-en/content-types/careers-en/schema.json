@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_en_entries",
+  "info": {
+    "singularName": "careers-en",
+    "pluralName": "careers-en-entries",
+    "displayName": "Careers En",
+    "description": "Generiert aus src/content (Website-Content-Layer)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "json"
+    },
+    "hero": {
+      "type": "json"
+    },
+    "about": {
+      "type": "json"
+    },
+    "why": {
+      "type": "json"
+    },
+    "positions": {
+      "type": "json"
+    },
+    "cta": {
+      "type": "json"
+    },
+    "calendly": {
+      "type": "string"
+    }
+  }
+}

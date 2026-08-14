@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_overrides",
+  "info": {
+    "singularName": "image-override",
+    "pluralName": "image-overrides",
+    "displayName": "Bild austauschen",
+    "description": "Ein Eintrag pro Bild der Website. Datei hochladen = Bild wird ersetzt. Feld leer lassen = eingebautes Bild bleibt."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imageKey": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    }
+  }
+}

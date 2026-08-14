@@ -1,0 +1,46 @@
+# ⚠️  NUR FÜR STANDALONE-BETRIEB — im Normalfall NICHT diese Datei benutzen.
+# ---------------------------------------------------------------------------
+# Der Lead-Service ist Teil des gemeinsamen VPS-Stacks und läuft dort im
+# docker-compose des CMS:
+#
+#     cd apps/cms && docker compose up -d --build      ← der normale Weg
+#     docker compose logs -f lead-api
+#     docker compose exec lead-api python followups.py list
+#
+# Diese Datei bleibt nur für zwei Fälle:
+#   1. Lokales Ausprobieren des Service ohne Postgres/Strapi
+#   2. Betrieb auf einem eigenen Host / einer eigenen Subdomain
+#      (Reverse-Proxy dann separat: Caddyfile.example)
+#
+# Aufruf ausdrücklich mit -f; ein bloßes `docker compose up` findet sie
+# absichtlich nicht mehr:
+#
+#     docker compose -f docker-compose.standalone.yml up -d --build
+#
+# Achtung: Port 127.0.0.1:8090 ist derselbe wie im gemeinsamen Stack — beide
+# gleichzeitig zu starten schlägt mit "port is already allocated" fehl. Das ist
+# gut so: zwei Prozesse auf demselben data/-Ordner würden sich die Follow-up-
+# Warteschlange streitig machen.
+#
+# Der Service heißt hier wie im gemeinsamen Stack "lead-api", damit alle
+# docker-compose-exec-Befehle aus der README in beiden Welten funktionieren.
+# ---------------------------------------------------------------------------
+
+services:
+  lead-api:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    # Nur lokal binden — nach außen geht es ausschließlich über den Reverse-Proxy (Caddy/nginx)
+    ports:
+      - "127.0.0.1:8090:8090"
+    volumes:
+      - ./data:/data
+    healthcheck:
+      # urllib statt curl: im python:3.12-slim-Image ist kein curl/wget installiert.
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

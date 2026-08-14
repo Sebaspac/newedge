@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_tags",
+  "info": {
+    "displayName": "Tag",
+    "icon": "priceTag",
+    "description": "Kurz-Tag (inkl. optionalem Emoji-Präfix), z. B. \"📍 Remote/München\""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
